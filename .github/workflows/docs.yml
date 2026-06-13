@@ -1,0 +1,55 @@
+name: docs
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+# GitHub Pages 배포에 필요한 최소 권한.
+permissions:
+  contents: read
+
+# 동시 배포 충돌 방지 (진행 중 실행은 취소하지 않음).
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install tox
+        run: python -m pip install --upgrade pip tox
+
+      - name: Lint docs (doc8)
+        run: tox -e pep8
+
+      - name: Build docs (sphinx)
+        run: tox -e docs
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: doc/build/html
+
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build-docs
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
