@@ -1,0 +1,60 @@
+# Sphinx / documentation build output
+doc/build/
+doc/source/_build/
+releasenotes/build/
+*.doctree
+*.pickle
+
+# tox / local virtual environments
+.tox/
+.nox/
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache, test, and packaging output
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.cache/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+cover/
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# OpenStack-style generated files
+AUTHORS
+ChangeLog
+.stestr/
+.testrepository/
+
+# Kubernetes-style local output
+_output/
+bazel-*
+*.test
+*.out
+coverage.out
+
+# Local configuration and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
