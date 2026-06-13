@@ -1,0 +1,8 @@
+# 문서 빌드에 필요한 Python 패키지.
+# 처음에는 기본 theme(alabaster)로 단순하게 시작합니다.
+# 추후 openstackdocstheme 로 전환하려면 conf.py 의 html_theme 을 함께 변경하세요.
+sphinx>=7.0.0
+doc8>=1.1.0
+
+# (선택) OpenStack 공식 문서 테마로 전환할 때 주석을 해제하세요.
+# openstackdocstheme>=3.0.0
