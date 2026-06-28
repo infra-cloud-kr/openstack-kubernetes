@@ -31,8 +31,11 @@ jobs:
       - name: Lint docs (doc8)
         run: tox -e pep8
 
-      - name: Build docs (sphinx)
+      - name: Build docs (sphinx, Korean)
         run: tox -e docs
+
+      - name: Build docs (sphinx, English -> /en/)
+        run: tox -e docs-en
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

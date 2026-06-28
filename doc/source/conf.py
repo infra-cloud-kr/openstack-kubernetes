@@ -30,6 +30,13 @@ root_doc = 'index'
 # 빌드에서 제외할 파일/디렉터리 패턴.
 exclude_patterns = []
 
+# -- 국제화 (i18n) -----------------------------------------------------------
+# 번역 파일(.po) 위치. Weblate 가 이 디렉터리의 .po 를 읽고 씁니다.
+locale_dirs = ['locales/']
+# 모든 문서를 단일 카탈로그(docs.po)로 합칩니다. 새 문서를 추가해도
+# 그 문자열이 같은 카탈로그에 들어가 Weblate 컴포넌트 하나가 포착합니다.
+gettext_compact = 'docs'
+
 # todo 지시문을 출력에 표시.
 todo_include_todos = True
 
