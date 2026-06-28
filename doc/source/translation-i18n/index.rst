@@ -18,3 +18,4 @@
    openstack-i18n
    kubernetes-localization
    weblate
+   translation-guide

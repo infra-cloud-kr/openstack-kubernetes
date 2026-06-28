@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenStack & Kubernetes 한글 문서화 프로젝트 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-28 22:21+0900\n"
+"POT-Creation-Date: 2026-06-28 22:28+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -67,6 +67,7 @@ msgstr ""
 #: ../../source/documentation/kubernetes-doc-conventions.rst:30
 #: ../../source/documentation/openstack-doc-conventions.rst:38
 #: ../../source/translation-i18n/localization-communities.rst:55
+#: ../../source/translation-i18n/weblate.rst:150
 msgid "항목"
 msgstr ""
 
@@ -2214,65 +2215,555 @@ msgid ""
 ":doc:`weblate` 에서 다룹니다."
 msgstr ""
 
+#: ../../source/translation-i18n/translation-guide.rst:3
+msgid "Weblate 번역 가이드"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:5
+msgid ""
+"이 문서는 **멘토링 참가자(멘티)** 가 번역 플랫폼 `Weblate "
+"<https://translate.openinfra.kr>`_ 에서 계정을 발급받고 문서를 번역하는 과정을 안내합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:9
+msgid ""
+"본 프로젝트 문서는 **한국어가 원문**\\이며, Weblate 를 통해 **영어로 번역**\\됩니다. 번역한 내용은 자동으로 "
+"GitHub Pull Request 로 만들어지고, 검토 후 병합되면 영어 사이트(``/en/``)에 반영됩니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:13
+msgid "동작 원리(파이프라인)는 :doc:`weblate` 를 참고하세요."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:17
+msgid "한눈에 보는 흐름"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:27
+msgid "번역 사이트: https://translate.openinfra.kr"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:28
+msgid "대상 프로젝트: ``openstack-kubernetes`` / ``docs``"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:29
+msgid "번역 언어: 한국어(원문) → English(영어)"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:33
+msgid "1. 계정 만들기"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:35
+msgid "https://translate.openinfra.kr/accounts/register/ 에 접속합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:36
+msgid "다음을 입력합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:38
+msgid "**E-mail**: 인증 메일을 받을 본인 이메일"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:39
+msgid "**Username**: 로그인용 사용자 이름(영문)"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:40
+msgid "**Full name**: 표시될 이름(기여자 이름으로 기록)"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:41
+msgid "**I'm not a robot**: 사람 확인(캡차)"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:43
+msgid "**Register** 버튼을 누릅니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:45
+msgid "Weblate 회원가입 화면"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:49
+msgid "회원가입 화면."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:53
+msgid "가입 후 입력한 이메일로 **인증 메일**\\이 옵니다. 메일의 링크를 눌러야 계정이 활성화됩니다. 안 보이면 스팸함도 확인하세요."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:58
+msgid "2. 로그인"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:60
+msgid "이메일 인증을 마쳤다면 https://translate.openinfra.kr/accounts/login/ 에서 로그인합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:63
+msgid "Weblate 로그인 화면"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:67
+msgid "로그인 화면."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:71
+msgid "3. 번역할 문서 찾기"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:73
+msgid "상단 **Projects** → **openstack-kubernetes** 를 선택합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:75
+msgid "openstack-kubernetes 프로젝트 화면"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:79
+msgid "프로젝트 화면."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:81
+msgid "**docs** 컴포넌트 → 언어 목록에서 **English** 를 선택하면 번역 현황이 나타납니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:84
+msgid "English 번역 현황 화면"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:88
+msgid ""
+"번역 현황. **Translate** 로 편집기에 들어갑니다. *Unfinished strings* 를 누르면 미번역 문장만 모아 "
+"볼 수 있습니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:93
+msgid "처음에는 **Unfinished strings → Translate** 로 시작하면 번역이 필요한 문장만 순서대로 보여 줍니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:98
+msgid "4. 번역 편집기 사용법"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:100
+msgid "Weblate 번역 편집기"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:104
+msgid "번역 편집기. 위에 한국어 원문, 아래에 영어 입력칸이 있습니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:106
+msgid "**Korean** (위): 번역할 원문(한국어)"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:107
+msgid "**English** (아래): 영어 번역을 입력"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:108
+msgid "**Glossary** (오른쪽): 용어집(등록된 통일 번역어)"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:109
+msgid "**Nearby strings** (아래): 앞뒤 문맥 문장"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:111
+msgid "저장 버튼:"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:113
+msgid "**Save and continue**: 저장하고 다음 문장으로 (가장 많이 사용)"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:114
+msgid "**Save and stay**: 저장하고 현재 문장에 머무름"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:115
+msgid "**Suggest**: 확정 대신 제안만 남김"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:116
+msgid "**Skip**: 저장 없이 건너뜀"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:120
+msgid ""
+"번역을 저장하려면 **로그인**\\이 되어 있어야 합니다. 비로그인 상태에서는 \"Sign in to save "
+"translations.\" 안내가 보입니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:125
+msgid "5. 마크업 보존 규칙"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:127
+msgid ""
+"원문에는 reStructuredText(RST) 서식이 섞여 있습니다. **서식 기호는 그대로 두고 글자만 번역**\\해야 문서가 "
+"깨지지 않습니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:142
+msgid "별표(``*``), 백틱, 밑줄(``_``) 같은 서식 기호를 지우거나 추가하지 마세요."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:144
+msgid "URL, 제품명(OpenStack, Kubernetes 등)은 번역하지 않습니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:145
+msgid "문제가 있으면 Weblate 가 **Checks** 경고로 알려 줍니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:149
+msgid "6. 내 번역은 어떻게 반영되나요?"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:151
+msgid "저장한 번역은 다음 과정을 거쳐 사이트에 반영됩니다. **이 과정은 자동**\\이므로 번역가가 Git 을 직접 다룰 필요는 없습니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:154
+msgid "Weblate 가 번역을 모아 GitHub 로 **Pull Request** 를 생성/갱신"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:155
+msgid "멘토(메인테이너)가 PR 을 검토하고 병합"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:156
+msgid "GitHub Actions 가 영어 문서를 빌드/배포"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:160
+msgid "번역되지 않은 문장은 영어 사이트에서 원문(한국어)으로 표시되며, 번역이 쌓일수록 영어로 채워집니다."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:165
+msgid "도움이 필요하면"
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:167
+msgid "막히는 부분은 **멘토에게 문의**\\하세요."
+msgstr ""
+
+#: ../../source/translation-i18n/translation-guide.rst:168
+msgid ""
+"Weblate 사용법: `Translating using Weblate "
+"<https://docs.weblate.org/en/latest/user/translating.html>`_"
+msgstr ""
+
 #: ../../source/translation-i18n/weblate.rst:5
 msgid ""
-"`Weblate <https://weblate.org/>`_ 는 웹 기반 번역 플랫폼입니다. 본 프로젝트는 번역 워크플로우 구성 "
-"경험을 쌓기 위해 Weblate 활용을 다룹니다."
+"`Weblate <https://weblate.org/>`_ 는 웹 기반 번역 플랫폼입니다. 본 프로젝트의 한글 문서는 한국어를 "
+"원문으로 하고, Weblate 를 통해 영어로 번역됩니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:9
+msgid "번역 인스턴스: https://translate.openinfra.kr"
 msgstr ""
 
 #: ../../source/translation-i18n/weblate.rst:10
-msgid "기여자 작업용 골격입니다. 실제 인스턴스 구성/연동 경험을 바탕으로 보강해 주세요."
+msgid "프로젝트 / 컴포넌트: ``openstack-kubernetes`` / ``docs``"
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:15
-msgid "왜 Weblate 인가"
+#: ../../source/translation-i18n/weblate.rst:11
+msgid "원문 언어: 한국어(``ko``) → 번역 언어: 영어(``en``)"
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:17
-msgid "웹 기반의 직관적인 번역 인터페이스"
+#: ../../source/translation-i18n/weblate.rst:13
+msgid ""
+"실제 번역하는 방법은 :doc:`translation-guide` 를 참고하세요. 이 문서는 **번역이 자동으로 동기화되는 "
+"구조**\\를 설명합니다."
 msgstr ""
 
 #: ../../source/translation-i18n/weblate.rst:18
-msgid "VCS(Git) 연동을 통한 ``.po`` 동기화"
+msgid "전체 흐름"
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:19
-msgid "번역 메모리, 용어집, 품질 검사 기능"
+#: ../../source/translation-i18n/weblate.rst:20
+msgid "GitHub 와 Weblate 사이의 양방향 번역 파이프라인"
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:23
-msgid "기본 흐름"
+#: ../../source/translation-i18n/weblate.rst:24
+msgid "원문/문자열은 GitHub → Weblate(①)로, 번역 결과는 Weblate → GitHub(②)로 흐릅니다."
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:25
-msgid "Git 저장소와 Weblate 컴포넌트 연결"
+#: ../../source/translation-i18n/weblate.rst:29
+msgid "핵심: Weblate 는 ``.po`` 를 읽고 씁니다"
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:26
-msgid "``.pot``/``.po`` 파일 등록"
+#: ../../source/translation-i18n/weblate.rst:31
+msgid ""
+"Weblate 는 RST 원문을 직접 다루지 않습니다. Sphinx 문서는 gettext 방식으로 번역되며, 번역 단위는 "
+"``.po`` 파일입니다."
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:27
-msgid "번역 진행 및 리뷰"
+#: ../../source/translation-i18n/weblate.rst:44
+msgid "번역 대상 문자열은 원문에서 추출되어 ``docs.po`` 의 ``msgid`` 가 됩니다."
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:28
-msgid "번역 결과를 Git 으로 커밋/푸시"
+#: ../../source/translation-i18n/weblate.rst:46
+msgid "번역 결과는 ``docs.po`` 의 ``msgstr`` 에 저장됩니다."
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:32
-msgid "연동 시 고려사항"
+#: ../../source/translation-i18n/weblate.rst:47
+msgid "그래서 원문이 바뀌면 ``.po`` 를 다시 생성해야 새 문장이 Weblate 에 나타납니다(아래 ① 자동화)."
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:34
-msgid "저장소 권한과 브랜치 전략"
+#: ../../source/translation-i18n/weblate.rst:52
+msgid ""
+"``conf.py`` 에서 ``gettext_compact = 'docs'`` 로 설정해 모든 문서를 하나의 ``docs.po`` "
+"로 합칩니다. 덕분에 새 ``.rst`` 문서를 추가해도 그 문장이 같은 카탈로그에 들어가 Weblate 컴포넌트 하나가 자동으로 "
+"포착합니다."
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:35
-msgid "충돌 해결과 동기화 주기"
+#: ../../source/translation-i18n/weblate.rst:59
+msgid "① GitHub → Weblate (원문/문자열 반영)"
 msgstr ""
 
-#: ../../source/translation-i18n/weblate.rst:36
-msgid "용어집/번역 메모리 공유"
+#: ../../source/translation-i18n/weblate.rst:61
+msgid "저장소 원문이 바뀌면 Weblate 에 반영됩니다. 두 단계로 동작합니다."
 msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:64
+msgid "1단계 — 카탈로그 자동 재생성 (GitHub Actions)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:66
+msgid ""
+"``doc/source/**.rst`` 또는 ``conf.py`` 가 ``main`` 에 들어오면 워크플로우 "
+"``.github/workflows/i18n-sync.yml`` 이 실행됩니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:74
+msgid ""
+"``sphinx-intl update`` 는 내부적으로 ``msgmerge`` 를 수행하여 기존 번역은 유지하면서 새 문장 "
+"추가/삭제/변경을 처리합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:78
+msgid "2단계 — Weblate 가 변경을 받아옴 (Webhook)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:80
+msgid "저장소의 Webhook 이 push 때마다 Weblate 알림 엔드포인트로 신호를 보냅니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:88
+msgid ""
+"이 엔드포인트는 인증이 필요 없습니다. Weblate 는 payload 의 저장소를 기존 컴포넌트와 대조한 뒤, 컴포넌트에 등록된 "
+"신뢰된 URL 에서만 pull 합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:91
+msgid "저장소가 공개라 Weblate 는 익명으로 읽습니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:95
+msgid "② Weblate → GitHub (번역 결과 반영)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:97
+msgid "번역가가 저장한 번역이 다시 저장소로 돌아갑니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:113
+msgid "Weblate 가 push/PR 하려면 쓰기 권한 인증이 필요하며, 서버 환경변수의 개인 액세스 토큰(PAT)을 사용합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:115
+msgid "번역은 묶음(지연 커밋)으로 처리되어 하나의 PR 이 점진적으로 갱신됩니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:120
+msgid "인증 정리 (방향별)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:126
+msgid "동작"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:127
+msgid "인증"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:128
+msgid "비고"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:129
+msgid "GitHub → Weblate (Webhook)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:130
+#: ../../source/translation-i18n/weblate.rst:133
+msgid "불필요"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:131
+msgid "공개 엔드포인트"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:132
+msgid "Weblate 가 저장소 읽기(pull)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:134
+msgid "저장소 공개"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:135
+msgid "Weblate → GitHub (push/PR)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:136
+msgid "PAT 필요"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:137
+msgid "서버 환경변수"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:138
+msgid "Actions 의 카탈로그 커밋"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:139
+msgid "``GITHUB_TOKEN``"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:140
+msgid "별도 시크릿 없음"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:144
+msgid "컴포넌트 설정 요약"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:151
+msgid "값"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:152
+msgid "원문 언어"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:153
+msgid "한국어 (``ko``)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:154
+msgid "번역 언어"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:155
+msgid "영어 (``en``)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:156
+msgid "파일 형식"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:157
+msgid "gettext PO (bilingual)"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:158
+msgid "File mask"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:159
+msgid "``doc/source/locales/*/LC_MESSAGES/docs.po``"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:160
+msgid "버전 관리"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:161
+msgid "``github`` (PR 방식), merge: rebase"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:162
+msgid "Push 브랜치"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:163
+msgid "``weblate-translations``"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:167
+msgid "메인테이너 메모"
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:171
+msgid ""
+"원문을 바꿨는데 Weblate 에 안 보이면, ①의 카탈로그 재생성 Action 이 돌아 ``docs.po`` 가 갱신됐는지, "
+"Webhook 이 전달됐는지 확인합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:174
+msgid ""
+"filemask 등을 바꾼 뒤 재스캔이 안 되면(이미 파싱됨으로 스킵), 서버에서 ``weblate loadpo --force "
+"--foreground openstack-kubernetes/docs`` 로 강제 재로딩합니다."
+msgstr ""
+
+#: ../../source/translation-i18n/weblate.rst:177
+msgid "로컬 미반영 커밋과 원격이 어긋나면 Weblate 의 *Repository* 에서 ``reset`` 으로 원격 상태에 맞춥니다."
+msgstr ""
+
+#~ msgid ""
+#~ "`Weblate <https://weblate.org/>`_ 는 웹 기반 "
+#~ "번역 플랫폼입니다. 본 프로젝트는 번역 워크플로우 구성 "
+#~ "경험을 쌓기 위해 Weblate 활용을 다룹니다."
+#~ msgstr ""
+
+#~ msgid "기여자 작업용 골격입니다. 실제 인스턴스 구성/연동 경험을 바탕으로 보강해 주세요."
+#~ msgstr ""
+
+#~ msgid "왜 Weblate 인가"
+#~ msgstr ""
+
+#~ msgid "웹 기반의 직관적인 번역 인터페이스"
+#~ msgstr ""
+
+#~ msgid "VCS(Git) 연동을 통한 ``.po`` 동기화"
+#~ msgstr ""
+
+#~ msgid "번역 메모리, 용어집, 품질 검사 기능"
+#~ msgstr ""
+
+#~ msgid "기본 흐름"
+#~ msgstr ""
+
+#~ msgid "Git 저장소와 Weblate 컴포넌트 연결"
+#~ msgstr ""
+
+#~ msgid "``.pot``/``.po`` 파일 등록"
+#~ msgstr ""
+
+#~ msgid "번역 진행 및 리뷰"
+#~ msgstr ""
+
+#~ msgid "번역 결과를 Git 으로 커밋/푸시"
+#~ msgstr ""
+
+#~ msgid "연동 시 고려사항"
+#~ msgstr ""
+
+#~ msgid "저장소 권한과 브랜치 전략"
+#~ msgstr ""
+
+#~ msgid "충돌 해결과 동기화 주기"
+#~ msgstr ""
+
+#~ msgid "용어집/번역 메모리 공유"
+#~ msgstr ""
 
