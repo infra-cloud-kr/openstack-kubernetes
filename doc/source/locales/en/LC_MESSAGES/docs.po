@@ -4,20 +4,21 @@
 # Kubernetes 한글 문서화 프로젝트 package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenStack & Kubernetes 한글 문서화 프로젝트 \n"
+"Project-Id-Version: OpenStack & Kubernetes 한글 문서화 프로젝트\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-28 22:28+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2026-07-01 15:19+0000\n"
+"Last-Translator: OpenInfra Admin <ppiyakk2@printf.kr>\n"
+"Language-Team: English <https://translate.openinfra.kr/projects/openstack-"
+"kubernetes/docs/en/>\n"
 "Language: en\n"
-"Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.6.1\n"
 "Generated-By: Babel 2.18.0\n"
 
 #: ../../source/documentation/index.rst:3
@@ -1949,7 +1950,7 @@ msgstr ""
 
 #: ../../source/translation-i18n/index.rst:3
 msgid "번역 · 국제화"
-msgstr ""
+msgstr "Translation & i18n"
 
 #: ../../source/translation-i18n/index.rst:5
 msgid ""
@@ -2485,7 +2486,7 @@ msgstr ""
 
 #: ../../source/translation-i18n/weblate.rst:18
 msgid "전체 흐름"
-msgstr ""
+msgstr "Overview"
 
 #: ../../source/translation-i18n/weblate.rst:20
 msgid "GitHub 와 Weblate 사이의 양방향 번역 파이프라인"
@@ -2701,7 +2702,7 @@ msgstr ""
 
 #: ../../source/translation-i18n/weblate.rst:167
 msgid "메인테이너 메모"
-msgstr ""
+msgstr "Maintainer Notes"
 
 #: ../../source/translation-i18n/weblate.rst:171
 msgid ""
@@ -2766,4 +2767,3 @@ msgstr ""
 
 #~ msgid "용어집/번역 메모리 공유"
 #~ msgstr ""
-
