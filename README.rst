@@ -102,6 +102,31 @@ To lint the rST sources:
    $ tox -e pep8
 
 
+Translation (i18n)
+==================
+
+Korean is the source language; the docs are translated into English via
+Weblate (https://translate.openinfra.kr, project ``openstack-kubernetes``).
+Weblate reads and writes the gettext catalog at
+``doc/source/locales/<lang>/LC_MESSAGES/docs.po``.
+
+**Catalog sync is automated.** When ``doc/source/**.rst`` or ``conf.py``
+changes land on ``main``, the ``i18n-sync`` workflow regenerates and
+commits ``docs.po``; Weblate then picks up the changes via a GitHub
+webhook. You do not need to run anything by hand. To preview/update the
+catalog locally:
+
+.. code-block:: console
+
+   $ tox -e update-po        # regenerate docs.po (keeps existing msgstr)
+   $ tox -e docs-en          # build the English site into doc/build/html/en
+
+Translators translate in Weblate, and their work returns as pull
+requests. See the *번역 · 국제화 → Weblate* and *Weblate 번역 가이드*
+pages in the built documentation for the full pipeline and a
+step-by-step guide.
+
+
 Contributing
 ============
 

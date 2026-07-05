@@ -5,6 +5,9 @@ releasenotes/build/
 *.doctree
 *.pickle
 
+# Compiled translation catalogs (generated from .po at build time)
+*.mo
+
 # tox / local virtual environments
 .tox/
 .nox/

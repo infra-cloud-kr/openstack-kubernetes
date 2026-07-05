@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 540" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif">
+  <rect x="0" y="0" width="920" height="540" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+
+  <!-- Title -->
+  <text x="460" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">번역 파이프라인 (GitHub ↔ Weblate)</text>
+
+  <!-- ===== Lane 1: GitHub -> Weblate ===== -->
+  <text x="20" y="86" font-size="15" font-weight="700" fill="#2563eb">① GitHub → Weblate · 원문/문자열 반영</text>
+
+  <g fill="#eff6ff" stroke="#2563eb" stroke-width="1.5">
+    <rect x="20"  y="100" width="180" height="74" rx="10"/>
+    <rect x="253" y="100" width="180" height="74" rx="10"/>
+    <rect x="487" y="100" width="180" height="74" rx="10"/>
+    <rect x="720" y="100" width="180" height="74" rx="10"/>
+  </g>
+  <g font-size="13" fill="#1e293b" text-anchor="middle">
+    <text x="110" y="131">RST 원문 변경</text>
+    <text x="110" y="151" font-size="11" fill="#475569">git push → main</text>
+
+    <text x="343" y="131">GitHub Actions</text>
+    <text x="343" y="151" font-size="11" fill="#475569">docs.po 재생성·커밋</text>
+
+    <text x="577" y="131">Webhook 통보</text>
+    <text x="577" y="151" font-size="11" fill="#475569">/hooks/github/</text>
+
+    <text x="810" y="131">Weblate</text>
+    <text x="810" y="151" font-size="11" fill="#475569">pull → 새 문자열 표시</text>
+  </g>
+  <g stroke="#2563eb" stroke-width="2" fill="none" marker-end="url(#arrowblue)">
+    <line x1="200" y1="137" x2="252" y2="137"/>
+    <line x1="433" y1="137" x2="486" y2="137"/>
+    <line x1="667" y1="137" x2="719" y2="137"/>
+  </g>
+
+  <!-- ===== Lane 2: Weblate -> GitHub ===== -->
+  <text x="20" y="356" font-size="15" font-weight="700" fill="#d97706">② Weblate → GitHub · 번역 반영</text>
+
+  <g fill="#fffbeb" stroke="#d97706" stroke-width="1.5">
+    <rect x="20"  y="370" width="180" height="74" rx="10"/>
+    <rect x="253" y="370" width="180" height="74" rx="10"/>
+    <rect x="487" y="370" width="180" height="74" rx="10"/>
+    <rect x="720" y="370" width="180" height="74" rx="10"/>
+  </g>
+  <g font-size="13" fill="#1e293b" text-anchor="middle">
+    <text x="110" y="401">Weblate에서 번역</text>
+    <text x="110" y="421" font-size="11" fill="#475569">저장 (Save)</text>
+
+    <text x="343" y="401">Weblate 커밋</text>
+    <text x="343" y="421" font-size="11" fill="#475569">PAT로 push</text>
+
+    <text x="577" y="401">Pull Request</text>
+    <text x="577" y="421" font-size="11" fill="#475569">weblate-translations</text>
+
+    <text x="810" y="401">리뷰 · 머지</text>
+    <text x="810" y="421" font-size="11" fill="#475569">→ /en/ 배포</text>
+  </g>
+  <g stroke="#d97706" stroke-width="2" fill="none" marker-end="url(#arroworange)">
+    <line x1="200" y1="407" x2="252" y2="407"/>
+    <line x1="433" y1="407" x2="486" y2="407"/>
+    <line x1="667" y1="407" x2="719" y2="407"/>
+  </g>
+
+  <!-- Center note: po vs rst -->
+  <rect x="170" y="210" width="580" height="116" rx="10" fill="#f1f5f9" stroke="#cbd5e1" stroke-dasharray="4 3"/>
+  <text x="460" y="238" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">핵심: Weblate는 RST가 아니라 gettext 카탈로그(.po)를 읽고 씁니다</text>
+  <text x="460" y="264" text-anchor="middle" font-size="12" fill="#334155">index.rst (한국어 원문)  ──(Sphinx: make update-po)──▶  docs.po (번역 대상)</text>
+  <text x="460" y="286" text-anchor="middle" font-size="12" fill="#334155">docs.po (번역 결과)  ──(Sphinx build -D language=en)──▶  영어 HTML (/en/)</text>
+  <text x="460" y="310" text-anchor="middle" font-size="11" fill="#64748b">그래서 원문이 바뀌면 ①에서 .po를 자동 재생성해야 새 문장이 Weblate에 나타납니다.</text>
+
+  <defs>
+    <marker id="arrowblue" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arroworange" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 z" fill="#d97706"/>
+    </marker>
+  </defs>
+</svg>

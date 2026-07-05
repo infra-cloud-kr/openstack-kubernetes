@@ -1,0 +1,47 @@
+name: Sync translation catalogs
+
+# 원문(RST/conf.py)이 바뀌면 gettext 카탈로그(docs.po)를 다시 생성해 커밋합니다.
+# 갱신된 .po 를 Weblate 가 (GitHub 웹훅으로) 가져가 새 문자열을 노출합니다.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'doc/source/**.rst'
+      - 'doc/source/conf.py'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: i18n-sync
+  cancel-in-progress: false
+
+jobs:
+  update-catalogs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install tox
+        run: python -m pip install --upgrade pip tox
+
+      - name: Regenerate gettext catalog and update .po
+        run: tox -e update-po
+
+      - name: Commit updated catalogs if changed
+        run: |
+          if [ -n "$(git status --porcelain doc/source/locales)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add doc/source/locales
+            git commit -m "i18n: update translation catalogs"
+            git push
+            echo "Catalogs updated and pushed."
+          else
+            echo "No catalog changes."
+          fi
