@@ -1,0 +1,51 @@
+name: 💡 New content / enhancement
+description: Request a new document or section, or propose an improvement to the project.
+labels: ["kind/enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to propose new documentation content, a new lab,
+        or an enhancement to the project structure or tooling.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+      description: Describe the new content or enhancement and why it is useful.
+      placeholder: e.g. Add a lab that walks through deploying Magnum on an OpenStack all-in-one setup.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area does this belong to?
+      description: See the "Documentation layout" section in the README.
+      options:
+        - introduction
+        - OpenStack on Kubernetes
+        - Kubernetes on OpenStack
+        - storage
+        - labs
+        - documentation
+        - translation-i18n
+        - tooling / CI / repo structure
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Link any upstream docs, issues, or discussions that are relevant.
+    validations:
+      required: false
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to work on this?
+      options:
+        - "Yes, I would like to open a pull request"
+        - "No, I am just suggesting"
+        - "Not sure yet"
+    validations:
+      required: false
