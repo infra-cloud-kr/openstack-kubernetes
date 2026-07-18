@@ -2,55 +2,58 @@
 Kubernetes 핵심 개념
 =====================
 
+통합 패턴(:doc:`../integration-patterns`)에서 OpenStack 을 K8s 위에 올릴 때, 각
+OpenStack 컴포넌트가 어떤 K8s 리소스로 동작하는지를 미리 짚습니다. K8s 개념
+자체의 상세는 공식 문서로 링크하고, 여기서는 "이 리소스가 OpenStack 의 무엇에
+쓰이는가"에 초점을 둡니다.
+
 .. note::
 
-   기여자 작업용 골격입니다. 실습 경험과 공식 문서를 바탕으로 보강해 주세요.
+   기여자 작업용 골격입니다. K8s 개념을 재설명하지 말고, 각 리소스가 OpenStack
+   컴포넌트에 어떻게 대응되는지(왜 알아야 하는지)를 한 줄로 유지하세요. 상세는
+   공식 문서와 통합 패턴 섹션으로.
 
 
-선언적(Declarative) 관리
-========================
-
-.. todo::
-
-   원하는 상태(desired state) 선언과 컨트롤러의 조정(reconciliation loop)
-   개념 설명 보강.
-
-
-주요 오브젝트
-=============
+Workloads
+=========
 
 .. todo::
 
-   Deployment / StatefulSet / Service / ConfigMap / Secret 등 주요 오브젝트와
-   역할을 표로 정리.
+   * Deployment / ReplicaSet → 무상태 OpenStack API 서비스 (Keystone, Nova,
+     Glance API 등)
+   * StatefulSet → 상태 유지 컴포넌트 (DB, 메시지 큐)
+   * 매핑 상세: :doc:`../openstack-on-kubernetes/openstack-helm`
 
 
-자동화 3종
-==========
-
-.. todo::
-
-   Self-healing / Rolling Update / Auto-scaling(HPA) 설명 보강.
-
-
-CRD (Custom Resource Definition)
-================================
+네트워킹
+========
 
 .. todo::
 
-   * Kubernetes API 확장 메커니즘으로서의 CRD 와, 이것이
-     :doc:`bridging-concepts` 의 여러 통합 프로젝트(Magnum 드라이버,
-     Metal3 ``BareMetalHost`` 등)의 공통 기반이 되는 점 설명 보강
-   * kubectl 로 오브젝트를 조회/생성하는 기본 흐름 예시 추가
-   * Operator 패턴(CRD + 컨트롤러)과의 연결 보강
+   * Service (``type=LoadBalancer``) → OpenStack API 엔드포인트 노출, Octavia
+     매핑 (:doc:`../kubernetes-on-openstack/octavia-load-balancer`)
+   * Ingress / Gateway API → 외부 트래픽 진입
+   * CNI → Pod 네트워킹, Neutron 공존
+     (:doc:`../openstack-on-kubernetes/cni-and-neutron`)
 
 
-실습 전 기본 명령
+스토리지
+========
+
+.. todo::
+
+   * PV / PVC → OpenStack 스토리지(Cinder 볼륨) 소비
+   * StorageClass → 동적 프로비저닝, Cinder CSI
+     (:doc:`../kubernetes-on-openstack/cinder-csi`)
+
+
+선언적 관리와 CRD
 =================
 
 .. todo::
 
-   기본 오브젝트 조회 등 ``kubectl`` 명령 예시 보강.
+   * CRD / Operator → Magnum 드라이버, Metal3 ``BareMetalHost`` 등 통합
+     프로젝트의 기반 (:doc:`bridging-concepts`)
 
 
 더 읽을거리
@@ -58,4 +61,4 @@ CRD (Custom Resource Definition)
 
 .. todo::
 
-   참고 링크 보강.
+   Kubernetes 공식 개념 문서(kubernetes.io/docs/concepts) 링크.
