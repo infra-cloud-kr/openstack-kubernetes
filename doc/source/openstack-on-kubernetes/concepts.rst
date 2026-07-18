@@ -1,9 +1,9 @@
-==========
-핵심 개념
-==========
+==============================
+핵심 개념 (OpenStack on K8s)
+==============================
 
-이 문서는 OpenStack 을 Kubernetes 위에서 운영할 때 알아야 할 핵심 개념을
-정리합니다.
+OpenStack 을 Kubernetes 위에서 운영하기 전에 잡아 두면 좋은 핵심 개념을
+모았습니다.
 
 .. note::
 
@@ -46,7 +46,10 @@ OpenStack 의 주요 서비스가 Kubernetes 리소스로 어떻게 매핑되는
 배포 방식 비교
 ==============
 
-* :doc:`openstack-helm` — Helm chart 기반 배포
-* :doc:`kolla` — Kolla 컨테이너 이미지 + 배포 도구
+컨테이너화된 OpenStack 을 올리는 배포 방식은 크게 둘입니다.
 
-두 방식의 차이와 선택 기준은 각 문서에서 자세히 다룹니다.
+* :doc:`openstack-helm` — Helm chart 기반, Kubernetes 위 배포
+* Kolla-Ansible — Ansible + Docker 기반(Kubernetes 아님)
+
+두 방식의 상세 비교와 선택 기준은 :doc:`comparison` 에서 다룹니다. 두 방식이
+공통으로 사용하는 컨테이너 이미지 레이어는 :doc:`kolla` 를 참고하세요.

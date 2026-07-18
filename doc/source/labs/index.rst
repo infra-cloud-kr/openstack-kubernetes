@@ -13,6 +13,5 @@
 .. toctree::
    :maxdepth: 1
 
-   local-dev-environment
    openstack-helm-lab
    kubernetes-on-openstack-lab

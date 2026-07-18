@@ -34,11 +34,15 @@ OpenStack & Kubernetes 운영 문서화 및 국제화
 
 .. toctree::
    :maxdepth: 2
+   :caption: 기초 개념
+
+   foundations/index
+
+.. toctree::
+   :maxdepth: 2
    :caption: 통합 패턴
 
-   openstack-on-kubernetes/index
-   kubernetes-on-openstack/index
-   storage/index
+   integration-patterns
 
 .. toctree::
    :maxdepth: 2
@@ -48,10 +52,9 @@ OpenStack & Kubernetes 운영 문서화 및 국제화
 
 .. toctree::
    :maxdepth: 2
-   :caption: 문서화 & 번역
+   :caption: 기여
 
-   documentation/index
-   translation-i18n/index
+   contributing
 
 .. toctree::
    :maxdepth: 1
