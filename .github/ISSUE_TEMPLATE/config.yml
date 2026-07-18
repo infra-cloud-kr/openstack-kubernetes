@@ -1,0 +1,6 @@
+# Reference: https://github.com/kubernetes/website/tree/main/.github/ISSUE_TEMPLATE
+blank_issues_enabled: false
+contact_links:
+  - name: Contributing Guide
+    url: https://github.com/infra-cloud-kr/openstack-kubernetes/blob/main/CONTRIBUTING.rst
+    about: Read how to contribute documentation and translations before opening an issue.

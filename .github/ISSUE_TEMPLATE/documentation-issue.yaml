@@ -1,0 +1,44 @@
+name: 📝 Documentation issue
+description: Report an error, unclear wording, or something missing in an existing document.
+labels: ["kind/documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the documentation!
+
+        Please make sure a similar issue does not already exist by
+        [searching the issue tracker](https://github.com/infra-cloud-kr/openstack-kubernetes/issues).
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is the problem?
+      description: Describe what is wrong, unclear, outdated, or missing.
+      placeholder: e.g. The Cinder CSI installation step references an option that no longer exists.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Affected page(s)
+      description: Path under `doc/source/` or the published URL of the page.
+      placeholder: e.g. doc/source/storage/cinder-csi.rst
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change
+      description: If you already have an idea of how to fix it, describe it here.
+    validations:
+      required: false
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to work on this?
+      options:
+        - "Yes, I would like to open a pull request"
+        - "No, I am just reporting"
+        - "Not sure yet"
+    validations:
+      required: false
