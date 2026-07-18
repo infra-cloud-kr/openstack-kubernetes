@@ -2,8 +2,8 @@
 Swift (오브젝트 스토리지)
 ============================
 
-Swift 는 OpenStack 의 오브젝트 스토리지 서비스입니다. Kubernetes 생태계에서
-다양한 역할을 맡습니다.
+Swift 는 OpenStack 의 오브젝트 스토리지 서비스입니다. Kubernetes 생태계에서도
+여러 용도로 쓰입니다.
 
 .. note::
 

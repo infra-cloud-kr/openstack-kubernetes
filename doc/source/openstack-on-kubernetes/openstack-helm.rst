@@ -38,6 +38,22 @@ openstack-helm
 자세한 단계별 실습은 :doc:`../labs/openstack-helm-lab` 를 참고하세요.
 
 
+values 오버라이드
+=================
+
+openstack-helm 운영의 실질 핵심은 chart 기본값을 환경에 맞게 덮어쓰는 values
+오버라이드입니다.
+
+* 오버라이드 파일 구조 — endpoints, network, storage backend 등 주요 블록
+* 공통 값과 서비스별 값의 분리, 적용 순서(values file ordering)
+* backend 선택(스토리지·네트워크·데이터베이스)이 values 에 반영되는 지점
+
+.. todo::
+
+   실습(:doc:`../labs/openstack-helm-lab`)에서 쓰는 최소 오버라이드 예시와
+   블록별 설명 보강.
+
+
 GitOps 연계
 ===========
 

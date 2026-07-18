@@ -2,8 +2,9 @@
 Cinder (블록 스토리지)
 =========================
 
-Cinder 는 OpenStack 의 블록 스토리지 서비스입니다. Kubernetes 에서는 Cinder
-CSI 드라이버를 통해 PersistentVolume 으로 활용됩니다.
+Cinder 는 OpenStack 의 블록 스토리지 서비스입니다. 이 문서는 서비스 자체를
+다루며, K8s 에서 CSI 로 소비하는 관점은
+:doc:`../kubernetes-on-openstack/cinder-csi` 에서 다룹니다.
 
 .. note::
 
@@ -18,12 +19,3 @@ CSI 드라이버를 통해 PersistentVolume 으로 활용됩니다.
 * 볼륨, 스냅샷, 백업
 * 볼륨 타입과 백엔드 드라이버
 * 멀티 백엔드 구성
-
-
-Kubernetes 연동
-===============
-
-* CSI 드라이버를 통한 PersistentVolume 제공
-* 동적 프로비저닝과 ``StorageClass`` 매핑
-
-자세한 내용: :doc:`../kubernetes-on-openstack/cinder-csi`

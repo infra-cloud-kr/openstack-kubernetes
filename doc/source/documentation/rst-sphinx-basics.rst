@@ -103,10 +103,21 @@ admonition (참고/경고)
       주의할 내용입니다.
 
 
-빌드와 린트
-===========
+로컬 환경 준비
+==============
+
+문서 빌드에는 ``tox`` 사용을 권장합니다.
 
 .. code-block:: console
 
    $ tox -e docs    # HTML 빌드 (경고를 오류로 처리)
    $ tox -e pep8    # doc8 로 rST 스타일 검사
+
+``tox`` 없이 직접 빌드하려면 가상 환경을 사용합니다.
+
+.. code-block:: console
+
+   $ python -m venv .venv
+   $ . .venv/bin/activate
+   $ pip install -r doc/requirements.txt
+   $ sphinx-build -W -b html doc/source doc/build/html
