@@ -141,12 +141,12 @@ Control Plane과 Data Plane 경계
    |                                                           |
    |  +---------------- Kubernetes Control Plane ------------+ |
    |  | kube-apiserver / scheduler / controllers             | |
-   |  +---------------------------+---------------------------+ |
+   |  +---------------------------+--------------------------+ |
    |                              | Pod 배치·복구              |
    |                              v                            |
    |  +------------- OpenStack Control Plane Pods -----------+ |
    |  | Keystone | nova-api | nova-scheduler | Neutron ...   | |
-   |  +---------------------------+---------------------------+ |
+   |  +---------------------------+--------------------------+ |
    +------------------------------|----------------------------+
                                   | VM 생성·삭제 및 호스트 선택
                                   v
@@ -184,7 +184,7 @@ VM 생성 요청은 일반적으로 다음과 같이 처리된다.
 #. KVM/QEMU가 게스트 커널과 사용자 워크로드를 실행한다.
 
 OpenStack Control Plane이 Kubernetes Pod로 실행되는 경우에도 VM 배치를
-결정하는 주체는 Nova이다. Kubernetes 스케줄러는 ``nova-api``나
+결정하는 주체는 Nova이다. Kubernetes 스케줄러는 ``nova-api`` 나
 ``nova-scheduler`` Pod가 실행될 노드를 결정하지만, Nova VM이 실행될
 Compute Node를 선택하지는 않는다.
 
