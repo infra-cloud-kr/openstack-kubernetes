@@ -47,6 +47,8 @@ Kubernetes 가 클라우드(OpenStack) 자원을 쓰기 위한 표준 확장점�
    openstack-helm 을 비롯한 아래 여러 방식의 기반입니다.
 
 
+.. _bridging-concepts-provisioning:
+
 배포·프로비저닝
 ========================
 
@@ -69,6 +71,8 @@ Kubernetes 가 클라우드(OpenStack) 자원을 쓰기 위한 표준 확장점�
      - 선언적으로 K8s 클러스터 프로비저닝 (K8s → OpenStack)
      - :doc:`../kubernetes-on-openstack/cluster-api`
 
+
+.. _bridging-concepts-baremetal:
 
 베어메탈 (물리 서버)
 ========================
