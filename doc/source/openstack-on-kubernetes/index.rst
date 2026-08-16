@@ -15,6 +15,7 @@ openstack-helm 을 중심으로 준비부터 운영까지 짚습니다.
    :caption: 개념·설계
 
    concepts
+   nova-kvm-libvirt
    approaches
    reference-architecture
 
