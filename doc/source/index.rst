@@ -28,37 +28,31 @@ OpenStack & Kubernetes 운영 문서화 및 국제화
 
 .. toctree::
    :maxdepth: 2
-   :caption: 소개
 
    introduction/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: 기초 개념
 
    foundations/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: 통합 패턴
 
    integration-patterns
 
 .. toctree::
    :maxdepth: 2
-   :caption: 실습
 
    labs/index
 
 .. toctree::
    :maxdepth: 2
-   :caption: 기여
 
    contributing
 
 .. toctree::
    :maxdepth: 1
-   :caption: 참고
 
    glossary
 
