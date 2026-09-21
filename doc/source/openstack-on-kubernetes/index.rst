@@ -15,6 +15,7 @@ openstack-helm 을 중심으로 준비부터 운영까지 짚습니다.
    :caption: 개념·설계
 
    concepts
+   nova-libvirt-kvm
    approaches
    reference-architecture
 
@@ -22,6 +23,7 @@ openstack-helm 을 중심으로 준비부터 운영까지 짚습니다.
    :maxdepth: 1
    :caption: K8s 네트워킹 준비
 
+   openstack-helm-network-outline
    cni-and-neutron
    gateway-api
    metallb
@@ -31,6 +33,7 @@ openstack-helm 을 중심으로 준비부터 운영까지 짚습니다.
    :caption: 배포
 
    openstack-helm
+   neutron-helm-chart
    kolla
    comparison
 

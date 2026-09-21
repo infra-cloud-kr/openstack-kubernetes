@@ -1,6 +1,6 @@
 name: 📝 Documentation issue
 description: Report an error, unclear wording, or something missing in an existing document.
-labels: ["kind/documentation"]
+labels: ["documentation"]
 body:
   - type: markdown
     attributes:

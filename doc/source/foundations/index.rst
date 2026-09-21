@@ -23,3 +23,4 @@
    kubernetes-fundamentals
    helm
    bridging-concepts
+   kubernetes-csi

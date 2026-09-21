@@ -26,7 +26,7 @@ Fixes #
 
 ## Checklist
 
-- [ ] I read the [Contributing Guide](../CONTRIBUTING.rst).
+- [ ] I read the [Contributing Guide](https://github.com/infra-cloud-kr/openstack-kubernetes/blob/main/CONTRIBUTING.rst).
 - [ ] The documentation builds locally: `tox -e docs`
 - [ ] The rST sources pass lint: `tox -e pep8`
 - [ ] New pages are registered in the parent `index.rst` `toctree`.

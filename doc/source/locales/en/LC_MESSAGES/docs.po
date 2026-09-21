@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenStack & Kubernetes 한글 문서화 프로젝트 \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-18 15:54+0000\n"
+"POT-Creation-Date: 2026-09-21 10:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: ../../source/contributing.rst:3 ../../source/index.rst:53
+#: ../../source/contributing.rst:3
 msgid "기여"
 msgstr ""
 
@@ -78,6 +78,7 @@ msgstr ""
 
 #: ../../source/documentation/kubernetes-doc-conventions.rst:30
 #: ../../source/documentation/openstack-doc-conventions.rst:38
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:260
 #: ../../source/translation-i18n/localization-communities.rst:55
 #: ../../source/translation-i18n/weblate.rst:150
 msgid "항목"
@@ -444,9 +445,9 @@ msgid "무엇을 잇나"
 msgstr ""
 
 #: ../../source/foundations/bridging-concepts.rst:29
-#: ../../source/foundations/bridging-concepts.rst:61
-#: ../../source/foundations/bridging-concepts.rst:86
-#: ../../source/foundations/bridging-concepts.rst:107
+#: ../../source/foundations/bridging-concepts.rst:63
+#: ../../source/foundations/bridging-concepts.rst:90
+#: ../../source/foundations/bridging-concepts.rst:111
 msgid "상세"
 msgstr ""
 
@@ -501,136 +502,131 @@ msgid ""
 "helm 을 비롯한 아래 여러 방식의 기반입니다."
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:51
+#: ../../source/foundations/bridging-concepts.rst:53
 msgid "배포·프로비저닝"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:53
+#: ../../source/foundations/bridging-concepts.rst:55
 msgid "두 기술을 결합하는 방법으로, 방향에 따라 나뉩니다."
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:59
-#: ../../source/foundations/bridging-concepts.rst:84
-#: ../../source/foundations/bridging-concepts.rst:105
+#: ../../source/foundations/bridging-concepts.rst:61
+#: ../../source/foundations/bridging-concepts.rst:88
+#: ../../source/foundations/bridging-concepts.rst:109
 msgid "이름"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:60
-#: ../../source/foundations/bridging-concepts.rst:85
-#: ../../source/foundations/bridging-concepts.rst:106
+#: ../../source/foundations/bridging-concepts.rst:62
+#: ../../source/foundations/bridging-concepts.rst:89
+#: ../../source/foundations/bridging-concepts.rst:110
 msgid "한 줄 정의"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:62
+#: ../../source/foundations/bridging-concepts.rst:64
+#: ../../source/foundations/openstack-fundamentals.rst:192
+#: ../../source/foundations/openstack-fundamentals.rst:209
 #: ../../source/glossary.rst:216
 #: ../../source/openstack-on-kubernetes/approaches.rst:26
 #: ../../source/openstack-on-kubernetes/openstack-helm.rst:3
 msgid "openstack-helm"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:63
+#: ../../source/foundations/bridging-concepts.rst:65
 msgid "OpenStack 을 K8s 에 배포 (OpenStack → K8s)"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:64
+#: ../../source/foundations/bridging-concepts.rst:66
 msgid ":doc:`../openstack-on-kubernetes/openstack-helm`"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:65
+#: ../../source/foundations/bridging-concepts.rst:67
 #: ../../source/glossary.rst:167
 #: ../../source/kubernetes-on-openstack/magnum.rst:3
 msgid "Magnum"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:66
+#: ../../source/foundations/bridging-concepts.rst:68
 msgid "OpenStack 이 K8s 클러스터를 생성 (K8s → OpenStack)"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:67
+#: ../../source/foundations/bridging-concepts.rst:69
 msgid ":doc:`../kubernetes-on-openstack/magnum`"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:68
+#: ../../source/foundations/bridging-concepts.rst:70
 #: ../../source/kubernetes-on-openstack/cluster-api.rst:3
 msgid "Cluster API (CAPO)"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:69
+#: ../../source/foundations/bridging-concepts.rst:71
 msgid "선언적으로 K8s 클러스터 프로비저닝 (K8s → OpenStack)"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:70
+#: ../../source/foundations/bridging-concepts.rst:72
 msgid ":doc:`../kubernetes-on-openstack/cluster-api`"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:74
+#: ../../source/foundations/bridging-concepts.rst:78
 msgid "베어메탈 (물리 서버)"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:76
+#: ../../source/foundations/bridging-concepts.rst:80
 msgid ""
 "멀티노드 운영은 결국 물리 서버로 내려갑니다. 여기서 K8s 의 Metal3 와 OpenStack 의 Ironic 이 만나는데, "
 "Metal3(CRD)가 내부적으로 Ironic 을 호출하는 구조라 두 스택의 베어메탈 관리가 한 지점으로 수렴합니다."
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:87
+#: ../../source/foundations/bridging-concepts.rst:91
 #: ../../source/glossary.rst:132
 msgid "Ironic"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:88
+#: ../../source/foundations/bridging-concepts.rst:92
 msgid "OpenStack 의 베어메탈 프로비저닝 서비스"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:89
-#: ../../source/foundations/bridging-concepts.rst:92
+#: ../../source/foundations/bridging-concepts.rst:93
+#: ../../source/foundations/bridging-concepts.rst:96
 msgid "전용 문서 예정"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:90
+#: ../../source/foundations/bridging-concepts.rst:94
 #: ../../source/glossary.rst:171
 msgid "Metal3"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:91
+#: ../../source/foundations/bridging-concepts.rst:95
 msgid "K8s(CRD)로 베어메탈 관리 — 내부적으로 Ironic 사용"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:96
+#: ../../source/foundations/bridging-concepts.rst:100
 msgid "공용 스토리지"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:98
+#: ../../source/foundations/bridging-concepts.rst:102
 msgid ""
 "두 스택이 같은 스토리지 백엔드(Ceph)를 공유하는 수렴 지점입니다. K8s 측은 Rook 오퍼레이터로, OpenStack 측은 "
 "Cinder·Glance 등이 같은 Ceph 를 바라봅니다."
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:108
+#: ../../source/foundations/bridging-concepts.rst:112
 msgid "Ceph / Rook"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:109
+#: ../../source/foundations/bridging-concepts.rst:113
 msgid "OpenStack·K8s 공용 스토리지 백엔드 (Rook = K8s 오퍼레이터)"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:110
+#: ../../source/foundations/bridging-concepts.rst:114
 msgid ":doc:`../storage/ceph`"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:112
+#: ../../source/foundations/bridging-concepts.rst:116
 #: ../../source/foundations/helm.rst:20 ../../source/foundations/helm.rst:29
 #: ../../source/foundations/helm.rst:39
 #: ../../source/foundations/kubernetes-fundamentals.rst:20
 #: ../../source/foundations/kubernetes-fundamentals.rst:31
 #: ../../source/foundations/kubernetes-fundamentals.rst:43
-#: ../../source/foundations/kubernetes-fundamentals.rst:53
-#: ../../source/foundations/kubernetes-fundamentals.rst:62
-#: ../../source/foundations/openstack-fundamentals.rst:13
-#: ../../source/foundations/openstack-fundamentals.rst:22
-#: ../../source/foundations/openstack-fundamentals.rst:46
-#: ../../source/foundations/openstack-fundamentals.rst:55
-#: ../../source/foundations/openstack-fundamentals.rst:63
 #: ../../source/foundations/vm-vs-container.rst:13
 #: ../../source/foundations/vm-vs-container.rst:22
 #: ../../source/foundations/vm-vs-container.rst:34
@@ -641,17 +637,10 @@ msgstr ""
 #: ../../source/labs/openstack-helm-lab.rst:38
 #: ../../source/labs/openstack-helm-lab.rst:57
 #: ../../source/labs/openstack-helm-lab.rst:73
-#: ../../source/networking/load-balancing.rst:20
-#: ../../source/networking/load-balancing.rst:28
 #: ../../source/networking/neutron-basics.rst:20
 #: ../../source/networking/neutron-basics.rst:31
 #: ../../source/networking/neutron-basics.rst:39
-#: ../../source/networking/ovn-ovs.rst:19
-#: ../../source/networking/ovn-ovs.rst:27
 #: ../../source/openstack-on-kubernetes/approaches.rst:36
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:21
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:33
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:41
 #: ../../source/openstack-on-kubernetes/comparison.rst:21
 #: ../../source/openstack-on-kubernetes/comparison.rst:32
 #: ../../source/openstack-on-kubernetes/comparison.rst:43
@@ -671,11 +660,11 @@ msgstr ""
 msgid "할 일"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:114
+#: ../../source/foundations/bridging-concepts.rst:118
 msgid "Metal3/Ironic 전용 심화 문서 신설 여부 검토"
 msgstr ""
 
-#: ../../source/foundations/bridging-concepts.rst:115
+#: ../../source/foundations/bridging-concepts.rst:119
 msgid "통합 패턴 섹션이 바뀌면 이 지도의 링크·항목도 함께 갱신"
 msgstr ""
 
@@ -723,14 +712,15 @@ msgid "Rook 등 오퍼레이터 설치에도 Helm Chart 사용 (:doc:`../storage
 msgstr ""
 
 #: ../../source/foundations/helm.rst:37
-#: ../../source/foundations/kubernetes-fundamentals.rst:60
-#: ../../source/foundations/openstack-fundamentals.rst:61
+#: ../../source/foundations/kubernetes-csi.rst:70
+#: ../../source/foundations/kubernetes-fundamentals.rst:136
+#: ../../source/foundations/openstack-fundamentals.rst:295
 #: ../../source/foundations/vm-vs-container.rst:32
 #: ../../source/kubernetes-on-openstack/cluster-api.rst:40
-#: ../../source/networking/load-balancing.rst:26
+#: ../../source/networking/load-balancing.rst:91
 #: ../../source/networking/neutron-basics.rst:37
-#: ../../source/networking/ovn-ovs.rst:25
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:39
+#: ../../source/networking/ovn-ovs.rst:115
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:387
 #: ../../source/openstack-on-kubernetes/comparison.rst:57
 #: ../../source/openstack-on-kubernetes/gateway-api.rst:37
 #: ../../source/openstack-on-kubernetes/reference-architecture.rst:50
@@ -741,7 +731,7 @@ msgstr ""
 msgid "Helm 공식 문서(helm.sh/docs) 링크."
 msgstr ""
 
-#: ../../source/foundations/index.rst:3 ../../source/index.rst:35
+#: ../../source/foundations/index.rst:3
 msgid "기초 개념"
 msgstr ""
 
@@ -760,6 +750,112 @@ msgstr ""
 
 #: ../../source/foundations/index.rst:15 ../../source/networking/index.rst:12
 msgid "기여자 작업용 골격입니다. 각 문서의 세부 절을 실습 경험과 공식 문서를 바탕으로 보강해 주세요."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:3
+msgid "CSI 기본 개념"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:6
+msgid "CSI 도입 배경"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:8
+msgid "쿠버네티스는 컨테이너화된 애플리케이션을 확장, 관리할 수 있지만 데이터를 영속적으로 관리하는 측면에서 한계가 존재한다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:11
+msgid ""
+"Kubernetes의 Pod를 재시작할 때 파드 내부에 축적되어 있는 데이터 정보는 유실된다. 이러한 문제를 해결하기 위해 PV를 "
+"HostPath로 사용하여 노드의 로컬 디스크로 저장할 수 있으나, 파드가 다른 노드로 재배포될 경우 데이터를 공유하여 활용할 수 "
+"없다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:17
+msgid ""
+"쿠버네티스는 이러한 문제를 해결하기 위해 컨테이너 간 스토리지를 이용할 수 있는 인터페이스를 구현했다. 즉, 파드가 어느 노드에 "
+"재배포가 되더라도 동일한 데이터를 참조하여 활용할 수 있게 된다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:23
+msgid "CSI 개념"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:25
+msgid ""
+"`Kubernetes CSI 공식 개발 문서 <https://kubernetes-csi.github.io/docs/>`_ 에 의하면"
+" CSI는 컨테이너화된 워크로드에 임의의 블록 및 파일 스토리지 시스템을 노출하기 위한 표준을 의미한다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:29
+msgid ""
+"이름에서부터 인터페이스가 나와 있으므로, 클라이언트는 형식화된 포맷으로 요청을 수행하게 되며, 구현부에 따라 서로 다른 기능을 "
+"실행시킬 수 있다. 즉,벤더는 이 표준을 구현한 드라이버(플러그인)를 제작하여 배포하면 되고, 관리자는 Kubernetes 릴리스와"
+" 무관하게 독립적으로 배포, 업데이트하여 원하는 벤더의 스토리지를 활용할 수 있게 된다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:35
+msgid ""
+"파드가 어느 노드로 재배포되더라도 CSI 드라이버가 해당 노드에 외부 스토리지 볼륨을 다시 부착(attach)해주므로, 동일한 "
+"데이터를 계속 참조할 수 있다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:39
+msgid "세부 구조"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:41
+msgid "CSI는 3개의 컴포넌트가 필요하다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:43
+msgid ""
+"Controller side: kube-apiserver를 통해 볼륨 생성, 삭제, 부착과 같은 제어를 담당한다. 보통 "
+"Deployment 나 StatefulSet으로 운영된다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:46
+msgid ""
+"Node side: 실제 마운트(mount)와 마운트 해제(unmount) 혹은 kubelet 연동을 수행한다. "
+"DaemonSet으로 노드별로 배포된다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:49
+msgid "Kubelet: kubelet을 통해 UNIX 도메인 소켓(socket)을 통해 CSI 노드의 서비스를 수행한다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:59
+msgid "작동 원리"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:61
+msgid "사용자가 PVC를 생성하면 Kubernetes가 StorageClass를 보고 어떤 CSI 드라이버를 쓸지 결정한다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:63
+msgid "Controller 쪽 CSI가 스토리지 시스템에 볼륨 생성을 요청해 실제 볼륨을 만든다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:64
+msgid "Kubernetes는 만들어진 결과를 PV로 표현하고, PVC와 바인딩한다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:65
+msgid "Pod가 스케줄되면 필요한 경우 controller가 노드에 attach를 수행한다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:66
+msgid "노드에서는 CSI node plugin이 파일시스템을 준비하고 Pod 경로에 마운트한다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:72
+msgid ""
+"CSI 동작 원리: https://www.netapp.com/learn/cvo-blg-kubernetes-csi-basics-of-"
+"csi-volumes-and-how-to-build-a-csi-driver/"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-csi.rst:74
+msgid "Kubernetes CSI: https://kubernetes-csi.github.io/docs/"
 msgstr ""
 
 #: ../../source/foundations/kubernetes-fundamentals.rst:3
@@ -837,14 +933,116 @@ msgstr ""
 msgid "선언적 관리와 CRD"
 msgstr ""
 
-#: ../../source/foundations/kubernetes-fundamentals.rst:55
+#: ../../source/foundations/kubernetes-fundamentals.rst:53
 msgid ""
-"CRD / Operator → Magnum 드라이버, Metal3 ``BareMetalHost`` 등 통합 프로젝트의 기반 "
-"(:doc:`bridging-concepts`)"
+"Kubernetes에서는 원하는 상태(desired state)를 리소스에 선언하고, 컨트롤러(Controller)가 현재 "
+"상태(current state)와 비교하여 두 상태가 일치하도록 지속적으로 조정(reconciliation)합니다."
 msgstr ""
 
-#: ../../source/foundations/kubernetes-fundamentals.rst:64
-msgid "Kubernetes 공식 개념 문서(kubernetes.io/docs/concepts) 링크."
+#: ../../source/foundations/kubernetes-fundamentals.rst:57
+msgid ""
+"OpenStack과 Kubernetes를 연동하는 일부 프로젝트에서는 이러한 선언적 관리 방식을 사용하여 OpenStack API로"
+" 관리되는 인프라의 원하는 상태를 Kubernetes 리소스로 표현합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:61
+msgid ""
+"이때 사용자 정의 리소스 정의(CustomResourceDefinition, :term:`CRD`)는 Kubernetes 기본 "
+"리소스로 표현하기 어려운 OpenStack 연동 대상을 새로운 리소스 종류로 정의하는 데 사용됩니다. 사용자는 CRD를 통해 추가된"
+" 사용자 정의 리소스(Custom Resource)에 원하는 상태를 선언합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:67
+msgid ""
+"이 연동 구조에서 컨트롤러나 :term:`오퍼레이터(Operator) <operator>` 는 사용자 정의 리소스를 감시하고, "
+"OpenStack API를 호출하여 선언된 상태가 실제 인프라에 반영되도록 조정합니다. CRD 자체가 OpenStack API를 "
+"호출하는 것이 아니라, 해당 리소스의 수명주기 관리 로직을 가진 컨트롤러나 오퍼레이터가 상태 조정을 수행합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:81
+msgid "대표 사례"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:83
+msgid "이 패턴을 OpenStack 연동에 적용한 대표 사례는 다음과 같습니다. 전체 연동 구조에서는 다음 영역에 해당합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:86
+msgid ""
+"**Magnum과 Cluster API(CAPI)·Cluster API Provider OpenStack(CAPO)** — "
+":ref:`배포·프로비저닝 <bridging-concepts-provisioning>`"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:88
+msgid "**Metal3와 Ironic** — :ref:`베어메탈 (물리 서버) <bridging-concepts-baremetal>`"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:93
+msgid "Magnum CAPI 드라이버와 CAPO"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:95
+msgid ""
+"Magnum의 CAPI 기반 드라이버는 CAPI와 CAPO의 사용자 정의 리소스를 생성하고, CAPO 컨트롤러는 OpenStack "
+"API를 호출하여 Nova·Neutron 등의 인프라를 조정합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:107
+msgid ""
+"이 대응 관계를 알면 Magnum API로 받은 클러스터 생성 요청이 CAPI 리소스로 변환되는 단계와 CAPO가 실제 "
+"OpenStack 인프라를 조정하는 역할을 구분할 수 있습니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:111
+msgid ""
+"자세한 내용은 :doc:`../kubernetes-on-openstack/magnum` 과 :doc:`../kubernetes-"
+"on-openstack/cluster-api` 를 참고합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:118
+msgid "Metal3와 Ironic"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:120
+msgid ""
+":term:`Metal3` 는 ``BareMetalHost`` 리소스를 CRD로 제공합니다. ``BareMetalHost`` 는 "
+"OpenStack :term:`Ironic` 이 관리하는 물리 서버의 원하는 상태를 표현합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:124
+msgid ""
+"Metal3의 Bare Metal Operator(BMO)는 Kubernetes 컨트롤러로서 ``BareMetalHost`` 를 "
+"감시하고 Ironic API를 호출하여 물리 서버의 검사와 프로비저닝을 조정합니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:132
+msgid ""
+"이 대응 관계를 알면 Kubernetes에 선언된 물리 서버의 상태와 Ironic이 수행하는 실제 하드웨어 작업의 경계를 구분할 수"
+" 있습니다."
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:138
+msgid ""
+"`Kubernetes 객체 공식 문서 <https://kubernetes.io/docs/concepts/overview"
+"/working-with-objects/>`_"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:140
+msgid ""
+"`컨트롤러 공식 문서 "
+"<https://kubernetes.io/docs/concepts/architecture/controller/>`_"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:142
+msgid ""
+"`Custom Resources 공식 문서 <https://kubernetes.io/docs/concepts/extend-"
+"kubernetes/api-extension/custom-resources/>`_"
+msgstr ""
+
+#: ../../source/foundations/kubernetes-fundamentals.rst:144
+msgid ""
+"`Operator 패턴 공식 문서 <https://kubernetes.io/docs/concepts/extend-"
+"kubernetes/operator/>`_"
 msgstr ""
 
 #: ../../source/foundations/openstack.rst:3
@@ -861,100 +1059,437 @@ msgstr ""
 msgid "OpenStack 주요 특징"
 msgstr ""
 
-#: ../../source/foundations/openstack-fundamentals.rst:7
+#: ../../source/foundations/openstack-fundamentals.rst:6
+msgid "주요 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:9
+msgid "OpenStack의 주요 서비스는 다음의 표와 같다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:16
+msgid "서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:17
+#: ../../source/kubernetes-on-openstack/concepts.rst:33
+#: ../../source/networking/load-balancing.rst:21
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:35
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:106
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:171
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:251
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:329
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:402
+msgid "역할"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:18
+msgid "**Keystone(키스톤)** — 인증 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:19
+msgid ""
+"OpenStack의 모든 서비스 중앙 인증, 사용자 자격 증명, 역할 기반 접근 제어(role-based access "
+"control, RBAC) 및 서비스 카탈로그(service catalog) 관리 담당"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:22
+msgid "**Nova(노바)** — 컴퓨팅 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:23
+msgid ""
+"가상 머신(virtual machine, VM) 및 컴퓨팅 자원의 프로비저닝(provisioning), "
+"스케줄링(scheduling), 수명 주기(lifecycle)를 담당"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:26
+msgid "**Placement(플레이스먼트)** — 리소스 추적 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:27
+msgid "컴퓨팅 리소스의 인벤토리(inventory)와 할당 정보를 추적하여 Nova 스케줄러가 적절한 호스트를 선택할 수 있도록 지원"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:29
+msgid "**Neutron(뉴트론)** — 네트워킹 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:30
+msgid ""
+"가상 네트워크, IP 주소 관리, L2/L3 라우팅, 테넌트 간 네트워크 격리, 소프트웨어 정의 네트워킹(software-"
+"defined networking, SDN) 통합 등 네트워킹 전반 담당"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:33
+msgid "**Cinder(신더)** — 블록 스토리지 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:34
+msgid "인스턴스에 연결하여 사용할 수 있는 영구적 블록 스토리지 생성, 연결, 스냅샷 관리 담당"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:36
+msgid "**Swift(스위프트)** — 오브젝트 스토리지 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:37
+msgid "이미지, 백업 등 대규모 비정형 데이터를 오브젝트 단위로 분산 저장하고 REST API로 제공"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:39
+msgid "**Glance(글랜스)** — 이미지 서비스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:40
+msgid "VM에 사용될 디스크 이미지 및 메타데이터(metadata) 등록, 검색, 카탈로그화 및 배포 담당"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:42
+msgid "**Horizon(호라이즌)** — 웹 대시보드"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:43
+msgid ""
+"사용자와 관리자가 클라우드 자원을 시각적으로 관리할 수 있는 그래픽 사용자 인터페이스(graphical user interface,"
+" GUI) 대시보드"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:48
+msgid "OpenStack의 서비스 구조와 컨테이너 배포"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:50
+msgid ""
+"앞에서 소개한 Nova, Neutron, Cinder와 같은 OpenStack 서비스는 각각 단일 프로세스로 실행되지 않는다. 각 "
+"서비스는 외부 요청을 받는 API 프로세스와 스케줄러(scheduler), 컨덕터(conductor), 컴퓨트(compute), "
+"에이전트(agent) 등 내부 작업을 담당하는 여러 프로세스로 구성된다. 이들 프로세스는 데이터베이스와 메시지 브로커(message"
+" broker) 같은 공용 인프라를 사용한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:59
+msgid "API 접근과 서비스 간 통신"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:61
+msgid ""
+"사용자나 클라이언트가 OpenStack 서비스 API를 호출하려면 먼저 인증하고 API 엔드포인트(endpoint)를 확인해야 "
+"한다. Keystone은 공통 인증을 처리하고 토큰과 서비스 카탈로그를 제공한다. 사용자나 클라이언트는 카탈로그에 등록된 Nova,"
+" Neutron, Cinder 등의 API 엔드포인트를 확인한 뒤 각 서비스의 API를 직접 호출한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:67
+msgid ""
+"OpenStack 서비스 간 기능 호출도 주로 각 서비스가 제공하는 HTTP API를 통해 이루어진다. 같은 서비스에 속한 분산 "
+"프로세스 사이에서는 ``oslo.messaging`` 기반 원격 프로시저 호출(remote procedure call, RPC)과 "
+"알림을 사용한다. 리소스 메타데이터와 제어 상태는 일반적으로 SQL 데이터베이스에 저장된다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:73
+msgid "다음은 이러한 구조를 단순화한 것이다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:95
+msgid "이 그림은 일반적인 구조를 단순화한 것이다. 서비스마다 세부 구성과 통신 방식은 다를 수 있다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:99
+msgid "컨테이너 배포"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:101
+msgid ""
+"앞에서 살펴본 것처럼 OpenStack은 역할별 프로세스가 분리되어 있고, 각 프로세스는 API, 메시지 큐, 데이터베이스와 같은 "
+"명시적인 인터페이스를 통해 연결된다. 이 구조에서는 서비스 사이의 경계를 바꾸지 않고 각 프로세스의 실행 환경을 별도로 패키징할 수"
+" 있다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:107
+msgid ""
+"패키지 기반 배포에서는 OpenStack 데몬과 의존 라이브러리를 각 호스트의 운영체제에 설치하고 ``systemd`` 서비스로 "
+"관리한다. 컨테이너 기반 배포에서는 OpenStack 데몬과 데몬 실행에 필요한 사용자 공간 의존성을 컨테이너 이미지로 묶는다. "
+"운영자는 동일한 이미지를 여러 노드에 배포해 호스트별 패키지 상태에 대한 의존성을 줄이고 일관된 실행 환경을 구성할 수 있다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:114
+msgid ""
+"컨테이너화는 OpenStack의 서비스 구조를 새로 만드는 것이 아니라 기존의 역할 구분과 통신 구조를 유지하면서 실행 환경을 "
+"표준화하는 방법이다. 이러한 특성 때문에 OpenStack의 서비스 구조는 컨테이너 기반 배포와 잘 맞는다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:119
+msgid "구성 요소별 배포 고려사항"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:121
+msgid ""
+"컨테이너 이미지는 실행 환경을 표준화하지만 구성 요소의 실행 위치, 호스트 접근, 데이터 영속성에 대한 요구사항까지 없애지는 "
+"않는다. 따라서 각 구성 요소의 역할과 의존성에 맞게 배포 방식을 설계해야 한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:129
+#: ../../source/networking/load-balancing.rst:65
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:70
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:145
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:327
+msgid "구분"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:130
+msgid "예"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:131
+msgid "배포 시 고려사항"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:132
+msgid "중앙 제어 평면 프로세스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:133
+msgid "``nova-api``, ``nova-scheduler``, ``nova-conductor``, ``neutron-server``"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:135
+msgid "중앙 제어 노드에 여러 인스턴스로 배치할 수 있다. 데이터베이스, 메시지 브로커 및 다른 서비스의 API와 연결되어야 한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:138
+msgid "호스트 종속 프로세스"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:139
+msgid "``nova-compute``, Neutron 네트워크 에이전트"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:140
+msgid ""
+"자신이 관리하는 하이퍼바이저(hypervisor), Open vSwitch, 네트워크 인터페이스 등이 있는 노드에서 실행되어야 "
+"한다. 컨테이너로 실행하더라도 임의의 노드로 이동할 수 없다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:143
+msgid "상태 저장 지원 인프라"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:144
+msgid "MariaDB, RabbitMQ"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:145
+msgid "컨테이너의 실행뿐 아니라 영속 스토리지, 복제, 쿼럼(quorum), 백업과 복구를 함께 설계해야 한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:148
+msgid ""
+"예를 들어 ``nova-compute`` 프로세스는 자신이 관리하는 하이퍼바이저가 있는 컴퓨트 노드에서 실행되어야 한다. "
+"Neutron 에이전트 역시 해당 노드의 Open vSwitch, 네트워크 인터페이스, 커널 네트워크 기능에 접근해야 한다. "
+"Kubernetes 위에 배포하더라도 이러한 노드 종속성은 유지된다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:154
+msgid ""
+"MariaDB와 RabbitMQ도 컨테이너로 실행할 수 있다. 그러나 컨테이너를 다시 생성하는 것만으로 데이터베이스나 메시지 브로커"
+" 클러스터가 복구되는 것은 아니다. 컨테이너 런타임이나 Kubernetes는 프로세스를 다시 실행할 수 있지만, 데이터 일관성과 "
+"클러스터 복구는 각 시스템의 운영 방식에 따라 관리해야 한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:160
+msgid "따라서 배포 도구는 구성 요소마다 다른 호스트 종속성과 데이터 관리 요구사항을 반영해야 한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:165
+msgid "OpenStack 배포 방식"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:167
+msgid ""
+"앞 절에서는 OpenStack의 서비스 구조가 컨테이너 배포와 잘 맞는 이유를 설명했다. 실제 환경에서는 목적과 운영 기반에 따라 "
+"서로 다른 배포 방식과 도구를 선택한다. 여기서는 DevStack, Kolla-Ansible, openstack-helm의 주요 "
+"용도와 실행·관리 기반을 간단히 살펴본다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:176
+#: ../../source/openstack-on-kubernetes/concepts.rst:99
+msgid "배포 방식 비교"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:183
+msgid "방식"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:184
+msgid "실행·관리 기반"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:185
+msgid "주요 용도와 특징"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:186
+#: ../../source/foundations/openstack-fundamentals.rst:200
+#: ../../source/glossary.rst:79
+msgid "DevStack"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:187
+msgid "셸 스크립트(shell script)"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:188
+msgid "개발과 학습을 위한 빠른 OpenStack 배포"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:189
+#: ../../source/foundations/openstack-fundamentals.rst:204
+#: ../../source/glossary.rst:151
+#: ../../source/openstack-on-kubernetes/approaches.rst:32
+msgid "Kolla-Ansible"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:190
+msgid "Docker 또는 Podman과 Ansible"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:191
+msgid "Kubernetes 없이 컨테이너화된 OpenStack 운영"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:193
+msgid "Kubernetes와 Helm"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:194
+msgid "Helm chart를 이용한 선언적(declarative) OpenStack 배포"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:198
+msgid "방식별 특징"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:201
+msgid ""
+"개발과 테스트 환경에 OpenStack을 빠르게 구성하기 위한 스크립트 모음이다. 학습과 기능 검증에는 유용하지만 프로덕션 운영을 "
+"목적으로 하지 않는다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:205
+msgid ""
+"Kolla가 제공하는 OpenStack 서비스 컨테이너 이미지를 Docker 또는 Podman으로 실행하고 Ansible "
+"playbook으로 배포·설정한다. Kubernetes 없이 컨테이너화된 OpenStack을 운영할 때 사용할 수 있다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:210
+msgid ""
+"OpenStack 서비스를 Helm chart로 패키징하여 Kubernetes 위에 배포한다. Kubernetes의 선언적 리소스 "
+"관리와 복구·롤아웃(rollout) 기능을 OpenStack 운영에 활용한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:214
+msgid ""
+"이 프로젝트는 openstack-helm을 중심으로 Kubernetes 위에 OpenStack을 배포하고 운영하는 방법을 다룬다. "
+"관련 배포 방식과 프로젝트는 :doc:`../openstack-on-kubernetes/approaches` 에서 살펴본다. "
+"Kolla-Ansible과 openstack-helm의 상세 차이는 :doc:`../openstack-on-"
+"kubernetes/comparison` 에서 다룬다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:224
+msgid "실습 전 기본 명령"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:226
+msgid ""
+"아래 예시는 리소스를 변경하지 않는 조회 명령이다. 명령을 실행하기 전에 OpenStackClient를 설치하고 ``openrc``"
+" 파일이나 ``clouds.yaml`` 파일로 인증 정보를 설정해야 한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:231
+msgid "서비스 카탈로그를 조회하여 현재 인증 정보와 API 접근이 정상인지 확인한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:237
+msgid "컴퓨팅에 필요한 이미지와 플레이버(flavor), 현재 프로젝트의 인스턴스를 조회한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:246
+msgid "네트워크와 서브넷, 라우터를 조회한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:254
+msgid "Cinder와 Swift가 배포된 환경에서는 블록 볼륨과 오브젝트 스토리지 컨테이너를 조회할 수 있다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:262
+msgid "목록에서 확인한 리소스의 이름이나 ID를 ``show`` 명령에 전달하면 상세 정보를 확인할 수 있다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:272
+msgid "인스턴스에 연결된 네트워크 포트와 볼륨, Swift 컨테이너에 저장된 오브젝트도 조회할 수 있다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:281
+msgid "자동화나 후처리가 필요하면 ``-f`` 로 출력 형식을, ``-c`` 로 출력할 열을 선택한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:290
+msgid "``<server>``, ``<image>`` 와 같은 값은 실제 리소스의 이름이나 ID로 바꿔 실행한다."
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:297
+msgid ""
+"`OpenStack 논리적 아키텍처 <https://docs.openstack.org/ko_KR/install-guide/get-"
+"started-logical-architecture.html>`_"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:299
+msgid ""
+"`OpenStack 개념적 아키텍처 <https://docs.openstack.org/ko_KR/install-guide/get-"
+"started-conceptual-architecture.html>`_"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:301
+msgid ""
+"`Kolla-Ansible 고급 구성 <https://docs.openstack.org/kolla-"
+"ansible/latest/admin/advanced-configuration.html>`_"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:303
+msgid "`DevStack 공식 문서 <https://docs.openstack.org/devstack/latest/>`_"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:304
+msgid ""
+"`openstack-helm 공식 문서 <https://docs.openstack.org/openstack-"
+"helm/latest/>`_"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:306
+msgid ""
+"`OpenStack 메시지 큐 구성 <https://docs.openstack.org/install-guide"
+"/environment-messaging.html>`_"
+msgstr ""
+
+#: ../../source/foundations/openstack-fundamentals.rst:308
+msgid ""
+"`OpenStack SQL 데이터베이스 구성 <https://docs.openstack.org/install-guide"
+"/environment-sql-database.html>`_"
+msgstr ""
+
+#: ../../source/foundations/vm-vs-container.rst:3
+msgid "가상화 기초: VM vs 컨테이너"
+msgstr ""
+
 #: ../../source/foundations/vm-vs-container.rst:7
 #: ../../source/kubernetes-on-openstack/cluster-api.rst:11
 #: ../../source/kubernetes-on-openstack/concepts.rst:10
-#: ../../source/networking/load-balancing.rst:11
 #: ../../source/networking/neutron-basics.rst:10
-#: ../../source/networking/ovn-ovs.rst:10
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:11
 #: ../../source/openstack-on-kubernetes/comparison.rst:12
 #: ../../source/openstack-on-kubernetes/gateway-api.rst:10
 #: ../../source/openstack-on-kubernetes/metallb.rst:12
 #: ../../source/openstack-on-kubernetes/operations.rst:10
 #: ../../source/openstack-on-kubernetes/reference-architecture.rst:11
 msgid "기여자 작업용 골격입니다. 실습 경험과 공식 문서를 바탕으로 보강해 주세요."
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:11
-msgid "핵심 컴포넌트"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:15
-msgid "핵심 서비스(Keystone, Nova, Neutron, Cinder, Glance 등)와 각 역할을 표로 정리."
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:20
-msgid "왜 컨테이너화가 자연스러운가"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:24
-msgid ""
-"\"각 서비스가 독립된 REST API 서버\" 라는 특성과, 이것이 :doc:`../openstack-on-"
-"kubernetes/index` (openstack-helm, Kolla)의 전제가 되는 이유 설명 보강"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:27
-msgid "서비스 간 의존 관계(예: 대부분의 서비스가 Keystone 인증에 의존) 정리"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:28
-msgid "데이터베이스(MariaDB)·메시지 큐(RabbitMQ) 등 공용 인프라 컴포넌트 보강"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:32
-msgid "OpenStack 배포 방식 (배경)"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:34
-msgid ""
-"OpenStack 은 여러 서비스의 집합이라 배포 방식이 곧 운영 경험을 좌우합니다. 대표적인 배포 방식부터 이 프로젝트가 다루는 "
-"방식까지 짚어 둡니다."
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:37
-msgid "DevStack — 개발·학습용 올인원(단일 노드) 배포"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:38
-msgid ""
-"Kolla-Ansible — OpenStack 을 컨테이너(Docker)로 묶어 Ansible 로 배포하는 전통적 프로덕션 방식. "
-"Kubernetes 위가 아님"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:40
-msgid ""
-"openstack-helm — 같은 컨테이너화를 Kubernetes 네이티브(Helm)로 올린 방식. 이 프로젝트 :doc"
-":`../openstack-on-kubernetes/index` 의 주제"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:43
-msgid ""
-"Kolla-Ansible 과 openstack-helm 의 상세 비교는 :doc:`../openstack-on-"
-"kubernetes/comparison` 에서 다룹니다."
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:48
-msgid "Kolla-Ansible/DevStack 을 기준점으로, openstack-helm 이 무엇을 바꾸는지 한 문단으로 연결."
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:53
-msgid "실습 전 기본 명령"
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:57
-msgid "VM/이미지/네트워크 조회 등 기본 ``openstack`` CLI 예시 보강."
-msgstr ""
-
-#: ../../source/foundations/openstack-fundamentals.rst:65
-#: ../../source/foundations/vm-vs-container.rst:36
-#: ../../source/openstack-on-kubernetes/reference-architecture.rst:54
-msgid "참고 링크 보강."
-msgstr ""
-
-#: ../../source/foundations/vm-vs-container.rst:3
-msgid "가상화 기초: VM vs 컨테이너"
 msgstr ""
 
 #: ../../source/foundations/vm-vs-container.rst:11
@@ -983,6 +1518,11 @@ msgstr ""
 msgid "컨테이너 격리 강화 기법(gVisor, Kata Containers 등)과 VM 격리의 절충점 보강"
 msgstr ""
 
+#: ../../source/foundations/vm-vs-container.rst:36
+#: ../../source/openstack-on-kubernetes/reference-architecture.rst:54
+msgid "참고 링크 보강."
+msgstr ""
+
 #: ../../source/glossary.rst:3
 msgid "용어집"
 msgstr ""
@@ -997,7 +1537,7 @@ msgstr ""
 msgid "아래 색인에서 글자를 누르면 해당 그룹으로 이동합니다."
 msgstr ""
 
-#: ../../source/glossary.rst:11 ../../source/index.rst:67
+#: ../../source/glossary.rst:11 ../../source/index.rst:61
 msgid "색인"
 msgstr ""
 
@@ -1095,6 +1635,15 @@ msgid "D"
 msgstr ""
 
 #: ../../source/glossary.rst:71
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:99
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:102
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:105
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:108
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:111
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:114
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:117
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:120
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:123
 msgid "DaemonSet"
 msgstr ""
 
@@ -1103,15 +1652,14 @@ msgid "각 노드마다 하나씩 Pod 를 실행하는 Kubernetes 오브젝트. 
 msgstr ""
 
 #: ../../source/glossary.rst:75
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:90
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:93
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:96
 msgid "Deployment"
 msgstr ""
 
 #: ../../source/glossary.rst:77
 msgid "무상태(stateless) 애플리케이션의 배포·롤아웃·스케일링을 관리하는 Kubernetes 오브젝트."
-msgstr ""
-
-#: ../../source/glossary.rst:79
-msgid "DevStack"
 msgstr ""
 
 #: ../../source/glossary.rst:81
@@ -1220,11 +1768,6 @@ msgid ""
 "이 모두 이 이미지를 사용한다."
 msgstr ""
 
-#: ../../source/glossary.rst:151
-#: ../../source/openstack-on-kubernetes/approaches.rst:32
-msgid "Kolla-Ansible"
-msgstr ""
-
 #: ../../source/glossary.rst:153
 msgid ""
 "Kolla 컨테이너 이미지를 Ansible + Docker 로 배포·운영하는 도구. Kubernetes 위가 아니라 컨테이너로 직접"
@@ -1264,6 +1807,9 @@ msgid "N"
 msgstr ""
 
 #: ../../source/glossary.rst:188
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:113
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:116
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:119
 msgid "Neutron"
 msgstr ""
 
@@ -1445,25 +1991,6 @@ msgstr ""
 msgid "웹 기반 번역 플랫폼. Git 연동과 번역 메모리/용어집 기능을 제공한다."
 msgstr ""
 
-#: ../../source/index.rst:29 ../../source/introduction/index.rst:3
-msgid "소개"
-msgstr ""
-
-#: ../../source/index.rst:41 ../../source/integration-patterns.rst:3
-msgid "통합 패턴"
-msgstr ""
-
-#: ../../source/index.rst:47 ../../source/labs/index.rst:3
-msgid "실습"
-msgstr ""
-
-#: ../../source/index.rst:59
-#: ../../source/kubernetes-on-openstack/cloud-provider-openstack.rst:34
-#: ../../source/kubernetes-on-openstack/magnum.rst:39
-#: ../../source/openstack-on-kubernetes/kolla.rst:42
-msgid "참고"
-msgstr ""
-
 #: ../../source/index.rst:3
 msgid "OpenStack & Kubernetes 운영 문서화 및 국제화"
 msgstr ""
@@ -1495,12 +2022,16 @@ msgstr ""
 msgid "목차"
 msgstr ""
 
-#: ../../source/index.rst:69
+#: ../../source/index.rst:63
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../source/index.rst:70
+#: ../../source/index.rst:64
 msgid ":ref:`search`"
+msgstr ""
+
+#: ../../source/integration-patterns.rst:3
+msgid "통합 패턴"
 msgstr ""
 
 #: ../../source/integration-patterns.rst:5
@@ -1598,6 +2129,10 @@ msgstr ""
 msgid ""
 "Leveraging Containers and OpenStack (백서) — https://www.openstack.org/use-"
 "cases/containers/leveraging-containers-and-openstack/"
+msgstr ""
+
+#: ../../source/introduction/index.rst:3
+msgid "소개"
 msgstr ""
 
 #: ../../source/introduction/index.rst:5
@@ -1903,6 +2438,7 @@ msgstr ""
 #: ../../source/kubernetes-on-openstack/magnum.rst:17
 #: ../../source/openstack-on-kubernetes/kolla.rst:19
 #: ../../source/openstack-on-kubernetes/metallb.rst:16
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:5
 #: ../../source/openstack-on-kubernetes/openstack-helm.rst:15
 #: ../../source/storage/ceph.rst:15
 msgid "개요"
@@ -2000,6 +2536,13 @@ msgid ""
 "왔습니다. OpenStack 통합 역시 CCM 으로 제공되며, 이것이 현재 권장되는 방식입니다."
 msgstr ""
 
+#: ../../source/kubernetes-on-openstack/cloud-provider-openstack.rst:34
+#: ../../source/kubernetes-on-openstack/magnum.rst:39
+#: ../../source/openstack-on-kubernetes/kolla.rst:42
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:292
+msgid "참고"
+msgstr ""
+
 #: ../../source/kubernetes-on-openstack/cloud-provider-openstack.rst:36
 msgid ""
 "cloud-provider-openstack — https://github.com/kubernetes/cloud-provider-"
@@ -2090,10 +2633,6 @@ msgstr ""
 msgid "Kubernetes 가 OpenStack 서비스를 활용하는 표준 인터페이스는 다음과 같습니다."
 msgstr ""
 
-#: ../../source/kubernetes-on-openstack/concepts.rst:33
-msgid "역할"
-msgstr ""
-
 #: ../../source/kubernetes-on-openstack/concepts.rst:34
 msgid "CCM (Cloud Controller Manager)"
 msgstr ""
@@ -2119,7 +2658,6 @@ msgid "Octavia 를 통한 로드밸런서 프로비저닝 (:doc:`octavia-load-ba
 msgstr ""
 
 #: ../../source/kubernetes-on-openstack/index.rst:9
-#: ../../source/networking/load-balancing.rst:15
 #: ../../source/storage/cinder.rst:17 ../../source/storage/swift.rst:22
 msgid "개념"
 msgstr ""
@@ -2240,6 +2778,10 @@ msgstr ""
 msgid "CCM 통합: :doc:`cloud-provider-openstack`"
 msgstr ""
 
+#: ../../source/labs/index.rst:3
+msgid "실습"
+msgstr ""
+
 #: ../../source/labs/index.rst:5
 msgid "이 장은 단계별 실습 가이드를 모읍니다. 직접 환경을 구축·운영하며 두 기술을 체득하는 것을 목표로 합니다."
 msgstr ""
@@ -2263,6 +2805,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/labs/kubernetes-on-openstack-lab.rst:15
+#: ../../source/networking/load-balancing.rst:80
 msgid "전제 조건"
 msgstr ""
 
@@ -2475,20 +3018,152 @@ msgid ""
 "/octavia-load-balancer` 에서 다룹니다."
 msgstr ""
 
-#: ../../source/networking/load-balancing.rst:17
-msgid "로드밸런서 / 리스너 / 풀 / 멤버 / 헬스 모니터"
+#: ../../source/networking/load-balancing.rst:11
+msgid "핵심 리소스 개념"
 msgstr ""
 
-#: ../../source/networking/load-balancing.rst:18
-msgid "amphora 드라이버와 OVN Octavia 드라이버"
+#: ../../source/networking/load-balancing.rst:13
+msgid ""
+"Octavia 는 로드밸런서, 리스너, 풀, 멤버, 헬스 모니터라는 다섯 가지 리소스로 구성됩니다. 각 리소스는 트래픽이 흘러가는 "
+"순서대로 계층을 이룹니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:20
+msgid "리소스"
 msgstr ""
 
 #: ../../source/networking/load-balancing.rst:22
-msgid "각 리소스의 관계와 트래픽 흐름을 다이어그램으로 정리."
+msgid "로드밸런서 (Load Balancer)"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:23
+msgid "가상 IP(VIP)를 할당받는 최상위 리소스. 하나 이상의 리스너를 가집니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:24
+msgid "리스너 (Listener)"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:25
+msgid "로드밸런서가 특정 포트·프로토콜(HTTP, HTTPS, TCP 등)로 들어오는 요청을 받는 지점입니다. 하나의 풀과 연결됩니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:27
+msgid "풀 (Pool)"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:28
+msgid "트래픽을 분산할 백엔드 멤버들의 집합과 분산 알고리즘 (라운드 로빈, 최소 연결 등)을 정의합니다."
 msgstr ""
 
 #: ../../source/networking/load-balancing.rst:30
-msgid "Octavia 공식 문서 등 참고 링크 보강."
+msgid "멤버 (Member)"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:31
+msgid "실제로 트래픽을 처리하는 백엔드 서버(IP·포트)입니다. 풀에 여러 멤버를 등록할 수 있습니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:33
+msgid "헬스 모니터 (Health Monitor)"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:34
+msgid "풀에 속한 멤버의 상태를 주기적으로 점검하고, 응답하지 않는 멤버를 분산 대상에서 자동으로 제외합니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:37
+msgid "트래픽은 다음 순서로 흘러갑니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:49
+msgid ""
+"헬스 모니터는 풀에 소속되어 각 멤버의 상태를 점검하며, 트래픽 경로 자체에는 포함되지 않습니다. 대신 점검 결과에 따라 풀이 특정"
+" 멤버로의 분산 여부를 결정합니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:55
+msgid "amphora 드라이버와 OVN Octavia 드라이버"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:57
+msgid ""
+"Octavia 는 로드밸런서를 실제로 어떻게 구현할지 여러 드라이버(provider)로 선택할 수 있습니다. 그중 가장 널리 쓰이는"
+" 두 드라이버는 구조가 크게 다릅니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:66
+msgid "amphora 드라이버"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:67
+msgid "OVN Octavia 드라이버"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:68
+msgid "구현 방식"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:69
+msgid "로드밸런서마다 전용 가상 머신(amphora)을 생성하고, 그 안에서 HAProxy 가 실제 분산을 처리합니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:71
+msgid "별도 VM 없이 OVN(Open Virtual Network)의 로드 밸런싱 기능을 그대로 활용합니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:73
+msgid "리소스 사용"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:74
+msgid "로드밸런서마다 VM 을 띄우므로 메모리·CPU 오버헤드가 있습니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:75
+msgid "추가 VM 이 없어 오버헤드가 낮습니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:76
+msgid "기능 범위"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:77
+msgid "L7 정책, TLS 종료 등 HAProxy 가 지원하는 기능을 폭넓게 지원합니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:78
+msgid "지원 기능이 amphora 드라이버보다 제한적입니다(L7 정책 등 일부 미지원)."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:81
+msgid "별도 네트워크 백엔드에 의존하지 않습니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:82
+msgid "Neutron 의 SDN 백엔드가 OVN 이어야 사용할 수 있습니다 (:doc:`../networking/ovn-ovs` 참고)."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:85
+msgid ""
+"openstack-helm 배포에서는 기본값으로 amphora 드라이버를 사용하며, OVN 드라이버는 Neutron 백엔드가 OVN"
+" 으로 구성된 환경에서 선택적으로 활성화할 수 있습니다."
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:93
+msgid "`Octavia 프로젝트 공식 문서 <https://docs.openstack.org/octavia/latest/>`_"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:94
+msgid ""
+"`Octavia OVN provider driver 문서 "
+"<https://docs.openstack.org/octavia/latest/admin/providers/ovn.html>`_"
+msgstr ""
+
+#: ../../source/networking/load-balancing.rst:96
+msgid ""
+":doc:`../kubernetes-on-openstack/octavia-load-balancer` — Kubernetes "
+"``Service type=LoadBalancer`` 가 Octavia 를 백엔드로 사용하는 관점"
 msgstr ""
 
 #: ../../source/networking/neutron-basics.rst:3
@@ -2547,28 +3222,118 @@ msgstr ""
 
 #: ../../source/networking/ovn-ovs.rst:5
 msgid ""
-"OVN(Open Virtual Network)과 OVS(Open vSwitch)는 Neutron 의 대표적인 SDN 백엔드입니다. "
-"최근 배포에서 기본값으로 자리 잡은 OVN 을 중심으로 정리합니다."
+"OVN(Open Virtual Network)과 OVS(Open vSwitch)는 OpenStack Neutron에서 사용되는 "
+"대표적인 네트워크 기술입니다. OVS는 호스트에서 실제 네트워크 패킷을 전달하는 가상 스위치 역할을 하며, OVN은 OVS를 데이터"
+" 평면으로 사용하여 논리적인 네트워크를 구성하고 관리합니다."
 msgstr ""
 
-#: ../../source/networking/ovn-ovs.rst:14
-msgid "OVS 와 OVN 의 관계"
+#: ../../source/networking/ovn-ovs.rst:10
+msgid "최근 OpenStack 배포에서는 Neutron의 네트워크 백엔드로 ML2/OVN 구성이 널리 사용되고 있습니다."
 msgstr ""
 
-#: ../../source/networking/ovn-ovs.rst:16
-msgid "OVS — 호스트 단의 가상 스위치(데이터 평면)"
+#: ../../source/networking/ovn-ovs.rst:15
+msgid "OVS와 OVN의 관계"
 msgstr ""
 
 #: ../../source/networking/ovn-ovs.rst:17
-msgid "OVN — OVS 위에 논리 네트워크(라우팅/L2/L3)를 얹는 컨트롤 평면"
+msgid ""
+"OVS는 호스트 단에서 동작하는 가상 스위치입니다. VM의 가상 NIC, 물리 NIC, 터널 인터페이스 등을 연결하고 실제 패킷을 "
+"전달하는 데이터 평면(Data Plane) 역할을 담당합니다."
 msgstr ""
 
 #: ../../source/networking/ovn-ovs.rst:21
-msgid "OVN 도입으로 기존 Neutron 에이전트 구조가 어떻게 단순화되는지 정리."
+msgid ""
+"OVN은 OVS를 데이터 평면으로 사용하면서 논리적인 네트워크를 정의하고 관리하는 네트워크 제어 계층(Control Plane) "
+"역할을 합니다. 논리 스위치, 논리 라우터, ACL 등의 네트워크 기능을 논리적인 객체로 표현할 수 있습니다."
 msgstr ""
 
-#: ../../source/networking/ovn-ovs.rst:29
-msgid "OVN / ovn-kubernetes 참고 링크 보강."
+#: ../../source/networking/ovn-ovs.rst:26
+msgid "OVN과 OVS는 다음과 같이 역할을 나누어 사용합니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:48
+msgid "간단하게 정리하면 다음과 같습니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:50
+msgid "**OVS**: 호스트 단의 가상 스위치(데이터 평면)"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:51
+msgid "**OVN**: OVS 위에 논리 네트워크(라우팅/L2/L3)를 얹는 컨트롤 평면"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:52
+msgid "**ML2/OVN**: Neutron과 OVN을 연결"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:53
+msgid "**ovn-controller**: OVN의 네트워크 상태를 호스트의 OVS에 반영"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:57
+msgid "OVN 도입에 따른 Neutron Agent 구조 단순화"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:59
+msgid "기존 ML2/OVS 구조에서는 네트워크 기능별로 여러 Neutron Agent가 사용되었습니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:75
+msgid ""
+"OVS Agent는 OVS 브리지와 Flow를 관리하고, L3 Agent와 DHCP Agent는 각각 라우팅과 DHCP 기능을 "
+"담당합니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:78
+msgid "네트워크 기능별로 Agent가 구성되기 때문에 여러 Agent의 상태와 통신을 함께 관리해야 합니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:81
+msgid "ML2/OVN에서는 OVN이 논리 네트워크 모델을 통해 주요 네트워크 기능을 처리하므로 구조가 다음과 같이 단순화됩니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:99
+msgid ""
+"OVN은 논리적인 네트워크 객체로 관리하고, :code:`ovn-controller` 프로세스가 이를 각 호스트의 OVS 데이터 "
+"평면에 반영합니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:102
+msgid ""
+"이에 따라 기존의 OVS Agent, L3 Agent, DHCP Agent가 담당하던 주요 네트워크 기능을 OVN으로 통합할 수 "
+"있으며, Neutron의 Agent 중심 구조가 단순해집니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:108
+msgid ""
+"OVN을 사용한다고 해서 모든 Neutron Agent가 사라지는 것은 아닙니다. 일부 기능에서는 여전히 Neutron Agent가"
+" 사용될 수 있습니다. 따라서 OVN은 기존 Agent를 완전히 제거한다기보다, 핵심 네트워크 기능을 OVN으로 이동하여 Agent"
+" 구조를 단순화한 것입니다."
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:117
+msgid ""
+"`OVN Features "
+"<https://docs.openstack.org/neutron/latest/admin/ovn/features.html>`_"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:120
+msgid "`OVN Documentation <https://docs.ovn.org/en/latest/>`_"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:123
+msgid "`OVN-Kubernetes <https://ovn-kubernetes.io/>`_"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:126
+msgid "`Open vSwitch Documentation <https://docs.openvswitch.org/en/latest/>`_"
+msgstr ""
+
+#: ../../source/networking/ovn-ovs.rst:129
+msgid ""
+"`Neutron OVN Design "
+"<https://docs.openstack.org/neutron/latest/contributor/internals/ovn/index.html>`_"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/approaches.rst:3
@@ -2644,52 +3409,674 @@ msgstr ""
 msgid "CNI 와 Neutron 의 공존"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:5
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:7
 msgid ""
-"OpenStack on Kubernetes 구성에서 가장 헷갈리는 지점입니다. Kubernetes Pod 네트워킹(CNI)과 "
-"OpenStack 가상 네트워킹(Neutron), 성격이 다른 두 스택이 한 클러스터에 겹쳐 돌기 때문입니다."
+"OpenStack on Kubernetes 에서는 OpenStack 서비스가 Kubernetes 위에서 실행되는 동시에, 그 "
+"서비스가 생성한 가상 머신에는 OpenStack 네트워크가 제공된다. 이 문서는 이때 컨테이너 네트워크 "
+"인터페이스(:term:`CNI`)와 OpenStack 네트워킹 서비스(:term:`Neutron`)가 각각 무엇을 담당하며 어떤 "
+"방식으로 공존하는지 설명한다."
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:15
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:16
 msgid "두 스택이 공존하는 이유"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:17
-msgid "K8s 계층 — Pod 간 통신을 위한 CNI(Calico, Flannel 등)"
-msgstr ""
-
 #: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:18
-msgid "OpenStack 계층 — VM/테넌트 네트워크를 위한 Neutron"
+msgid ""
+"OpenStack-Helm 은 Keystone, Nova, Neutron, Glance 등의 애플리케이션 프로그래밍 "
+"인터페이스(API)와 서버 구성 요소를 Kubernetes 파드로 배포한다. 이 파드들과 RabbitMQ, 데이터베이스 같은 백엔드"
+" 서비스가 통신하려면 Kubernetes 의 파드 네트워크가 필요하다."
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:19
-msgid "두 계층이 서로 다른 네트워크 네임스페이스를 다룸"
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:24
+msgid ""
+"한편 OpenStack 사용자가 생성한 Nova 가상 머신은 Kubernetes 파드가 아니다. 가상 머신의 네트워크, 서브넷, "
+"포트, 라우터, 보안 그룹 및 플로팅 IP 는 OpenStack Networking 서비스인 Neutron 이 관리한다."
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:23
-msgid "\"무엇이 어느 계층에서 처리되는가\" 를 다이어그램으로 정리(초심자 혼란 지점)."
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:28
+msgid "따라서 하나의 OpenStack on Kubernetes 환경에는 다음 두 네트워크가 동시에 존재한다."
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:27
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:31
+msgid "**Kubernetes 계층:** CNI 가 OpenStack 서비스 파드와 백엔드 파드의 통신을 담당한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:33
+msgid "**OpenStack 계층:** Neutron 이 Nova 가상 머신과 테넌트 네트워크의 통신을 담당한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:46
+msgid ""
+"두 네트워크는 같은 물리 노드와 물리 네트워크를 사용할 수 있지만 서로 다른 대상을 담당한다. CNI 는 파드를 연결하고, "
+"Neutron 은 가상 머신을 연결한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:50
+msgid ""
+"OpenStack 서비스 간의 네트워크 생성·변경 요청은 CNI 기반 파드 네트워크를 통해 Neutron 에 전달될 수 있다. "
+"그러나 가상 머신의 실제 사용자 패킷이 OpenStack 서비스 파드를 거치는 것은 아니다. OpenStack 의 API 및 "
+"네트워크 관리 서비스가 원하는 네트워크 상태를 만들면, 이후 가상 머신의 통신은 Neutron 이 구성한 별도의 경로에서 처리된다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:60
+msgid "OpenStack API 접근과 가상 머신 접근의 차이"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:62
+msgid ""
+"외부에서 OpenStack 환경으로 들어오는 요청은 목적지에 따라 OpenStack API 에 대한 관리 요청과 가상 머신 "
+"애플리케이션에 대한 사용자 트래픽으로 구분할 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:71
+msgid "OpenStack API 접근"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:72
+msgid "가상 머신 애플리케이션 접근"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:73
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:330
+msgid "목적"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:74
+msgid "가상 머신 생성·조회·삭제"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:75
+msgid "가상 머신에서 실행되는 서비스 사용"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:76
+msgid "목적지"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:77
+msgid "``nova-api`` 파드"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:78
+msgid "Nova 가 관리하는 가상 머신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:79
+msgid "대표 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:80
+msgid "인그레스·로드밸런서 → Kubernetes 서비스 → API 파드"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:81
+msgid "프로바이더 네트워크 → ``br-ex`` → 플로팅 IP → 가상 머신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:82
+msgid "담당 영역"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:83
+msgid "Kubernetes 와 OpenStack 제어 서비스"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:84
+msgid "Neutron 이 구성한 가상 머신 패킷 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:86
+msgid ""
+"첫 번째 경로는 OpenStack 자원을 생성하거나 조회하기 위한 관리 요청이고, 두 번째 경로는 가상 머신에서 실행되는 "
+"애플리케이션의 데이터를 주고받는 경로이다. 목적지가 다르기 때문에 필요한 노출 방식과 보안 정책도 다르다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:100
+msgid "통신 사례로 보는 계층 구분"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:106
+msgid "통신 사례"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:107
+msgid "담당 계층"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:108
+msgid "개념적인 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:109
+msgid "OpenStack API 파드가 다른 서비스 파드에 요청"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:110
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:364
+msgid "Kubernetes 계층"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:111
+msgid "송신 파드 → CNI 기반 파드 네트워크 → 대상 파드"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:112
+msgid "같은 노드의 가상 머신 간 통신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:114
+msgid "송신 가상 머신 → 노드의 가상 네트워크 → 수신 가상 머신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:115
+msgid "서로 다른 노드의 가상 머신 간 통신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:117
+msgid "송신 가상 머신 → 송신 노드 → 물리 네트워크 → 수신 노드 → 수신 가상 머신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:118
+msgid "플로팅 IP 를 통한 외부 접근"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:120
+msgid "외부 네트워크 → Neutron 라우팅·주소 변환 → 대상 가상 머신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:122
+msgid ""
+"같은 물리 네트워크 위에서 두 종류의 통신이 흐르더라도 정책 경계는 분리된다. 파드 통신 정책은 Kubernetes 계층에서, 가상"
+" 머신의 보안 그룹과 라우팅 정책은 Neutron 계층에서 적용된다. 따라서 \"파드 통신은 정상인데 가상 머신 통신만 실패하는\""
+" 상황이 발생할 수 있으며, 운영자는 먼저 어느 계층의 문제인지 구분해야 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:131
+msgid "OpenStack-Helm 과 네트워크 구현체의 관계"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:133
+msgid ""
+"OpenStack-Helm 은 특정 CNI 나 Neutron 네트워크 백엔드를 하나로 고정하지 않는다. OpenStack 서비스를 "
+"Kubernetes 에 배포하고, 선택한 네트워크 구현체를 Helm 설정값으로 구성할 수 있도록 제공한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:138
+msgid ""
+"Neutron 백엔드에는 Open vSwitch(:term:`OVS`)나 Open Virtual "
+"Network(:term:`OVN`) 기반 기술이 사용될 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:146
+msgid "예시"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:147
+msgid "CNI 표준을 사용하는 파드 네트워크 구현체"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:148
+msgid "Calico, Cilium, Flannel, ovn-kubernetes"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:149
+msgid "Neutron 네트워크 백엔드"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:150
+msgid "ML2/OVS, ML2/OVN, SR-IOV"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:151
+msgid "현재 실습 구성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:152
+msgid "Calico 와 Neutron ML2/OVS"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:154
+msgid ""
+"따라서 OpenStack on Kubernetes 의 네트워크 구조를 이해하려면 OpenStack-Helm 자체만 보는 것이 아니라"
+" Kubernetes 에 적용된 CNI 플러그인과 Neutron 에 적용된 네트워크 백엔드의 조합을 함께 확인해야 한다. 이 조합에"
+" 따라 두 네트워크를 독립적인 기술 스택으로 운영할 수도 있고, 양쪽에 공통된 네트워크 기술을 적용해 운영 경험과 도구를 공유할 "
+"수도 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:163
 msgid "통합 접근"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:29
-msgid "두 스택을 각각 운영하는 구성"
-msgstr ""
-
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:30
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:165
 msgid ""
-"OVN 으로 CNI 와 Neutron 을 하나로 수렴시키는 구성(ovn-kubernetes) — :doc:`../networking"
-"/ovn-ovs` 참고"
+"CNI 와 Neutron 이 공존하는 방식은 크게 각 스택을 독립적으로 운영하는 구성과 양쪽에서 OVN 계열 기술을 사용하는 "
+"구성으로 나누어 볼 수 있다. 이는 CNI 와 Neutron 의 책임을 합치는 것이 아니라, 서로 다른 두 네트워크를 어떤 "
+"기술적·운영적 관계로 구성할지에 관한 선택이다."
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:35
-msgid "각 접근의 트레이드오프(운영 복잡도 vs 통합 이점) 정리."
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:172
+msgid "두 스택을 각각 운영"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:43
-msgid "CNI / ovn-kubernetes 참고 링크 보강."
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:174
+msgid ""
+"Kubernetes 에는 Calico, Flannel, Cilium 같은 CNI 플러그인을 사용하고, OpenStack 가상 머신 "
+"네트워크에는 Neutron 의 별도 백엔드를 사용하는 방식이다. CNI 는 파드 네트워크를, Neutron 은 가상 머신 네트워크를"
+" 담당한 채 각각의 제어 영역과 운영 수명주기를 유지한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:180
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:230
+msgid "**장점**"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:182
+msgid ""
+"**기술 선택과 업그레이드를 독립적으로 수행할 수 있다.** 한쪽의 구현체를 교체하거나 버전을 올릴 때 다른 쪽을 동시에 변경할 "
+"필요가 없다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:184
+msgid ""
+"**각 생태계에서 널리 검증된 구성을 선택할 수 있다.** 조직의 정책, 성능 요구 및 운영 경험에 맞는 CNI 와 Neutron "
+"백엔드를 각각 선택할 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:187
+msgid ""
+"**장애 범위를 구분하기 쉽다.** 서비스 파드 통신 장애는 CNI 와 Kubernetes 서비스를, 가상 머신 통신 장애는 "
+"Neutron 포트·라우터·보안 그룹을 우선 조사할 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:190
+msgid ""
+"**변경의 영향 범위를 제한할 수 있다.** 한쪽 네트워크의 변경이나 장애가 다른 쪽 데이터 평면에 직접 전파되지 않아 단계적인 "
+"검증과 롤백 계획을 세우기 쉽다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:194
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:242
+msgid "**고려 사항**"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:196
+msgid ""
+"**주소 계획을 이중으로 관리해야 한다.** 파드 주소 대역과 Neutron 테넌트 네트워크 대역이 겹치지 않도록 구축 단계에서 "
+"주소 범위를 정해야 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:198
+msgid ""
+"**정책이 서로 다른 위치에서 적용된다.** 파드 접근 제어는 Kubernetes 네트워크 정책으로, 가상 머신 접근 제어는 "
+"Neutron 보안 그룹으로 관리한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:200
+msgid ""
+"**관측 및 장애 대응 도구가 나뉜다.** Kubernetes 의 파드·서비스·CNI 도구와 OpenStack 의 "
+"network·port·router 도구를 모두 사용해야 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:202
+msgid ""
+"**공통 물리 네트워크의 자원을 함께 사용한다.** 같은 노드 NIC 와 물리 네트워크를 사용한다면 최대 전송 단위(MTU), "
+"대역폭, 주소 경로를 함께 고려해야 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:208
+msgid "OVN 계열 기술을 양쪽에서 사용"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:210
+msgid ""
+"Kubernetes CNI 로 ovn-kubernetes 를 선택하고 Neutron 도 :term:`OVN` 기반 백엔드를 사용하면"
+" 파드 네트워크와 가상 머신 네트워크가 모두 :term:`OVS`·OVN 계열 기술을 사용한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:220
+msgid ""
+"이 접근의 핵심은 두 계층에서 공통된 네트워크 기술을 사용해 운영 지식과 도구를 재사용하는 것이다. 다만 ovn-kubernetes"
+" 는 Kubernetes 의 파드, 서비스, 네트워크 정책을, Neutron 은 OpenStack 의 network, port, "
+"router, 보안 그룹을 각각 관리한다. 같은 기술을 선택해도 두 네트워크나 제어 영역이 자동으로 하나가 되는 것은 아니다. "
+"데이터베이스와 제어 영역까지 공유하려면 호환성, 주소 관리, 정책 소유권과 장애 영향 범위를 별도로 설계하고 검증해야 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:232
+msgid ""
+"**공통된 기술 모델과 운영 경험을 재사용할 수 있다.** 양쪽 모두 OVN 의 논리 네트워크와 OVS 데이터 평면을 기반으로 "
+"하므로 관측 체계를 일관되게 가져갈 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:235
+msgid ""
+"**호스트의 네트워크 기술 구성을 일관되게 가져갈 수 있다.** 기존의 OVN·OVS 모니터링, 성능 튜닝 또는 하드웨어 가속 "
+"경험을 양쪽에 활용할 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:238
+msgid ""
+"**향후 연계 가능성을 검토하기 쉽다.** 파드와 가상 머신 연결, 공통 물리 네트워크 연계 같은 고급 통합을 설계할 때 공통 "
+"개념과 도구를 활용할 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:244
+msgid ""
+"**버전과 업그레이드 호환성을 확인해야 한다.** ovn-kubernetes 와 Neutron 이 요구하는 OVN·OVS 버전 "
+"범위가 다를 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:246
+msgid ""
+"**정책과 주소 관리의 소유권은 여전히 분리된다.** Kubernetes 네트워크 정책과 Neutron 보안 그룹은 서로 다른 "
+"API 와 리소스이다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:248
+msgid ""
+"**공통 기술 장애가 넓은 영향을 줄 수 있다.** OVN·OVS 운영 구성이나 호스트 자원에 공통 문제가 생기면 두 네트워크가 "
+"동시에 영향을 받을 수 있어 장애 격리와 롤백 계획이 필요하다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:254
+msgid "접근 방식 비교"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:261
+msgid "각각 운영"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:262
+msgid "OVN 계열 기술 사용"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:263
+msgid "기술 선택"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:264
+msgid "각 계층에 적합한 구현체를 독립적으로 선택"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:265
+msgid "두 계층에서 OVN·OVS 기반 기술을 사용"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:266
+#: ../../source/openstack-on-kubernetes/operations.rst:22
+msgid "업그레이드"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:267
+msgid "각 스택의 수명주기를 분리하기 쉬움"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:268
+msgid "사용하는 OVN·OVS 버전의 호환성을 함께 고려"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:269
+msgid "운영 지식"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:270
+msgid "Kubernetes 와 OpenStack 도구를 각각 학습"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:271
+msgid "공통된 OVN·OVS 개념과 관측 경험을 재사용 가능"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:272
+msgid "정책"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:273
+msgid "Kubernetes 정책과 Neutron 보안 정책이 분리"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:274
+msgid "공통 기술을 사용해도 정책의 의미와 소유권은 구분 필요"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:275
+msgid "복잡성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:276
+msgid "스택 수는 많지만 경계가 명확"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:277
+msgid "기술은 일관되지만 통합 수준이 높을수록 결합도 증가"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:279
+msgid ""
+"어느 방식을 선택하더라도 CNI 와 Neutron 이 담당하는 대상 자체는 달라지지 않는다. 중요한 것은 두 네트워크를 무조건 "
+"하나로 합치는 것이 아니라 운영 환경에 맞게 책임 범위와 장애 경계를 명확하게 설계하는 것이다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:286
+msgid "실제 네트워크 구성과 가상 머신 패킷 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:288
+msgid ""
+"사용자가 가상 머신을 생성할 때 네트워크가 어떻게 구성되고, 구성이 끝난 뒤 실제 패킷이 어떤 경로로 이동하는지 구분해 보자. 이는"
+" 앞에서 설명한 두 네트워크에 새로운 네트워크를 하나 더 추가하는 것이 아니다. 같은 OpenStack 환경을 네트워크 설정을 "
+"만드는 과정과 만들어진 설정에 따라 패킷을 전달하는 과정으로 나누어 보는 것이다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:297
+msgid "네트워크 구성 과정과 패킷 이동 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:299
+msgid ""
+"**네트워크를 구성하는 과정:** 가상 머신이 사용할 네트워크, 포트, IP, 보안 그룹과 전달 경로를 만든다. 이를 제어 "
+"평면(control plane)이라고 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:302
+msgid ""
+"**실제 패킷이 이동하는 과정:** 구성된 가상 네트워크 장치(TAP), OVS 와 라우터를 따라 가상 머신의 패킷이 이동한다. "
+"이를 데이터 평면(data plane)이라고 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:307
+msgid "도로에 비유하면 네트워크 구성은 도로와 신호 체계를 만드는 작업이고, 패킷 이동은 완성된 도로 위로 자동차가 이동하는 것에 해당한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:314
+msgid "두 용어는 특정 장비나 별도의 물리 네트워크 이름이 아니라 기능을 구분하는 표현이다. 다음 질문으로 쉽게 구분할 수 있다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:320
+msgid "지금 전달되는 내용이 네트워크를 만들거나 변경하기 위한 명령인가, 아니면 가상 머신 애플리케이션이 주고받는 실제 데이터인가?"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:328
+msgid "네트워크를 구성하는 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:329
+msgid "실제 패킷이 이동하는 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:331
+msgid "네트워크와 전달 규칙 생성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:332
+msgid "가상 머신의 실제 통신 전달"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:333
+msgid "전달 내용"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:334
+msgid "API 요청, 포트·라우터·정책 정보"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:335
+msgid "이더넷 프레임, IP·TCP·UDP 패킷"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:336
+msgid "주요 구성 요소"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:337
+msgid "Nova API, Neutron Server, 데이터베이스, 메시지 큐, 에이전트"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:338
+msgid ""
+"가상 머신 가상 네트워크 인터페이스(vNIC), TAP, OVS, Virtual Extensible LAN(VXLAN), 라우터, "
+"물리 네트워크 인터페이스 카드(NIC)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:340
+msgid "동작 시점"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:341
+msgid "생성·변경·삭제 시"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:342
+msgid "가상 머신 통신이 발생할 때마다"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:343
+msgid "대표 장애"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:344
+msgid "가상 머신 생성 실패, 포트가 DOWN"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:345
+msgid "가상 머신은 ACTIVE 지만 ping 이나 외부 접속 실패"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:349
+msgid "장애 증상으로 담당 계층 구분하기"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:351
+msgid ""
+"CNI 와 Neutron 은 같은 노드와 물리 네트워크를 공유할 수 있지만 관리 대상과 정책 경계는 분리된다. 통신 장애가 발생하면"
+" 먼저 파드와 가상 머신 중 어느 대상에서 문제가 발생했는지 구분해야 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:360
+msgid "증상"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:361
+msgid "우선 확인할 영역"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:362
+msgid "대표 확인 대상"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:363
+msgid "OpenStack API 파드끼리 통신하지 못함"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:365
+msgid "파드, 서비스, 엔드포인트, Calico, 네트워크 정책"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:366
+msgid "가상 머신 생성 또는 포트 연결이 완료되지 않음"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:367
+msgid "OpenStack 네트워크 구성 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:368
+msgid "Nova, Neutron Server, 메시지 큐, Neutron 에이전트, 포트 바인딩"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:369
+msgid "같은 노드의 가상 머신끼리 통신하지 못함"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:370
+msgid "가상 머신의 로컬 패킷 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:371
+msgid "TAP, ``br-int``, 보안 그룹, 가상 머신 포트"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:372
+msgid "다른 노드의 가상 머신끼리만 통신하지 못함"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:373
+msgid "오버레이 네트워크(overlay)와 언더레이 네트워크(underlay)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:374
+msgid "``br-tun``, VXLAN, 터널 IP, 노드 간 연결, MTU"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:375
+msgid "내부 통신은 되지만 플로팅 IP 접속이 안 됨"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:376
+msgid "외부 연결 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:377
+msgid "``br-ex``, 라우터, 플로팅 IP, 보안 그룹, 외부 방화벽"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:379
+msgid ""
+"예를 들어 OpenStack API 호출과 파드 통신은 정상인데 가상 머신의 ping 만 실패한다면 CNI 보다 Neutron "
+"포트, 보안 그룹과 OVS 경로를 먼저 확인하는 것이 적절하다. 반대로 API 파드 사이의 통신부터 실패한다면 가상 머신 데이터 "
+"경로보다 Kubernetes 서비스와 CNI 상태를 먼저 확인해야 한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:389
+msgid ":term:`CNI`"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:390
+msgid ":term:`Neutron`"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:391
+msgid ":term:`OVS`"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:392
+msgid ":term:`OVN`"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:393
+msgid ""
+"`OpenStack-Helm 공식 문서 — Networking <https://docs.openstack.org/openstack-"
+"helm/latest/devref/networking.html>`_"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:395
+msgid ""
+"`OpenStack Neutron 공식 문서 — Networking architecture "
+"<https://docs.openstack.org/neutron/2025.2/admin/deploy.html>`_"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/cni-and-neutron.rst:397
+msgid "`ovn-kubernetes 공식 문서 <https://ovn-kubernetes.io/>`_"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/comparison.rst:3
@@ -2825,50 +4212,125 @@ msgid "Nova (compute)"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/concepts.rst:37
-msgid "컨트롤 컴포넌트는 Pod, 하이퍼바이저 노드는 별도 관리"
-msgstr ""
-
-#: ../../source/openstack-on-kubernetes/concepts.rst:38
-msgid "Neutron (network)"
+msgid ""
+"컨트롤 컴포넌트는 Pod, 하이퍼바이저 노드는 별도 관리. :ref:`nova-hypervisor-registration` 에서 "
+"자세히 다룹니다."
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/concepts.rst:39
-msgid "Deployment/DaemonSet 조합"
+msgid "Neutron (network)"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/concepts.rst:40
-msgid "Glance (image)"
+msgid "Deployment/DaemonSet 조합"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/concepts.rst:41
-msgid "Deployment + 오브젝트 스토리지 백엔드"
+msgid "Glance (image)"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/concepts.rst:42
-msgid "데이터베이스 / 메시지 큐"
+msgid "Deployment + 오브젝트 스토리지 백엔드"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/concepts.rst:43
+msgid "데이터베이스 / 메시지 큐"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:44
 msgid "Operator 또는 StatefulSet (MariaDB, RabbitMQ 등)"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/concepts.rst:47
-msgid "배포 방식 비교"
-msgstr ""
-
-#: ../../source/openstack-on-kubernetes/concepts.rst:49
-msgid "컨테이너화된 OpenStack 을 올리는 배포 방식은 크게 둘입니다."
-msgstr ""
-
-#: ../../source/openstack-on-kubernetes/concepts.rst:51
-msgid ":doc:`openstack-helm` — Helm chart 기반, Kubernetes 위 배포"
+#: ../../source/openstack-on-kubernetes/concepts.rst:50
+msgid "Kubernetes 노드의 Nova 하이퍼바이저 등록"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/concepts.rst:52
+msgid ""
+":term:`Nova` 가 VM 을 배치하려면 각 노드가 하이퍼바이저(hypervisor)로 먼저 등록되어 있어야 합니다. "
+"OpenStack on Kubernetes 에서 이 하이퍼바이저는 별도의 물리 서버가 아니라 nova-compute 가 실행되는 "
+"Kubernetes 노드 자신입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:57
+msgid "Kubernetes 노드 1대 = Nova 하이퍼바이저 1대 (nova-compute Pod 가 노드마다 하나)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:58
+msgid "전체 흐름: nova-compute 기동 → 서비스 레코드 → 컴퓨트 노드 레코드 → 셀(cell) 매핑 → 스케줄러의 배치 후보"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:62
+msgid "등록 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:64
+msgid "nova-compute 가 기동하면서 수행하는 일:"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:66
+msgid "하이퍼바이저 드라이버(libvirt)에서 CPU/메모리/디스크 자원 정보 수집"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:67
+msgid ""
+"서비스(service) 레코드 등록 — \"이 호스트의 nova-compute 가 살아 있다\" 는 생존 신고, 이후 주기적인 "
+"하트비트로 갱신"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:69
+msgid "컴퓨트 노드(compute node) 레코드 생성 — 하이퍼바이저의 자원 현황표, 스케줄러가 VM 배치를 결정할 때 참조"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:72
+msgid ""
+"등록 이름은 노드의 호스트명(hostname)에서 옵니다 — nova-compute Pod 는 호스트 네트워크를 사용하므로 Pod "
+"호스트명이 곧 Kubernetes 노드 호스트명이고, 그 이름이 하이퍼바이저 이름으로 그대로 등록됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:77
+msgid "등록 확인"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:84
+msgid "첫 번째 명령 — 호스트별 nova-compute 서비스 상태. State 가 up 이면 생존 신고(하트비트) 정상"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:86
+msgid "두 번째 명령 — Hypervisor Hostname 열에 Kubernetes 노드의 호스트명이 그대로 표시"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:90
+msgid "셀 매핑 개요"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:92
+msgid "등록된 호스트는 셀(cell)에 매핑되어야 스케줄러의 배치 대상이 됨"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:93
+msgid ""
+"매핑은 ``nova-manage cell_v2 discover_hosts`` 가 수행 — 배포 도구가 주기적 실행을 자동화하는 것이"
+" 일반적"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:95
+msgid "셀 내부 구조는 이 절의 범위 밖 (후속 문서에서 다룰 수 있음)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:101
+msgid "컨테이너화된 OpenStack 을 올리는 배포 방식은 크게 둘입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:103
+msgid ":doc:`openstack-helm` — Helm chart 기반, Kubernetes 위 배포"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/concepts.rst:104
 msgid "Kolla-Ansible — Ansible + Docker 기반(Kubernetes 아님)"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/concepts.rst:54
+#: ../../source/openstack-on-kubernetes/concepts.rst:106
 msgid ""
 "두 방식의 상세 비교와 선택 기준은 :doc:`comparison` 에서 다룹니다. 두 방식이 공통으로 사용하는 컨테이너 이미지 "
 "레이어는 :doc:`kolla` 를 참고하세요."
@@ -2924,15 +4386,15 @@ msgstr ""
 msgid "개념·설계"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/index.rst:21
+#: ../../source/openstack-on-kubernetes/index.rst:22
 msgid "K8s 네트워킹 준비"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/index.rst:29
+#: ../../source/openstack-on-kubernetes/index.rst:31
 msgid "배포"
 msgstr ""
 
-#: ../../source/openstack-on-kubernetes/index.rst:37
+#: ../../source/openstack-on-kubernetes/index.rst:40
 msgid "운영"
 msgstr ""
 
@@ -3039,6 +4501,821 @@ msgstr ""
 msgid "L2/BGP 모드 선택 기준과 주소 풀 예시 보강."
 msgstr ""
 
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:3
+msgid "Neutron Helm Chart 구조 파악"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:5
+msgid ""
+"`openstack-helm <https://opendev.org/openstack/openstack-helm>`_ 의 "
+"neutron chart 는 OpenStack 네트워킹 서비스를 Kubernetes 위에 배포하는 Helm chart 다. 이 "
+"문서는 `차트 디렉터리 <https://github.com/openstack/openstack-"
+"helm/tree/master/neutron>`_ 의 파일 구성과 각 항목이 실제 Kubernetes 리소스로 어떻게 구현되는지를 "
+"정리한다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:12
+msgid "차트 최상위 파일"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:22
+msgid ""
+"**Chart.yaml** 은 차트 이름, 버전(``2026.1.0``), appVersion(``28.0.0``)을 선언하며, "
+"``helm-toolkit`` 을 라이브러리 의존성으로 등록한다. helm-toolkit 은 openstack-helm 전체에서 "
+"공통 스니펫(snippet)을 제공하는 내부 라이브러리 차트로, 실제 Kubernetes 리소스를 직접 생성하지는 않는다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:27
+msgid "**values.yaml** 은 배포 시 오버라이드할 수 있는 기본값 전체를 담는다. 주요 최상위 블록은 아래 표와 같다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:34
+msgid "블록"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:36
+msgid "``images``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:37
+msgid "컴포넌트별 컨테이너 이미지 태그"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:38
+msgid "``labels``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:39
+msgid "각 Deployment/DaemonSet 의 ``nodeSelector`` 키값"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:40
+msgid "``network``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:41
+msgid "``backend`` 리스트로 ``openvswitch`` 또는 ``ovn`` 선택"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:42
+msgid "``conf``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:43
+msgid "``neutron.conf``, ``ml2_conf.ini`` 등 설정 파일 내용 (INI 형식)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:44
+msgid "``endpoints``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:45
+msgid "Keystone/MariaDB/RabbitMQ 등 외부 서비스 URL 과 자격증명"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:46
+msgid "``dependencies``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:47
+msgid "각 컴포넌트의 기동 선행 조건 (Job 완료 여부, 서비스 Ready 여부)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:48
+msgid "``manifests``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:49
+msgid "리소스별 ``true``/``false`` 토글 — 원하지 않는 컴포넌트를 비활성화"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:53
+msgid "templates/ 디렉터리 구성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:55
+msgid "templates/ 아래 파일들은 역할에 따라 다음과 같이 묶인다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:58
+msgid "설정 관련"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:60
+msgid ""
+"``bin/`` 디렉터리에는 각 컴포넌트의 기동 스크립트가 ``_*.sh.tpl`` 형식으로 들어 있다. Helm 이 렌더링하면 "
+"``configmap-bin.yaml`` 에 의해 단일 ConfigMap 으로 묶여 각 Pod 의 ``/tmp/`` 경로에 "
+"마운트된다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:65
+msgid ""
+"``configmap-etc.yaml`` 은 ``values.yaml`` 의 ``conf`` 블록 값을 "
+"``neutron.conf``, ``ml2_conf.ini``, ``l3_agent.ini`` 등 설정 파일로 렌더링한다. 특이한 "
+"점은 이 템플릿 내부에서 ``endpoints`` 블록을 참조해 DB 접속 URL, RabbitMQ transport URL, "
+"Keystone auth_url 등을 자동으로 채워 넣는다는 것이다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:78
+msgid "워크로드 관련"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:80
+msgid "컴포넌트의 역할에 따라 Kubernetes 워크로드 타입이 다르게 선택된다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:86
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:167
+msgid "템플릿 파일"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:87
+msgid "Kubernetes 리소스"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:88
+msgid "배포 이유"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:89
+msgid "``deployment-server.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:91
+msgid "API 서버는 노드 독립적/스테이트리스 → replicas 조정 가능"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:92
+msgid "``deployment-rpc_server.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:94
+msgid "RabbitMQ RPC 처리 전담. API 서버와 분리해 부하 격리"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:95
+msgid "``deployment-ironic-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:97
+msgid "베어메탈 연동. 특정 노드가 아닌 임의 노드에서 실행 가능"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:98
+msgid "``daemonset-ovs-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:100
+msgid "OVS 브리지/포트를 호스트마다 관리해야 하므로 노드 단위 배포"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:101
+msgid "``daemonset-ovn-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:103
+msgid "OVN logical flow 동기화. 역시 노드 단위"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:104
+msgid "``daemonset-dhcp-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:106
+msgid "dnsmasq 가 각 노드의 네트워크 네임스페이스에서 실행"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:107
+msgid "``daemonset-l3-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:109
+msgid "가상 라우터/NAT/플로팅 IP 처리, 호스트 네트워크 네임스페이스 필요"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:110
+msgid "``daemonset-metadata-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:112
+msgid "``169.254.169.254`` 메타데이터 프록시, 노드별 실행"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:113
+msgid "``daemonset-ovn-metadata-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:115
+msgid "OVN 환경에서의 메타데이터 프록시"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:116
+msgid "``daemonset-sriov-agent.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:118
+msgid "SR-IOV VF 관리, 기본 비활성 (``manifests.daemonset_sriov_agent: false``)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:119
+msgid "``daemonset-bagpipe-bgp.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:121
+msgid "BGP VPN 연동, 기본 비활성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:122
+msgid "``daemonset-netns-cleanup-cron.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:124
+msgid "고아 네트워크 네임스페이스 정리 크론"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:126
+msgid ""
+"``network.backend`` 값에 따라 OVS 관련 또는 OVN 관련 DaemonSet 이 동적으로 활성화된다. 사용하지 "
+"않는 에이전트는 ``manifests`` 토글로 리소스 자체가 생성되지 않는다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:132
+msgid "Job 관련"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:134
+msgid ""
+"서비스 기동 전 일회성 작업은 Helm Hook(``post-install``, ``post-upgrade``)으로 등록된 Job "
+"으로 실행된다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:141
+msgid "Job 템플릿"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:142
+msgid "하는 일"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:143
+msgid "``job-db-init.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:144
+msgid "MariaDB 에 neutron DB/사용자 생성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:145
+msgid "``job-db-sync.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:146
+msgid "``neutron-db-manage upgrade head`` 로 DB 스키마 마이그레이션"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:147
+msgid "``job-ks-user.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:148
+msgid "Keystone 에 neutron 서비스 계정 생성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:149
+msgid "``job-ks-service.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:150
+msgid "Keystone 에 ``network`` 타입 서비스 등록"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:151
+msgid "``job-ks-endpoints.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:152
+msgid "Keystone 에 public/internal/admin 엔드포인트 URL 등록"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:153
+msgid "``job-rabbit-init.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:154
+msgid "RabbitMQ 에 vhost/사용자/권한 설정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:155
+msgid "``job-bootstrap.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:156
+msgid "초기 네트워크 리소스 생성 (선택)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:157
+msgid "``job-db-drop.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:158
+msgid "DB 삭제 (차트 제거 시, 기본 비활성)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:161
+msgid "기타 리소스"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:168
+msgid "생성되는 Kubernetes 리소스"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:169
+msgid "``service-server.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:170
+msgid "ClusterIP Service (포트 9696) — neutron API 클러스터 내 노출"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:171
+msgid "``secret-db.yaml`` / ``secret-rabbitmq.yaml`` / ``secret-keystone.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:172
+msgid "각 서비스 자격증명을 담은 Secret"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:173
+msgid "``pdb-server.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:174
+msgid "PodDisruptionBudget — API 서버 롤링 업데이트 시 최소 가용 Pod 보장"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:175
+msgid "``network_policy.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:176
+msgid "NetworkPolicy — 인그레스/이그레스 제한"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:177
+msgid "``certificates.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:178
+msgid "TLS 인증서 Secret (TLS 활성화 시)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:179
+msgid "``extra-manifests.yaml``"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:180
+msgid "``values.yaml`` 의 ``manifests.extra`` 에 정의된 임의 Kubernetes 리소스 주입"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:184
+msgid "값 → 리소스 반영 흐름 요약"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/neutron-helm-chart.rst:186
+msgid "아래는 ``helm install`` 시 values.yaml 의 값이 실제 Kubernetes 리소스로 이어지는 흐름이다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:5
+msgid "Nova 의 VM 생성과 자원 격리 (libvirt / KVM)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:7
+msgid ""
+"OpenStack on Kubernetes(openstack-helm) 환경에서 Nova 가 인스턴스 생성 요청을 받아 "
+"Kubernetes 생태계와 호스트 커널을 거쳐 실제 QEMU 프로세스를 띄우기까지의 전체 과정을 정리합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:13
+msgid "Nova 에서 VM 이 만들어지기까지"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:16
+msgid "요청 경로: nova-api 에서 nova-compute 까지"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:18
+msgid ""
+"**nova-api** — Keystone 으로 토큰을 검증하고, 자원 한도를 확인한 뒤, DB에 가상 머신 생성을 위한 정보를 "
+"기록합니다. 이후 nova-conductor 에게 요청을 전달합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:21
+msgid ""
+"**nova-conductor** — nova-api로부터 받은 요청을 처리합니다. nova-scheduler를 호출해 생성 위치를"
+" 정하고, DB 프록시(대리인) 역할을 수행하며, 최종적으로 선택된 nova-compute에 VM 생성을 지시합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:24
+msgid ""
+"**nova-scheduler + Placement** — nova-scheduler는 Placement에게 vCPU/RAM/디스크"
+" 등 조건을 만족하는 컴퓨트 노드를 물어 후보 목록을 받고, 그중 필터와 가중치를 적용해 최종 호스트를 고릅니다. 선택이 끝나면 "
+"Placement 에 기록(claim)합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:28
+msgid ""
+"**nova-compute** — 선택된 컴퓨트 노드의 nova-compute Pod로 요청이 전달됩니다. nova-compute는"
+" Glance에서 이미지를 받아오고, Neutron에 네트워크 포트를, Cinder에 볼륨을 요청해 VM을 구성합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:31
+msgid ""
+"**Pod 간 UNIX 소켓 통신** — openstack-helm 환경에서 nova-compute와 libvirt는 각각 별도의 "
+"DaemonSet Pod로 실행됩니다. nova-compute는 도메인 XML을 생성한 후, 두 Pod가 공유 마운트한 호스트 경로"
+" 상의 UNIX 소켓(RPC)을 통해 libvirt Pod 내부의 libvirtd에 전달합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:38
+msgid "libvirt Pod의 호스트 접근 권한 확보"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:40
+msgid ""
+"컨테이너는 기본적으로 호스트 커널 및 하드웨어 접근이 제한(unprivileged)되어 있으나, libvirtd는 KVM 제어와 "
+"장치 할당을 위해 호스트 권한이 필요합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:43
+msgid ""
+"**Pod의 Privileged 모드 설정** — libvirt Pod를 privileged 모드로 실행하여, 호스트의 실제 "
+"디렉터리를 직접 마운트하여 제어합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:45
+msgid ""
+"**kubelet cgroup 계층 탈출** - Pod는 기본적으로 kubelet이 관리하는 cgroup 계층(kubepods) "
+"아래에서 실행됩니다. 그러나 libvirtd가 이 안에 갇혀 있으면 자식 프로세스인 QEMU도 Pod의 리소스 제한을 받게 됩니다."
+" 이는 VM의 자원 할당에 제약의 원인이 되므로, libvirt Pod는 호스트 권한을 사용하여 이 계층을 벗어나, 직접 "
+"cgroup을 생성하고 libvirtd의 cgroup을 system.slice 아래로 이동시킵니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:59
+msgid "``cgcreate`` 로 cgroup 루트 아래에 ``/osh-libvirt`` 를 직접 만듭니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:60
+msgid ""
+"``cgexec`` 로 그 cgroup 으로 이동해 kubelet 이 만든 계층을 벗어난 뒤, ``systemd-run "
+"--scope --slice=system`` 을 통해 libvirtd 를 호스트 systemd 의 ``system.slice`` "
+"아래 scope에 새롭게 등록합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:63
+msgid ""
+"컨테이너의 최초 프로세스는 ``systemd-run`` 으로 남아 libvirtd 를 감시합니다. libvirtd 가 죽으면 함께 "
+"종료되고, Kubernetes 가 Pod 를 다시 띄웁니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:71
+msgid ""
+"결과적으로 libvirtd는 ``system.slice`` 에 속한 데몬처럼 동작하면서도, 수명 주기는 Kubernetes 의 "
+"선언적 관리 아래 남습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:75
+msgid "libvirtd 가 QEMU 프로세스를 생성하는 과정 (Double Fork & Machine Cgroup)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:77
+msgid ""
+"libvirtd는 nova-compute로부터 받은 도메인 XML(vCPU, 메모리, 가상 디스크, NIC 설정 등)을 해석해 "
+"QEMU를 구성하고 프로세스를 생성합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:80
+msgid ""
+"Double Fork와 서브리퍼(Subreaper) : libvirtd는 Double fork를 하고 cgroup을 분리하여 "
+"QEMU를 생성합니다. 이는 **libvirtd 가 재시작, 크래시해도 실행 중인 VM 이 함께 죽지 않도록** 독립시키기 "
+"위해서입니다. double fork 과정에서 중간 프로세스가 종료되면서 QEMU 는 고아 프로세스가 되고, 가장 가까운 서브리퍼가 "
+"부모 프로세스로 매핑되게 됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:86
+msgid ""
+"Machine cgroup 격리 : libvirtd는 system.slice에 위치하지만, 생겨난 QEMU 프로세스는 호스트 "
+"cgroup 루트 직하의 가상화 전용 구역인 machine 계층으로 이동시킵니다. 이를 통해 시스템 데몬들과 VM의 자원을 격리하여"
+" VM이 호스트 시스템에 영향을 주지 않도록 합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:90
+msgid "보안 레이블 및 네임스페이스 :"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:92
+msgid ""
+"sVirt (SELinux/AppArmor): VM 간 이미지 무단 접근을 차단하기 위해 QEMU 프로세스와 디스크 파일에 고유 "
+"MCS 레이블을 부여합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:94
+msgid "Mount Namespace: QEMU의 /dev 경로를 호스트와 분리하여 해당 VM에 허용된 가상 장치 파일만 노출합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:96
+msgid "권한 축소: root 권한이 아닌 libvirt-qemu 유저/그룹 권한으로 실행 단계를 낮춥니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:116
+msgid ""
+"위 cgroup 경로는 ``machine.slice`` 가 아니라 cgroup 루트 바로 아래의 ``machine`` 계층으로 "
+"관찰됩니다. Pod를 privileged 모드로 실행하더라도 기본적으로는 호스트의 systemd의 D-Bus에 접근할 수 없으므로,"
+" 호스트의 systemd에게 cgroup 등록을 요청할 수 없습니다. 따라서 libvirtd 는 직접 cgroupfs를 통해 "
+"cgroup의 /machine 계층에 QEMU를 등록합니다. 중요한 점은 백엔드가 systemd든 cgroupfs든 관계없이, "
+"QEMU가 배치되는 cgroup(/machine)은 kubelet의 자원 추적 범위인 kubepods 계층과 격리되어 있다는 "
+"것입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:127
+msgid "QEMU 와 KVM 의 상호작용"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:130
+msgid "사전 개념 : CPU 동작 모드, 호스트 모드와 게스트 모드"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:132
+msgid ""
+"게스트 OS 도 스스로를 진짜 OS 로 인식하므로 Ring 0 권한으로 동작해야 하지만, 호스트의 진짜 Ring 0 을 그대로 주면"
+" 격리가 파괴됩니다. Intel VT-x / AMD-V 는 이를 위해 물리 CPU 에 두 가지 동작 모드를 둡니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:136
+msgid ""
+"**호스트 모드 (VMX root)** — KVM 커널 모듈과 QEMU 가 CPU 제어권을 갖는 모드. 하드웨어에 대한 완전한 접근"
+" 권한을 가집니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:138
+msgid ""
+"**게스트 모드 (VMX non-root)** — 게스트가 CPU 제어권을 갖는 모드. 게스트 모드 안에도 별도의 Ring 0 ~ "
+"Ring 3 체계가 있어, 게스트 커널은 게스트 모드의 Ring 0 에서, 게스트 애플리케이션은 게스트 모드의 Ring 3 에서 "
+"동작합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:144
+msgid "vCPU의 동작 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:146
+msgid ""
+"vCPU는 게스트 OS 가 물리 CPU 로 인식하는 가상 CPU 로, 실제로는 호스트의 물리 CPU 위에서 게스트 코드를 대신 "
+"실행하는 스레드입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:149
+msgid ""
+"QEMU 는 vCPU 하나마다 호스트 스레드를 하나씩 만듭니다. 호스트 OS 에게 이 스레드는 다른 프로세스와 완전히 동일한 "
+"스케줄링 대상입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:152
+msgid "vCPU 스레드는 아래 과정을 무한 루프로 반복합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:154
+msgid ""
+"**VM-Entry** — vCPU 스레드가 ``ioctl(vcpu_fd, KVM_RUN)`` 시스템 콜을 호출하면 KVM 커널 "
+"모듈이 물리 CPU 를 게스트 모드로 전환합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:156
+msgid "**게스트 명령어 직접 실행** — 게스트 코드가 에뮬레이션 없이 물리 하드웨어 속도로 실행됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:158
+msgid ""
+"**VM-Exit** — 게스트가 I/O 작업, 특정 제어 레지스터 접근 등 가상화 경계를 넘는 동작을 시도하면 물리 CPU 가 "
+"실행을 중단하고 호스트 모드로 복귀합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:161
+msgid ""
+"**처리와 재진입** - KVM 안에서 처리 가능한 것은 KVM 이 처리하고 바로 VM-Entry 로 돌아가며, 그렇지 않은 I/O"
+" 작업 등은 ``ioctl(KVM_RUN)`` 이 반환되어 QEMU 가 에뮬레이션한 뒤, 루프의 처음으로 돌아가 KVM_RUN 을 "
+"다시 호출합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:167
+msgid ""
+"호스트 타이머 인터럽트로 타임 슬라이스가 끝났을 때도 VM-Exit 가 발생합니다. 이때는 호스트 스케줄러가 vCPU 스레드를 물리"
+" CPU 에서 내리고 다른 프로세스를 스케줄링합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:172
+msgid "메모리의 동작 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:174
+msgid "QEMU 는 호스트 메모리 공간에서 VM 크기만큼의 메모리를 ``mmap`` 으로 확보합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:176
+msgid ""
+"게스트가 이 영역을 0 번지부터 시작하는 연속된 물리 메모리로 인식하도록 만들기 위해, 2단 주소 변환 체계를 사용합니다. QEMU"
+" 는 \"게스트 물리 주소(GPA) ↔ 호스트 가상(HVA) 주소\" 대응표를 "
+"``KVM_SET_USER_MEMORY_REGION`` 명령을 통해 KVM 에 등록하고, KVM 은 이를 바탕으로 **EPT** "
+"(Extended Page Table)를 구성합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:182
+msgid "게스트 페이지 테이블 : 게스트 가상 주소(GVA) → 게스트 물리 주소(GPA)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:183
+msgid "EPT : 게스트 물리 주소(GPA) → 호스트 물리 주소(HPA)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:184
+msgid ""
+"EPT 바이올레이션(Violation) : EPT는 초기에 비어있으며, 게스트가 메모리에 접근할 때마다 EPT violation "
+"(VM-Exit)이 발생하여 KVM 커널이 페이지 매핑을 동적으로 채웁니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:189
+msgid "기타 장치의 동작 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:191
+msgid ""
+"게스트와 QEMU 가 공유하는 링 버퍼(Virtqueue)가 게스트 메모리 안에 있고, 게스트는 I/O 요청을 그 큐에 쌓습니다. "
+"이 단계는 단순 메모리 쓰기이므로 VM-Exit 가 발생하지 않습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:194
+msgid "요청을 모아 둔 후 게스트가 알림용 레지스터에 값을 쓰면 VM-Exit 가 발생합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:195
+msgid "KVM 커널이 해당 요청을 받고, I/O 완료 처리 등을 위해 QEMU의 I/O 스레드로 제어권을 넘겨 처리합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:197
+msgid "작업 완료 신호는 게스트에 가상 인터럽트(vIRQ) 형태로 전달됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:201
+msgid "격리는 어떻게 이루어지는가"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:203
+msgid "VM 격리는 두 층위(하드웨어 및 호스트 OS)에서 동시에 작동합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:205
+msgid ""
+"**하드웨어 수준의 격리** - 게스트 OS 가 허용되지 않은 메모리 주소나 CPU 특권 레지스터를 건드리는 즉시 물리 CPU 가 "
+"명령 실행을 즉시 거부하고 VM-Exit을 발생시켜 제어권을 KVM 으로 강제 환수합니다. KVM 과 QEMU 는 정상적인 I/O "
+"요청만 처리하고, 허용되지 않은 접근은 게스트 내부의 에러(Page Fault 등)로 되돌려 호스트를 보호합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:211
+msgid ""
+"**호스트 OS 수준의 격리** - Kubernetes 컨테이너 환경 위에서도 QEMU 프로세스는 호스트 OS 차원의 제한을 "
+"받습니다. sVirt, 마운트 네임스페이스, 시스템 콜 제한(Seccomp), 자원 점유 제한(cgroup)을 겹겹이 적용하여 "
+"QEMU 프로세스 자체가 탈옥되더라도 피해가 호스트 시스템이나 다른 Pod/VM으로 확산되지 않도록 합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:221
+msgid "층위"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:222
+msgid "수단"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:223
+msgid "격리하는 대상"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:224
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:229
+msgid "하드웨어"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst
+msgid "VMX"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst
+msgid "non-root"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:227
+msgid ""
+"게스트의 특권 명령, 특수 레지스터 접근을 제한합니다. 경계를 넘으면 CPU 가 VM-Exit 로 가로채 KVM 으로 제어권을 "
+"넘깁니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:230
+msgid "EPT (Extended Page Table)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:231
+msgid ""
+"게스트 물리 주소 공간을 격리합니다. 게스트는 자신에게 매핑된 영역 밖을 볼 수 없으며, 매핑 밖 접근은 EPT 바이올레이션으로 "
+"처리됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:234
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:238
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:242
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:245
+msgid "호스트 OS"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:235
+msgid "sVirt (SELinux MCS / AppArmor)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:236
+msgid "QEMU 프로세스의 파일 접근을 제한합니다. VM 마다 레이블이 달라 다른 VM 의 디스크 이미지에 접근할 수 없습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:239
+msgid "Mount Namespace"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:240
+msgid "QEMU 프로세스가 바라보는 ``/dev`` 를 호스트와 분리해 해당 VM 에 필요한 장치 파일만 노출합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:243
+msgid "Seccomp"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:244
+msgid "QEMU 프로세스가 호출할 수 있는 시스템 콜을 허용 목록으로 제한합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:246
+msgid "cgroup"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:247
+msgid "CPU 시간 배분과 자원 사용량을 집계합니다. VM 마다 별도 cgroup 을 가집니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:252
+msgid "QEMU와 KVM의 동작 확인해 보기"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:255
+msgid "QEMU 와 KVM 의 연결 확인"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:257
+msgid "QEMU 프로세스가 열고 있는 파일 디스크립터 중 KVM 관련 항목만 봅니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:268
+msgid ""
+"``/dev/kvm`` — KVM 서브시스템 전체에 대한 제어. VM 생성 요청도 여기로 들어가며, 커널은 그 결과로 VM 제어용 "
+"파일 디스크립터를 돌려줍니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:270
+msgid "``anon_inode:kvm-vm`` — 특정 VM 하나에 대한 제어기. 메모리 슬롯 등록도 이 파일 디스크립터로 합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:272
+msgid ""
+"``anon_inode:kvm-vcpu:0`` — vCPU 단위 제어. ``ioctl(KVM_RUN)`` 이 호출되는 대상이며, "
+"vCPU 마다 파일 디스크립터가 따로 있습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:276
+msgid "KVM을 통한 CPU 모드 전환 관찰"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:278
+msgid "커널 트레이서로 실제 VM-Entry/Exit 를 볼 수 있습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:286
+msgid ""
+"``kvm_entry`` / ``kvm_exit`` 쌍이 게스트 모드 진입과 이탈이고, ``reason`` 필드가 이탈 사유입니다."
+" 위 로그 중 ``msr`` 은 게스트가 MSR(Model Specific Register)을 읽거나 쓰려 해서 발생한 VM-"
+"Exit 입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:294
+msgid ":ref:`nova-hypervisor-registration` — 노드가 하이퍼바이저로 등록되는 과정"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/nova-libvirt-kvm.rst:295
+msgid ":doc:`../foundations/vm-vs-container` — VM 과 컨테이너의 격리 방식 비교"
+msgstr ""
+
 #: ../../source/openstack-on-kubernetes/openstack-helm.rst:5
 msgid ""
 "`openstack-helm <https://docs.openstack.org/openstack-helm/>`_ 은 "
@@ -3133,6 +5410,583 @@ msgid ""
 "다룹니다."
 msgstr ""
 
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:3
+msgid "openstack-helm으로 구축한 환경의 네트워크 구조"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:7
+msgid ""
+"해당 문서는 ``openstack-on-kubernetes-terraform`` 을 사용하여 처음 OpenStack을 설치한 "
+"사용자가 전체 네트워크 구조의 뼈대를 잡을 수 있도록 돕기 위한 목적으로 작성되었습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:11
+msgid ""
+"`openstack-on-kubernetes-terraform`_ 에 작성된 단계에 따라 OpenStack 서비스를 "
+"Kubernetes로 배포한 환경을 전제하고 있으며, ``make init → make up → make ready → make "
+"osh-deploy → make osh-vm`` 을 완료한 시점을 기준으로 네트워크 구조와 주요 구성 요소의 역할을 설명합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:19
+msgid "설치 절차보다는 각 네트워크가 어디에 존재하고, 무엇과 연결되며, 어떤 구성 요소가 이를 관리하는지에 집중하여 작성되었습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:22
+msgid "또한 openstack-helm을 통해 구축된 인프라의 전체 네트워크를 총 다섯 개의 하위 네트워크로 나누어서 구분하였습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:36
+msgid "전체 네트워크"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:38
+msgid "전체 네트워크의 구조를 간략하게 나타내면 다음과 같습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:54
+msgid ""
+"하나의 EC2 Host 안에는 OpenStack 서비스를 실행하는 Kubernetes Network와 Tenant VM의 패킷을 "
+"전달하는 Open vSwitch Data Plane이 함께 구성됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:57
+msgid ""
+"``OpenStack API를 호출하는 요청`` 은 Kubernetes Service를 통해 Nova, Keystone 등의 "
+"OpenStack Service Pod로 전달됩니다. OpenStack 서비스 사이의 API 요청과 내부 메시지도 "
+"Kubernetes Network를 통해 전달됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:62
+msgid ""
+"반면 Tenant VM으로 향하거나 Tenant VM에서 나오는 패킷은 OpenStack API Pod를 통과하지 않습니다. "
+"Neutron이 정의한 Network와 Port 상태가 Open vSwitch에 반영되면, ``test-vm`` 이 송수신하는 "
+"패킷은 Open vSwitch Data Plane을 통해 Neutron Tenant Network 내부로 전달됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:69
+msgid "AWS Network"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:71
+msgid ""
+"OpenStack과 Kubernetes가 실행되는 EC2는 ``10.0.0.0/16`` VPC의 ``10.0.1.0/24`` "
+"Public Subnet에 배치됩니다. EC2의 Primary ENI에는 해당 Subnet의 Private IPv4가 할당됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:75
+msgid "AWS Cloud는 사용자가 구성하는 VPC 영역과 AWS가 운영하는 관리형 서비스 영역으로 구분할 수 있습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:90
+msgid ""
+"Public Subnet의 Route Table에는 ``0.0.0.0/0 → Internet Gateway`` 경로가 설정됩니다. "
+"EC2는 이 경로를 통해 패키지와 컨테이너 이미지를 내려받습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:94
+msgid ""
+"``본 배포에서 EC2의 Security Group은 아웃바운드 통신만 허용`` 하고 있으며 인바운드 통신은 허용하고 있지 "
+"않습니다. 따라서 사용자는 EC2의 Public IPv4나 SSH를 통해 직접 접속하지 않습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:98
+msgid ""
+"EC2 내부의 SSM Agent가 AWS Systems Manager에 아웃바운드 관리 채널을 생성하며, ``make ssm`` 과"
+" OpenStack 배포 명령도 이 채널을 통해 전달됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:105
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:170
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:250
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:328
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:401
+msgid "구성 요소"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:107
+msgid "VPC"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:108
+msgid "EC2가 배치되는 10.0.0.0/16 AWS 가상 네트워크"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:109
+msgid "Public Subnet"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:110
+msgid "EC2의 Primary ENI가 배치되는 10.0.1.0/24 주소 대역"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:111
+msgid "Internet Gateway"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:112
+msgid "Public Subnet과 외부 네트워크 사이의 통신 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:113
+msgid "Primary ENI"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:114
+msgid "AWS Network와 EC2 Host Network 간 연결"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:115
+msgid "Security Group"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:116
+msgid "인바운드 차단 및 모든 아웃바운드 통신 허용"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:117
+msgid "AWS Systems Manager"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:118
+msgid "SSH 없는 EC2 명령 전달 및 관리 세션 생성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:121
+msgid "EC2 Host Network"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:123
+msgid ""
+"EC2 Host Network는 AWS Network, Kubernetes Network 및 Neutron Tenant VM "
+"Network가 함께 존재하는 호스트 내부 네트워크입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:126
+msgid ""
+"본 프로젝트에서는 하나의 EC2가 ``Kubernetes Node`` 이자 ``OpenStack Compute Host`` 역할을 "
+"수행합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:147
+msgid ""
+"``Primary Network Interface`` 는 AWS의 Primary ENI에 대응하며, EC2 운영체제와 AWS "
+"VPC를 연결합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:150
+msgid ""
+"``Open vSwitch`` 는 여러 VM이 같은 Tenant Network에서 통신할 수 있도록 EC2 Host 안에 가상 "
+"스위치 구조를 만듭니다. Neutron OVS Agent는 Neutron에 정의된 Network와 Port 정보를 바탕으로 Open"
+" vSwitch의 Bridge와 연결 상태를 구성합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:155
+msgid ""
+"``br-int`` 는 여러 VM의 Virtual NIC가 연결되는 중심 Bridge입니다. 같은 Tenant Network에 속한"
+" VM과 DHCP Port 사이의 패킷을 전달합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:158
+msgid ""
+"``br-tun`` 은 서로 다른 Compute Host 사이에서 Tenant Network의 패킷을 VXLAN으로 전달할 때 "
+"사용됩니다. 현재는 단일 Compute Host 환경이므로 실제 Host 간 VXLAN Tunnel 트래픽은 발생하지 않습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:162
+msgid ""
+"``br-ex`` 는 VM이 Provider Network나 외부 네트워크로 접근할 때 사용하는 Bridge입니다. 본 배포에서는 "
+"실제 외부 NIC 대신 ``provider1`` Dummy Interface가 연결되므로 AWS VPC나 인터넷으로 이어지는 외부 "
+"경로는 구성되지 않습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:172
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:254
+msgid "Primary Network Interface"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:173
+msgid "AWS VPC와 EC2 Host Network 간 연결"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:174
+msgid "Linux Network Stack"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:175
+msgid "Host의 Routing 및 패킷 전달 처리"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:176
+msgid "Neutron OVS Agent"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:177
+msgid "Neutron Network 상태의 OVS Bridge·Port·Flow 구현"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:178
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:413
+msgid "br-int"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:179
+msgid "VM Port와 Neutron Tenant Network 간 연결"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:180
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:415
+msgid "br-tun"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:181
+msgid "VXLAN Segment 및 다중 Compute Host 간 Tunnel 처리"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:182
+msgid "br-ex"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:183
+msgid "Neutron Provider Network의 Host 측 연결 지점"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:184
+msgid "provider1"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:185
+msgid "실제 외부 NIC를 대신해 br-ex에 연결된 Dummy Interface"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:187
+msgid ""
+"``br_netfilter`` 와 ``net.ipv4.ip_forward = 1`` 은 별도의 Network Interface가 "
+"아니라 Linux Kernel의 패킷 처리 설정입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:199
+msgid "Kubernetes Network"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:201
+msgid ""
+"Kubernetes Network는 Node Communication, Pod Network, Service Network라는 서로"
+" 다른 역할의 영역으로 나누어 이해할 수 있습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:204
+msgid ""
+"Node Communication은 Kubernetes Node 자체의 통신을 담당하고, Pod Network는 일반 Pod에 "
+"독립된 IP와 통신 환경을 제공합니다. Service Network는 여러 Pod를 하나의 고정된 가상 주소로 연결합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:208
+msgid "본 프로젝트에서는 하나의 EC2가 단일 Kubernetes Node로 사용되므로 Node 간 통신은 발생하지 않습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:231
+msgid ""
+"``Node Communication`` 에서는 EC2의 Primary Private IPv4인 ``10.0.1.x`` 가 Node"
+" InternalIP로 사용됩니다. Kubernetes 전체를 대표하는 별도의 Network Interface가 생성되는 것은 "
+"아닙니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:235
+msgid ""
+"``Pod Network`` 에서는 일반 Pod에 독립된 Network Namespace와 ``eth0`` 이 구성되고, "
+"``192.168.0.0/16`` 범위에서 개별 IP가 할당됩니다. 본 프로젝트에서는 Calico CNI가 Pod Network를 "
+"구성합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:239
+msgid ""
+"``Service Network`` 는 Pod IP가 변경되더라도 동일한 주소로 접근할 수 있도록 ClusterIP를 제공합니다. "
+"본 프로젝트는 Service CIDR을 별도로 지정하지 않으므로 kubeadm 기본값인 ``10.96.0.0/12`` 를 "
+"사용합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:243
+msgid ""
+"``kube-proxy`` 는 ClusterIP로 들어온 요청을 실제 Endpoint Pod IP와 Port로 전달하는 규칙을 "
+"구성합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:252
+msgid "Node InternalIP"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:253
+msgid "Kubernetes의 Node 식별 주소"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:255
+msgid "Node InternalIP의 기반이 되는 Private IPv4 보유 EC2 Host Interface"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:256
+msgid "Pod CIDR"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:257
+msgid "일반 Pod IP 할당을 위한 192.168.0.0/16 주소 범위"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:258
+msgid "Calico CNI"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:259
+msgid "일반 Pod의 Network Namespace·Interface·IP·통신 경로 구성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:260
+msgid "Pod eth0"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:261
+msgid "일반 Pod의 기본 패킷 송수신 Network Interface"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:262
+msgid "Service CIDR"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:263
+msgid "ClusterIP 할당을 위한 10.96.0.0/12 주소 범위(kubeadm 기본값)"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:264
+msgid "ClusterIP"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:265
+msgid "여러 Endpoint Pod를 대표하는 고정 가상 주소"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:266
+msgid "kube-proxy"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:267
+msgid "ClusterIP 요청의 Endpoint Pod 전달 규칙 구성"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:271
+msgid ""
+"ClusterIP는 특정 Network Interface에 직접 할당되는 실제 IP가 아닙니다. kube-proxy가 전달 규칙을 "
+"구성하고, 실제 패킷 변환과 전달은 Linux Kernel이 수행합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:277
+msgid "OpenStack Service Network"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:279
+msgid ""
+"OpenStack Service Network는 OpenStack API Service와 Kubernetes Pod 위에 배포된 "
+"openstack Service가 통신하는 네트워크 영역입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:302
+msgid ""
+"``openstack Namespace`` 는 OpenStack 관련 Kubernetes Resource를 구분하고 관리하는 논리적"
+" 범위입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:305
+msgid ""
+"각 OpenStack API는 Kubernetes Service를 통해 노출됩니다. Service는 고정된 DNS 이름과 "
+"ClusterIP를 제공하며, 해당 Service로 전달된 요청을 연결된 API Pod로 전달합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:309
+msgid "``osc`` Pod는 Keystone, Glance, Nova 및 Neutron Service에 API 요청을 보냅니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:318
+msgid ""
+"이 과정에서 Service의 ClusterIP로 전달된 요청은 Node의 Linux Network Stack에서 kube-"
+"proxy가 구성한 전달 규칙에 따라 해당 Service의 Endpoint Pod IP로 변환됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:322
+msgid "변환된 패킷은 Kubernetes Pod Network를 통해 대상 Pod로 전달됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:330
+msgid "openstack Namespace"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:331
+msgid "OpenStack 관련 Kubernetes Resource의 논리적 관리 범위"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:332
+msgid "osc Pod"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:333
+msgid "OpenStack API 요청을 보내는 Client Pod"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:334
+msgid "OpenStack Service"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:335
+msgid "OpenStack API 접근을 위한 DNS 이름과 ClusterIP 제공"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:336
+msgid "OpenStack API Pod"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:337
+msgid "Service를 통해 전달된 OpenStack API 요청 처리"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:340
+msgid "Neutron Tenant VM Network"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:342
+msgid ""
+"Neutron Tenant VM Network는 OpenStack VM에 독립된 IP와 Layer 2 통신 환경을 제공하는 Data"
+" Plane 네트워크입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:345
+msgid ""
+"Tenant Network는 OpenStack 사용자가 VM을 연결하기 위해 생성하는 논리적인 가상 네트워크입니다. 같은 "
+"Tenant Network에 연결된 VM은 동일한 Layer 2 네트워크에 속하며, 다른 Network와 분리된 환경에서 "
+"통신합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:350
+msgid ""
+"Neutron Server는 Network, Subnet 및 Port 정보를 관리하고, Neutron Agent는 해당 정보를 "
+"EC2 Host의 네트워크 구조에 반영합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:353
+msgid ""
+"본 환경의 ``demo-net``, ``demo-subnet`` 및 ``test-vm`` 은 VM 생성과 Tenant "
+"Network의 동작을 확인하기 위한 테스트용 Resource입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:356
+msgid "이 절에서는 해당 구성을 기준으로 Tenant Network의 구조와 VM 패킷 전달 경로를 설명합니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:372
+msgid "``demo-net`` 은 ``test-vm`` 이 연결되는 테스트용 Tenant Network입니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:374
+msgid ""
+"Neutron Agent가 Network와 Port 정보를 EC2 Host에 반영하면, VM 패킷을 전달하기 위한 Open "
+"vSwitch Data Plane이 구성됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:377
+msgid ""
+"``test-vm`` 은 Neutron Port를 통해 ``demo-net`` 에 연결됩니다. Neutron Port에는 VM에 "
+"할당된 Fixed IP와 MAC Address가 저장되며, VM과 Tenant Network의 연결을 나타냅니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:381
+msgid ""
+"VM의 Virtual NIC는 EC2 Host에 생성된 TAP Interface와 연결됩니다. TAP Interface로 전달된 "
+"패킷은 ``qbr`` 와 ``qvb``·``qvo`` 를 거쳐 Open vSwitch의 ``br-int`` 로 전달됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:394
+msgid ""
+"이 경로는 VM 패킷에 Host Network 규칙을 적용한 뒤, 같은 Tenant Network에 연결된 다른 Port로 전달하기"
+" 위해 사용됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:403
+msgid "demo-net"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:404
+msgid "VM 생성과 Tenant Network 동작 확인을 위한 테스트용 Network"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:405
+msgid "demo-subnet"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:406
+msgid "10.10.10.0/24 주소 범위와 DHCP 설정을 제공하는 테스트용 Subnet"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:407
+msgid "Neutron Port"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:408
+msgid "VM의 Fixed IP·MAC Address·Network 연결 정의"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:409
+msgid "TAP Interface"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:410
+msgid "VM Virtual NIC와 EC2 Host Network Data Plane 간 연결"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:411
+msgid "qbr·qvb·qvo"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:412
+msgid "Host Network 규칙 적용 및 TAP Interface와 br-int 사이의 연결 경로"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:414
+msgid "같은 Tenant Network에 연결된 Port 사이의 Layer 2 패킷 전달"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:416
+msgid "VXLAN Segment와 다중 Compute Host 간 Tunnel 처리"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:417
+msgid "DHCP Namespace"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:418
+msgid "demo-subnet에 연결된 VM을 대상으로 DHCP 응답 제공"
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:420
+msgid ""
+"``demo-net`` 이 VXLAN Network로 구성된 경우, ``br-tun`` 은 서로 다른 Compute Host 사이의"
+" VXLAN Tunnel 처리에 사용됩니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:424
+msgid ""
+"현재는 단일 Compute Host 환경이므로 다른 Compute Host로 전달되는 VXLAN Tunnel 트래픽은 발생하지 "
+"않습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:427
+msgid ""
+"``br-ex`` 와 ``provider1`` 은 Provider Network를 위한 Host 측 구성입니다. 현재 환경에는 "
+"External Network, Neutron Router 및 Floating IP가 없으므로 ``demo-net`` 과 ``br-"
+"ex`` 사이의 패킷 전달 경로는 구성되지 않습니다."
+msgstr ""
+
+#: ../../source/openstack-on-kubernetes/openstack-helm-network-outline.rst:433
+msgid ""
+"현재 ``test-vm`` 은 ``demo-net`` 내부 통신과 DHCP를 사용할 수 있지만, Neutron Router를 통한 "
+"외부 연결이 없으므로 AWS VPC나 인터넷에는 접근할 수 없습니다."
+msgstr ""
+
 #: ../../source/openstack-on-kubernetes/operations.rst:3
 msgid "운영 (Day-2)"
 msgstr ""
@@ -3155,10 +6009,6 @@ msgstr ""
 
 #: ../../source/openstack-on-kubernetes/operations.rst:18
 msgid "변경의 리뷰·승인·롤백을 Git 워크플로우로 관리"
-msgstr ""
-
-#: ../../source/openstack-on-kubernetes/operations.rst:22
-msgid "업그레이드"
 msgstr ""
 
 #: ../../source/openstack-on-kubernetes/operations.rst:24
@@ -4394,5 +7244,140 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Swift 는 OpenStack 의 오브젝트 스토리지 서비스입니다. Kubernetes 생태계에서 다양한 역할을 맡습니다."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OpenStack on Kubernetes 구성에서 가장 헷갈리는 "
+#~ "지점입니다. Kubernetes Pod 네트워킹(CNI)과 OpenStack "
+#~ "가상 네트워킹(Neutron), 성격이 다른 두 스택이 한"
+#~ " 클러스터에 겹쳐 돌기 때문입니다."
+#~ msgstr ""
+
+#~ msgid "K8s 계층 — Pod 간 통신을 위한 CNI(Calico, Flannel 등)"
+#~ msgstr ""
+
+#~ msgid "OpenStack 계층 — VM/테넌트 네트워크를 위한 Neutron"
+#~ msgstr ""
+
+#~ msgid "두 계층이 서로 다른 네트워크 네임스페이스를 다룸"
+#~ msgstr ""
+
+#~ msgid "\"무엇이 어느 계층에서 처리되는가\" 를 다이어그램으로 정리(초심자 혼란 지점)."
+#~ msgstr ""
+
+#~ msgid "두 스택을 각각 운영하는 구성"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OVN 으로 CNI 와 Neutron 을 하나로 "
+#~ "수렴시키는 구성(ovn-kubernetes) — :doc:`../networking"
+#~ "/ovn-ovs` 참고"
+#~ msgstr ""
+
+#~ msgid "각 접근의 트레이드오프(운영 복잡도 vs 통합 이점) 정리."
+#~ msgstr ""
+
+#~ msgid "CNI / ovn-kubernetes 참고 링크 보강."
+#~ msgstr ""
+
+#~ msgid "로드밸런서 / 리스너 / 풀 / 멤버 / 헬스 모니터"
+#~ msgstr ""
+
+#~ msgid "각 리소스의 관계와 트래픽 흐름을 다이어그램으로 정리."
+#~ msgstr ""
+
+#~ msgid "Octavia 공식 문서 등 참고 링크 보강."
+#~ msgstr ""
+
+#~ msgid "컨트롤 컴포넌트는 Pod, 하이퍼바이저 노드는 별도 관리"
+#~ msgstr ""
+
+#~ msgid "핵심 컴포넌트"
+#~ msgstr ""
+
+#~ msgid "핵심 서비스(Keystone, Nova, Neutron, Cinder, Glance 등)와 각 역할을 표로 정리."
+#~ msgstr ""
+
+#~ msgid "왜 컨테이너화가 자연스러운가"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\"각 서비스가 독립된 REST API 서버\" 라는 "
+#~ "특성과, 이것이 :doc:`../openstack-on-"
+#~ "kubernetes/index` (openstack-helm, Kolla)의 전제가"
+#~ " 되는 이유 설명 보강"
+#~ msgstr ""
+
+#~ msgid "서비스 간 의존 관계(예: 대부분의 서비스가 Keystone 인증에 의존) 정리"
+#~ msgstr ""
+
+#~ msgid "데이터베이스(MariaDB)·메시지 큐(RabbitMQ) 등 공용 인프라 컴포넌트 보강"
+#~ msgstr ""
+
+#~ msgid "OpenStack 배포 방식 (배경)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OpenStack 은 여러 서비스의 집합이라 배포 방식이"
+#~ " 곧 운영 경험을 좌우합니다. 대표적인 배포 방식부터"
+#~ " 이 프로젝트가 다루는 방식까지 짚어 둡니다."
+#~ msgstr ""
+
+#~ msgid "DevStack — 개발·학습용 올인원(단일 노드) 배포"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Kolla-Ansible — OpenStack 을 "
+#~ "컨테이너(Docker)로 묶어 Ansible 로 배포하는 전통적 "
+#~ "프로덕션 방식. Kubernetes 위가 아님"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "openstack-helm — 같은 컨테이너화를 Kubernetes"
+#~ " 네이티브(Helm)로 올린 방식. 이 프로젝트 :doc"
+#~ ":`../openstack-on-kubernetes/index` 의 주제"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Kolla-Ansible 과 openstack-helm 의 "
+#~ "상세 비교는 :doc:`../openstack-on-"
+#~ "kubernetes/comparison` 에서 다룹니다."
+#~ msgstr ""
+
+#~ msgid "Kolla-Ansible/DevStack 을 기준점으로, openstack-helm 이 무엇을 바꾸는지 한 문단으로 연결."
+#~ msgstr ""
+
+#~ msgid "VM/이미지/네트워크 조회 등 기본 ``openstack`` CLI 예시 보강."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "CRD / Operator → Magnum 드라이버, "
+#~ "Metal3 ``BareMetalHost`` 등 통합 프로젝트의 기반"
+#~ " (:doc:`bridging-concepts`)"
+#~ msgstr ""
+
+#~ msgid "Kubernetes 공식 개념 문서(kubernetes.io/docs/concepts) 링크."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OVN(Open Virtual Network)과 OVS(Open vSwitch)는"
+#~ " Neutron 의 대표적인 SDN 백엔드입니다. 최근 "
+#~ "배포에서 기본값으로 자리 잡은 OVN 을 중심으로 "
+#~ "정리합니다."
+#~ msgstr ""
+
+#~ msgid "OVS 와 OVN 의 관계"
+#~ msgstr ""
+
+#~ msgid "OVS — 호스트 단의 가상 스위치(데이터 평면)"
+#~ msgstr ""
+
+#~ msgid "OVN — OVS 위에 논리 네트워크(라우팅/L2/L3)를 얹는 컨트롤 평면"
+#~ msgstr ""
+
+#~ msgid "OVN 도입으로 기존 Neutron 에이전트 구조가 어떻게 단순화되는지 정리."
+#~ msgstr ""
+
+#~ msgid "OVN / ovn-kubernetes 참고 링크 보강."
 #~ msgstr ""
 

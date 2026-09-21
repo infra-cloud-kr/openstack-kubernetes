@@ -1,6 +1,6 @@
 name: 💡 New content / enhancement
 description: Request a new document or section, or propose an improvement to the project.
-labels: ["kind/enhancement"]
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
