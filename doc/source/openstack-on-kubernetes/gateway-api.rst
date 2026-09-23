@@ -1,9 +1,9 @@
-====================
+===========
 Gateway API
-====================
+===========
 
 Gateway API 는 Kubernetes 의 트래픽 진입(라우팅) 표준입니다. 기존 Ingress 의
-후속 격으로, OpenStack-Helm 최신 설치에서 서비스 노출 진입점으로 쓰입니다.
+후속 격으로, openstack-helm 최신 설치에서 서비스 노출 진입점으로 쓰입니다.
 
 .. note::
 
@@ -25,7 +25,7 @@ openstack-helm 에서의 역할
 ==========================
 
 * OpenStack 서비스 엔드포인트를 외부로 노출하는 진입점
-* K8s 전제조건으로서의 설치 위치 — :doc:`../labs/openstack-helm-lab`
+* Kubernetes 전제조건으로서의 설치 위치 — :doc:`../labs/openstack-helm-lab`
 * MetalLB(:doc:`metallb`)와의 관계 — L4(LB) 위의 L7(라우팅)
 
 .. todo::

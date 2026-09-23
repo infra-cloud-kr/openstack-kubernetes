@@ -1,6 +1,6 @@
-==========
+=========
 학습 경로
-==========
+=========
 
 아래 학습 경로는 두 오픈소스 기술을 직접 경험한 뒤 문서화·번역에 기여하기
 위한 권장 순서입니다. 사전 지식 수준에 따라 조정할 수 있습니다.
@@ -11,6 +11,11 @@
 
 #. **개념 이해** — :doc:`why-openstack-and-kubernetes` 와
    :doc:`history-and-sigs` 를 읽고 두 기술이 함께 쓰이는 맥락을 파악합니다.
+#. **기초 개념 정리** — :doc:`../foundations/index` 에서 가상화 기초,
+   :doc:`../foundations/openstack-fundamentals`,
+   :doc:`../foundations/kubernetes-fundamentals`,
+   :doc:`../foundations/helm` 을 훑고, 두 기술을 잇는 표준 인터페이스는
+   :doc:`../foundations/bridging-concepts` 로 지도를 잡습니다.
 #. **문서화 도구 준비** — :doc:`../documentation/rst-sphinx-basics` 를 따라
    rST/Sphinx 와 ``tox`` 빌드 환경을 익힙니다.
 #. **실습 환경 구성** — :doc:`../labs/index` 의 가이드를 따라 로컬 또는

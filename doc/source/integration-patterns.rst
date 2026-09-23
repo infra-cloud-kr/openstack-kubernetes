@@ -1,6 +1,6 @@
-==========
+=========
 통합 패턴
-==========
+=========
 
 OpenStack 과 Kubernetes 를 결합하는 두 가지 방향을 다룹니다. OpenStack 컨트롤
 플레인을 Kubernetes 위에 올리는 방향과, 반대로 Kubernetes 클러스터를 OpenStack

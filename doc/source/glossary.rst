@@ -9,11 +9,25 @@
 
 .. rubric:: 색인
 
-:ref:`C <glossary-c>` · :ref:`D <glossary-d>` · :ref:`G <glossary-g>` ·
-:ref:`H <glossary-h>` · :ref:`I <glossary-i>` · :ref:`K <glossary-k>` ·
-:ref:`M <glossary-m>` · :ref:`N <glossary-n>` · :ref:`O <glossary-o>` ·
-:ref:`P <glossary-p>` · :ref:`R <glossary-r>` · :ref:`S <glossary-s>` ·
+:ref:`A <glossary-a>` · :ref:`C <glossary-c>` · :ref:`D <glossary-d>` ·
+:ref:`G <glossary-g>` · :ref:`H <glossary-h>` · :ref:`I <glossary-i>` ·
+:ref:`K <glossary-k>` · :ref:`L <glossary-l>` · :ref:`M <glossary-m>` ·
+:ref:`N <glossary-n>` · :ref:`O <glossary-o>` · :ref:`P <glossary-p>` ·
+:ref:`Q <glossary-q>` · :ref:`R <glossary-r>` · :ref:`S <glossary-s>` ·
 :ref:`V <glossary-v>` · :ref:`W <glossary-w>`
+
+
+.. _glossary-a:
+
+.. rubric:: A
+
+.. glossary::
+   :sorted:
+
+   amphora
+      Octavia 가 로드밸런서마다 띄우는 전용 가상 머신. 내부에서 HAProxy 가
+      실제 트래픽 분산을 처리한다. OVN 프로바이더 드라이버를 쓰면 이 VM 없이
+      OVN 의 로드 밸런싱 기능을 사용한다.
 
 
 .. _glossary-c:
@@ -60,6 +74,15 @@
       제어 평면(오케스트레이션·API·스케줄링)과 데이터 평면(실제 워크로드)을
       가리키는 구분. Nova 가 관리하는 VM 은 Kubernetes 밖의 데이터 평면에
       남는다.
+
+   cgroup
+      control group. 리눅스 커널이 프로세스 그룹의 CPU·메모리 등 자원 사용을
+      제한하고 집계하는 기능. Kubernetes 는 Pod 를 ``kubepods`` 계층에,
+      libvirt 는 VM 을 ``machine`` 계층에 배치한다.
+
+   Calico
+      Kubernetes 의 대표적인 CNI 구현체. 본 프로젝트 실습 환경의 Pod
+      네트워크를 구성한다.
 
 
 .. _glossary-d:
@@ -114,6 +137,9 @@
       Horizontal Pod Autoscaler. 부하에 따라 Pod 수를 자동으로 조절하는
       Kubernetes 오토스케일링 기능.
 
+   Horizon
+      OpenStack 의 웹 대시보드 서비스.
+
 
 .. _glossary-i:
 
@@ -157,6 +183,31 @@
       컨테이너화된 애플리케이션을 자동으로 배포·스케일링·관리하는 오픈소스
       프로젝트. CNCF 의 핵심 프로젝트.
 
+   kOps
+      Kubernetes 클러스터의 수명주기를 관리하는 도구. 클러스터 상태
+      저장소(state store)로 Swift 같은 오브젝트 스토리지를 쓸 수 있다.
+
+   Kubespray
+      Ansible 로 Kubernetes 클러스터를 배포하는 프로젝트. OpenStack VM 위에
+      클러스터를 직접 구성할 때 쓰인다.
+
+   KVM
+      Kernel-based Virtual Machine. 리눅스 커널의 하이퍼바이저 모듈.
+      Intel VT-x, AMD-V 같은 CPU 가상화 기능을 사용해 게스트 코드를 직접
+      실행한다. Nova 의 libvirt 드라이버가 이를 사용한다.
+
+
+.. _glossary-l:
+
+.. rubric:: L
+
+.. glossary::
+   :sorted:
+
+   libvirt
+      하이퍼바이저를 다루는 공통 관리 계층. Nova 는 libvirt 를 통해 KVM/QEMU
+      VM 을 만들고 제어한다. 데몬은 ``libvirtd`` 다.
+
 
 .. _glossary-m:
 
@@ -177,6 +228,11 @@
    MetalLB
       베어메탈·온프레미스 Kubernetes 에서 ``LoadBalancer`` 타입 Service 에
       외부 IP 를 제공하는 구현체.
+
+   ML2
+      Modular Layer 2. Neutron 의 코어 플러그인으로, 메커니즘 드라이버를 통해
+      OVS·OVN·SR-IOV 같은 백엔드를 선택한다. ``ML2/OVS``, ``ML2/OVN`` 처럼
+      조합으로 표기한다.
 
 
 .. _glossary-n:
@@ -237,6 +293,22 @@
       PersistentVolume / PersistentVolumeClaim. 각각 실제 스토리지 자원과 그
       자원에 대한 사용 요청. CSI 드라이버(예: Cinder CSI)로 연결된다.
 
+   Placement
+      컴퓨트 자원의 인벤토리와 할당을 추적하는 OpenStack 서비스.
+      nova-scheduler 가 배치 후보를 고를 때 조회한다.
+
+
+.. _glossary-q:
+
+.. rubric:: Q
+
+.. glossary::
+   :sorted:
+
+   QEMU
+      VM 을 실행하는 사용자 공간 프로세스. vCPU 마다 호스트 스레드를 만들고,
+      KVM 이 처리하지 않는 I/O 를 에뮬레이션한다.
+
 
 .. _glossary-r:
 
@@ -290,6 +362,11 @@
    VM
       가상 머신(Virtual Machine). 하이퍼바이저 위에서 게스트 OS 커널까지 통째로
       격리해 실행한다. OpenStack 에서는 Nova 가 관리한다.
+
+   VXLAN
+      Virtual Extensible LAN. L3 네트워크 위에 L2 세그먼트를 터널로 실어
+      나르는 오버레이 기술. Neutron 테넌트 네트워크가 노드 사이를 넘을 때
+      쓰인다.
 
 
 .. _glossary-w:

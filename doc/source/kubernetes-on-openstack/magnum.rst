@@ -2,9 +2,9 @@
 Magnum
 ======
 
-`Magnum <https://docs.openstack.org/magnum/>`_ 은 OpenStack 에서 컨테이너
-오케스트레이션 엔진(주로 Kubernetes)을 Container-as-a-Service 형태로 제공하는
-프로젝트입니다.
+`Magnum <https://docs.openstack.org/magnum/latest/>`_ 은 OpenStack 에서
+컨테이너 오케스트레이션 엔진(주로 Kubernetes)을 Container-as-a-Service
+형태로 제공하는 프로젝트입니다.
 
 .. note::
 
@@ -38,4 +38,4 @@ Magnum
 참고
 ====
 
-* Magnum 공식 문서 — https://docs.openstack.org/magnum/
+* Magnum 공식 문서 — https://docs.openstack.org/magnum/latest/

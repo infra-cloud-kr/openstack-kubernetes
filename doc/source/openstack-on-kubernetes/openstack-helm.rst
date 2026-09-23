@@ -2,8 +2,9 @@
 openstack-helm
 ==============
 
-`openstack-helm <https://docs.openstack.org/openstack-helm/>`_ 은 OpenStack
-서비스를 Helm chart 로 패키징하여 Kubernetes 위에 배포하는 프로젝트입니다.
+`openstack-helm <https://docs.openstack.org/openstack-helm/latest/>`_ 은
+OpenStack 서비스를 Helm chart 로 패키징하여 Kubernetes 위에 배포하는
+프로젝트입니다.
 
 .. note::
 
@@ -54,8 +55,20 @@ openstack-helm 운영의 실질 핵심은 chart 기본값을 환경에 맞게 �
    블록별 설명 보강.
 
 
+chart 하나를 예로 들어 values 가 실제 Kubernetes 리소스로 바뀌는 과정을
+따라가려면 :doc:`neutron-helm-chart` 를 참고하세요.
+
+
 GitOps 연계
 ===========
 
 FluxCD/ArgoCD 와 결합하여 선언적 배포와 Day-2 운영을 자동화하는 방법은
 :doc:`operations` 에서 다룹니다.
+
+
+관련 문서
+=========
+
+* :doc:`neutron-helm-chart` — neutron chart 의 파일 구성과 리소스 매핑
+* :doc:`openstack-helm-network-outline` — 배포된 환경의 네트워크 구조
+* :doc:`../labs/openstack-helm-lab` — 단계별 실습

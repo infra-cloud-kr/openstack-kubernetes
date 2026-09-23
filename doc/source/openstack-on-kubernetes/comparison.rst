@@ -1,6 +1,6 @@
-================================
+===============================
 Kolla-Ansible vs openstack-helm
-================================
+===============================
 
 두 배포 도구 모두 OpenStack 배포를 자동화하지만, 오케스트레이션 계층이
 다릅니다(Kolla-Ansible = Ansible + Docker, openstack-helm = Kubernetes + Helm).
@@ -27,17 +27,18 @@ Kolla-Ansible vs openstack-helm
 =============
 
 * self-healing, 롤링 업데이트, 스케일 아웃의 선언성 비교
-* 디버깅 경험(SSH 컨테이너 확인 vs kubectl/기존 K8s tooling)
+* 디버깅 경험(SSH 컨테이너 확인 vs kubectl 등 기존 Kubernetes 도구)
 
 .. todo::
 
-   Prometheus/Grafana 등 기존 K8s 운영 tooling 통합 관점 보강.
+   Prometheus/Grafana 등 기존 Kubernetes 운영 도구 통합 관점 보강.
 
 
 stateful 워크로드 문제
 ======================
 
-* nova-compute, cinder-volume 등 하이퍼바이저/스토리지 바인딩 서비스의 K8s화
+* nova-compute, cinder-volume 등 하이퍼바이저/스토리지 바인딩 서비스를
+  Kubernetes 로 옮기는 문제
 * hostPath / DaemonSet 강제 등 Pod 추상화와의 충돌 지점
 
 .. todo::
@@ -50,7 +51,7 @@ stateful 워크로드 문제
 
 .. todo::
 
-   조직 상황별(기존 K8s 운영 역량 유무 등) 선택 기준 정리.
+   조직 상황별(기존 Kubernetes 운영 역량 유무 등) 선택 기준 정리.
 
 
 더 읽을거리

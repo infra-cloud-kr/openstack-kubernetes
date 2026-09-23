@@ -1,6 +1,6 @@
-==========================
+==================
 Octavia 로드밸런서
-==========================
+==================
 
 OpenStack 의 로드밸런싱 서비스인 Octavia 는 Kubernetes 의
 ``Service type=LoadBalancer`` 요청을 처리하여 외부 트래픽을 분산합니다.
@@ -25,7 +25,7 @@ OpenStack 의 로드밸런싱 서비스인 Octavia 는 Kubernetes 의
 
 * Octavia 와 (구) Neutron-LBaaS 의 차이
 * 어노테이션을 통한 세부 설정 (헬스 모니터, 프로토콜 등)
-* 옥타비아 amphora 와 OVN 프로바이더 차이
+* Octavia 의 amphora 와 OVN 프로바이더 차이
 
 
 관련 문서

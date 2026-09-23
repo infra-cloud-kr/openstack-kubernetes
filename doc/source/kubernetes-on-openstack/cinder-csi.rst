@@ -2,8 +2,10 @@
 Cinder CSI
 ==========
 
-Cinder CSI 드라이버는 OpenStack 의 블록 스토리지(Cinder)를 Kubernetes 의
-PersistentVolume 으로 제공합니다.
+Cinder CSI 드라이버는 OpenStack 의 블록 스토리지(:term:`Cinder`)를
+Kubernetes 의 PersistentVolume 으로 제공합니다. :term:`CSI` 인터페이스
+자체의 개념은 :doc:`../foundations/kubernetes-csi` 에서 다루므로, 이 문서는
+Cinder 를 연결하는 관점에 집중합니다.
 
 .. note::
 
@@ -25,7 +27,7 @@ PersistentVolume 으로 제공합니다.
 #. CSI 드라이버 배포
 #. ``StorageClass`` 정의 (Cinder 백엔드 지정)
 #. ``PersistentVolumeClaim`` 생성
-#. 파드에서 볼륨 마운트
+#. Pod 에서 볼륨 마운트
 
 
 관련 문서

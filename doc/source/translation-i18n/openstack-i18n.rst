@@ -16,7 +16,7 @@ OpenStack 의 국제화는 **i18n SIG** 가 주도합니다
 =========
 
 * OpenStack I18n Contributor Guide —
-  https://docs.openstack.org/i18n/
+  https://docs.openstack.org/i18n/latest/
 
 
 번역 파이프라인 개요

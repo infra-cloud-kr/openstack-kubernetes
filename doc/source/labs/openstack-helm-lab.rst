@@ -1,9 +1,9 @@
-=================================
+====================
 실습: openstack-helm
-=================================
+====================
 
 openstack-helm 으로 Kubernetes 위에 OpenStack 을 배포하는 실습입니다. 순서는
-OpenStack-Helm 공식 설치 흐름(Before starting → Kubernetes → Kubernetes
+openstack-helm 공식 설치 흐름(Before starting → Kubernetes → Kubernetes
 전제조건 → Deploy OpenStack)을 따릅니다.
 
 .. note::
@@ -27,8 +27,8 @@ OpenStack-Helm 공식 설치 흐름(Before starting → Kubernetes → Kubernete
 1. Kubernetes 배포
 ==================
 
-동작 중인 Kubernetes 클러스터를 준비합니다. OSH 는 Ansible 롤 기반 부트스트랩을
-권장합니다.
+동작 중인 Kubernetes 클러스터를 준비합니다. openstack-helm 은 Ansible 롤
+기반 부트스트랩을 권장합니다.
 
 * roles 저장소 clone
 * Ansible 설치 및 roles lookup 경로 설정

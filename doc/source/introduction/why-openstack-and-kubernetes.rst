@@ -1,6 +1,6 @@
-=====================================
+===============================
 왜 OpenStack 과 Kubernetes 인가
-=====================================
+===============================
 
 클라우드 인프라의 두 축
 =======================
@@ -10,8 +10,8 @@
 OpenStack Foundation)의 핵심 프로젝트입니다.
 
 **Kubernetes** 는 컨테이너화된 애플리케이션을 자동으로 배포·스케일링·관리하는
-오픈소스 프로젝트로, CNCF(클라우드 네이티브 컴퓨팅 재단, Cloud Native
-Computing Foundation)의 핵심 프로젝트입니다.
+오픈소스 프로젝트로, 클라우드 네이티브 컴퓨팅 재단(Cloud Native Computing
+Foundation, CNCF)의 핵심 프로젝트입니다.
 
 두 프로젝트를 지원하는 재단 모두 Linux Foundation 과 협력하여 클라우드
 인프라 및 클라우드 네이티브 기술을 발전시키고 있으며, 전 세계 수많은 기업이
@@ -30,10 +30,11 @@ OpenStack on Kubernetes
 OpenStack 의 각 서비스(Nova, Neutron, Keystone, Glance, Swift 등)를
 컨테이너로 패키징하여 Kubernetes 위에서 운영하는 방식입니다.
 
-* `openstack-helm <https://docs.openstack.org/openstack-helm/>`_ 을 이용한
-  Helm 기반 배포
-* `Kolla / Kolla-Ansible <https://docs.openstack.org/kolla-ansible/>`_ 을
-  이용한 컨테이너 기반 배포
+* `openstack-helm <https://docs.openstack.org/openstack-helm/latest/>`_
+  을 이용한 Helm 기반 배포
+* `Kolla / Kolla-Ansible
+  <https://docs.openstack.org/kolla-ansible/latest/>`_ 을 이용한 컨테이너
+  기반 배포
 
 국내외 클라우드 사업자들이 OpenStack 컨트롤 플레인 현대화를 위해 이 구조를
 적극 채택하고 있습니다. GitOps(FluxCD, ArgoCD)와 결합하면 Day-2 운영
@@ -48,7 +49,8 @@ Kubernetes on OpenStack
 OpenStack 의 VM 인프라 위에 Kubernetes 클러스터를 프로비저닝·운영하는
 방식입니다.
 
-* `Magnum <https://docs.openstack.org/magnum/>`_ 을 통한 K8s-as-a-Service 제공
+* `Magnum <https://docs.openstack.org/magnum/latest/>`_ 을 통한
+  Kubernetes-as-a-Service 제공
 * `cloud-provider-openstack
   <https://github.com/kubernetes/cloud-provider-openstack>`_ 을 통한 Cinder
   볼륨·Octavia 로드밸런서·Neutron 네트워크의 Kubernetes 통합
@@ -104,7 +106,7 @@ openstack-helm 을 처음 접하는 개발자라면 Kubernetes, Helm, OpenStack 
 본 프로젝트의 접근 방식
 =======================
 
-본 프로젝트는 이 간극을 메우고자 OpenStack과 Kubernetes 운영 환경에 대해
+본 프로젝트는 이 간극을 메우고자 OpenStack 과 Kubernetes 운영 환경에 대해
 이해 및 실습, 문서화를 진행합니다. 또한, 관련 OpenStack/Kubernetes 문서를
 한글화하는 방법에 대해 설명합니다.
 
