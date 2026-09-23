@@ -88,13 +88,53 @@ reStructuredText conventions
 Documentation style guide
 ==========================
 
-* **Translated documents**: Convey the meaning of the source (English) text
-  accurately while prioritizing natural Korean prose. When a technical term
-  first appears, write it as ``한글(English)``.
-* **Proper nouns / project names**: Keep the original spelling for names such
-  as OpenStack, Kubernetes, Nova, and Neutron.
-* **Commands / code**: Specify the appropriate language for ``code-block``
+Korean prose conventions
+------------------------
+
+Korean is the source language of this repository, so these rules keep the
+pages consistent and keep the gettext catalog stable.
+
+* **Sentence endings**: use the polite ``합니다`` style
+  ("Neutron 은 ... 서비스입니다"), not the plain ``한다`` style. The only
+  exception is ``doc/source/glossary.rst``, where dictionary-style ``한다``
+  definitions are used throughout.
+* **Spacing around particles**: put a space between a Latin word and the
+  Korean particle that follows it — ``Neutron 은``, ``Pod 가``, ``VM 의``,
+  ``openstack-helm 으로``. Particles after a bare number stay attached
+  (``폭이 2로``), and particles after a closing parenthesis stay attached
+  (``제어 평면(control plane)이라고``).
+* **First use of a term**: write it as ``한글(English, ABBR)`` — for example
+  ``특별 관심 그룹(Special Interest Group, SIG)`` or
+  ``역할 기반 접근 제어(role-based access control, RBAC)``. Use the
+  abbreviation alone afterwards.
+* **Proper nouns / project names**: keep the original spelling for names such
+  as OpenStack, Kubernetes, Nova, and Neutron. Write the project name as
+  ``openstack-helm`` in lower case, and spell ``Kubernetes`` out rather than
+  abbreviating it to ``K8s``.
+* **Preferred terms**: ``Pod`` (not 파드), ``VM`` (not 가상 머신 after the
+  first use), ``Octavia`` (not 옥타비아). When in doubt, follow the headword
+  used in ``doc/source/glossary.rst`` and link the first mention with
+  ``:term:``.
+
+Markup and links
+----------------
+
+* **Commands / code**: specify the appropriate language for ``code-block``
   directives (``console``, ``yaml``, ``bash``, etc.).
+* Use inline literals (``` ``like this`` ```) only for code, paths, commands
+  and identifiers. To emphasize a phrase, use ``**bold**`` instead.
+* Prefer ``` ``literal`` ``` over the ``:code:`` role for inline code.
+* Write ordered lists with ``#.`` so the numbering stays automatic.
+* Point external links at their final URL, not at one that redirects
+  (``https://docs.openstack.org/magnum/latest/``, not
+  ``https://docs.openstack.org/magnum/``). ``tox -e linkcheck`` reports both
+  broken links and redirects.
+
+Translated documents
+--------------------
+
+Convey the meaning of the source text accurately while prioritizing natural
+prose, and record the source document and its version.
 
 For detailed rST/Sphinx conventions, see the ``doc/source/documentation/``
 section.

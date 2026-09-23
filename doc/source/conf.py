@@ -17,7 +17,6 @@ author = 'infra-cloud-kr contributors'
 # -- 일반 설정 ---------------------------------------------------------------
 
 extensions = [
-    'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
 ]
 
@@ -49,9 +48,19 @@ html_theme = 'alabaster'
 
 html_title = 'OpenStack & Kubernetes 한글 문서화 프로젝트'
 
-# -- intersphinx 설정 --------------------------------------------------------
-# 외부 공식 문서로의 교차 참조. 네트워크가 없는 환경에서도 빌드가
-# 실패하지 않도록 타임아웃을 짧게 둡니다.
+# -- 링크 검사 (linkcheck) ---------------------------------------------------
+# ``tox -e linkcheck`` 로 외부 링크의 유효성을 확인합니다.
+# 리다이렉트는 문서에서 최종 URL 로 바로 적는 것을 원칙으로 합니다.
 
-intersphinx_mapping = {}
-intersphinx_timeout = 5
+# 봇 접근을 차단해 403 을 돌려주지만 사람은 정상적으로 볼 수 있는 링크.
+linkcheck_ignore = [
+    r'https://www\.netapp\.com/learn/.*',
+]
+
+# 링크 검사 시 동시 요청 수와 재시도 (CI 에서의 산발적 실패를 줄입니다).
+linkcheck_workers = 5
+linkcheck_timeout = 15
+linkcheck_retries = 2
+
+# 외부 공식 문서로의 교차 참조가 필요해지면 ``sphinx.ext.intersphinx`` 를
+# extensions 에 추가하고 여기에 intersphinx_mapping 을 정의하세요.

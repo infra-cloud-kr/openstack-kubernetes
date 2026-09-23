@@ -37,6 +37,10 @@ jobs:
       - name: Build docs (sphinx, English -> /en/)
         run: tox -e docs-en
 
+      - name: Check external links (non-blocking)
+        run: tox -e linkcheck
+        continue-on-error: true
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
