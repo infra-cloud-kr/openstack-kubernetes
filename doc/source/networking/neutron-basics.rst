@@ -1,9 +1,11 @@
-====================
+============
 Neutron 기초
-====================
+============
 
-Neutron 은 OpenStack 의 가상 네트워킹(SDN) 서비스입니다. 실습 전에 잡아 두면
-좋은 핵심 구성요소와 개념을 정리합니다.
+:term:`Neutron` 은 OpenStack 의 가상 네트워킹(:term:`SDN`) 서비스입니다.
+실습 전에 잡아 두면 좋은 핵심 구성요소와 개념을 정리합니다. 백엔드 구현체는
+:doc:`ovn-ovs`, Kubernetes 네트워크와의 공존은
+:doc:`../openstack-on-kubernetes/cni-and-neutron` 에서 다룹니다.
 
 .. note::
 

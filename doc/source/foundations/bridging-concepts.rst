@@ -1,6 +1,6 @@
-==========================================
+======================================
 OpenStack ↔ Kubernetes 연동 인터페이스
-==========================================
+======================================
 
 가상화 기초·OpenStack·Kubernetes 세 레이어를 이해했다면, 다음은 두 기술을
 실제로 잇는 표준 인터페이스입니다. 각 개념의 상세는 통합 패턴·네트워킹·
@@ -15,7 +15,7 @@ OpenStack ↔ Kubernetes 연동 인터페이스
 
 
 연동 표준 인터페이스
-========================
+====================
 
 Kubernetes 가 클라우드(OpenStack) 자원을 쓰기 위한 표준 확장점입니다. 각
 인터페이스가 OpenStack 의 무엇과 이어지는지가 핵심입니다.
@@ -32,7 +32,8 @@ Kubernetes 가 클라우드(OpenStack) 자원을 쓰기 위한 표준 확장점�
      - :doc:`../openstack-on-kubernetes/cni-and-neutron`
    * - CSI
      - 퍼시스턴트 스토리지 ↔ Cinder
-     - :doc:`../kubernetes-on-openstack/cinder-csi`
+     - :doc:`kubernetes-csi` (개념),
+       :doc:`../kubernetes-on-openstack/cinder-csi` (연동)
    * - CCM
      - LoadBalancer·노드 수명주기 ↔ OpenStack
      - :doc:`../kubernetes-on-openstack/cloud-provider-openstack`
@@ -50,7 +51,7 @@ Kubernetes 가 클라우드(OpenStack) 자원을 쓰기 위한 표준 확장점�
 .. _bridging-concepts-provisioning:
 
 배포·프로비저닝
-========================
+===============
 
 두 기술을 결합하는 방법으로, 방향에 따라 나뉩니다.
 
@@ -62,22 +63,22 @@ Kubernetes 가 클라우드(OpenStack) 자원을 쓰기 위한 표준 확장점�
      - 한 줄 정의
      - 상세
    * - openstack-helm
-     - OpenStack 을 K8s 에 배포 (OpenStack → K8s)
+     - OpenStack 을 Kubernetes 에 배포 (OpenStack → Kubernetes)
      - :doc:`../openstack-on-kubernetes/openstack-helm`
    * - Magnum
-     - OpenStack 이 K8s 클러스터를 생성 (K8s → OpenStack)
+     - OpenStack 이 Kubernetes 클러스터를 생성 (Kubernetes → OpenStack)
      - :doc:`../kubernetes-on-openstack/magnum`
    * - Cluster API (CAPO)
-     - 선언적으로 K8s 클러스터 프로비저닝 (K8s → OpenStack)
+     - 선언적으로 Kubernetes 클러스터 프로비저닝 (Kubernetes → OpenStack)
      - :doc:`../kubernetes-on-openstack/cluster-api`
 
 
 .. _bridging-concepts-baremetal:
 
 베어메탈 (물리 서버)
-========================
+====================
 
-멀티노드 운영은 결국 물리 서버로 내려갑니다. 여기서 K8s 의 Metal3 와
+멀티노드 운영은 결국 물리 서버로 내려갑니다. 여기서 Kubernetes 의 Metal3 와
 OpenStack 의 Ironic 이 만나는데, Metal3(CRD)가 내부적으로 Ironic 을 호출하는
 구조라 두 스택의 베어메탈 관리가 한 지점으로 수렴합니다.
 
@@ -92,15 +93,16 @@ OpenStack 의 Ironic 이 만나는데, Metal3(CRD)가 내부적으로 Ironic 을
      - OpenStack 의 베어메탈 프로비저닝 서비스
      - 전용 문서 예정
    * - Metal3
-     - K8s(CRD)로 베어메탈 관리 — 내부적으로 Ironic 사용
+     - Kubernetes(CRD)로 베어메탈 관리 — 내부적으로 Ironic 사용
      - 전용 문서 예정
 
 
 공용 스토리지
-========================
+=============
 
-두 스택이 같은 스토리지 백엔드(Ceph)를 공유하는 수렴 지점입니다. K8s 측은
-Rook 오퍼레이터로, OpenStack 측은 Cinder·Glance 등이 같은 Ceph 를 바라봅니다.
+두 스택이 같은 스토리지 백엔드(:term:`Ceph`)를 공유하는 수렴 지점입니다.
+Kubernetes 측은 :term:`Rook` 오퍼레이터로, OpenStack 측은 Cinder·Glance 등이
+같은 Ceph 를 바라봅니다.
 
 .. list-table::
    :header-rows: 1
@@ -110,7 +112,7 @@ Rook 오퍼레이터로, OpenStack 측은 Cinder·Glance 등이 같은 Ceph 를 
      - 한 줄 정의
      - 상세
    * - Ceph / Rook
-     - OpenStack·K8s 공용 스토리지 백엔드 (Rook = K8s 오퍼레이터)
+     - OpenStack·Kubernetes 공용 스토리지 백엔드 (Rook = Kubernetes 오퍼레이터)
      - :doc:`../storage/ceph`
 
 .. todo::

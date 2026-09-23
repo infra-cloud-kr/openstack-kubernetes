@@ -1,10 +1,10 @@
-==========
+========
 네트워킹
-==========
+========
 
 OpenStack 이 제공하는 네트워킹 서비스를 다룹니다. 가상 네트워킹(Neutron)과 SDN
 백엔드(OVN/OVS), 로드 밸런싱(Octavia)이 대상입니다. 두 기술을 결합할 때의
-K8s-측 네트워킹(CNI 공존, Gateway API, MetalLB 등)은 통합 패턴 섹션에서
+Kubernetes 측 네트워킹(CNI 공존, Gateway API, MetalLB 등)은 통합 패턴 섹션에서
 다룹니다.
 
 .. note::

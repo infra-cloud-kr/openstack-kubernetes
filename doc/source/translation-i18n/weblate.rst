@@ -2,7 +2,7 @@
 Weblate
 =======
 
-`Weblate <https://weblate.org/>`_ 는 웹 기반 번역 플랫폼입니다.
+`Weblate <https://weblate.org/en/>`_ 는 웹 기반 번역 플랫폼입니다.
 본 프로젝트의 한글 문서는 한국어를 원문으로 하고, Weblate 를 통해
 영어로 번역됩니다.
 

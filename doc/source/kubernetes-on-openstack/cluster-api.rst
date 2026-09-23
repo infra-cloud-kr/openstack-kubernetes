@@ -1,16 +1,18 @@
-============================
+==================
 Cluster API (CAPO)
-============================
+==================
 
-Cluster API(CAPI)는 Kubernetes 클러스터 자체를 K8s 스타일 API(CRD)로 선언적으로
-프로비저닝·관리하는 프로젝트입니다. CAPO(Cluster API Provider OpenStack)는 그
-OpenStack 프로바이더로, OpenStack(Nova/Neutron 등) 위에 K8s 클러스터를 만듭니다.
+Cluster API(CAPI)는 Kubernetes 클러스터 자체를 Kubernetes 스타일
+API(:term:`CRD`)로 선언적으로 프로비저닝·관리하는 프로젝트입니다.
+CAPO(Cluster API Provider OpenStack)는 그 OpenStack 프로바이더로,
+OpenStack(Nova/Neutron 등) 위에 Kubernetes 클러스터를 만듭니다.
 
 .. note::
 
    기여자 작업용 골격입니다. 실습 경험과 공식 문서를 바탕으로 보강해 주세요.
 
-   Magnum 과 함께 "K8s on OpenStack" 클러스터 프로비저닝의 대표 방식입니다.
+   Magnum 과 함께 "Kubernetes on OpenStack" 클러스터 프로비저닝의 대표
+   방식입니다.
 
 
 개요
@@ -28,7 +30,7 @@ OpenStack 프로바이더로, OpenStack(Nova/Neutron 등) 위에 K8s 클러스�
 Magnum 과의 비교
 ================
 
-* Magnum — OpenStack API/서비스로 K8s 클러스터 제공 (:doc:`magnum`)
+* Magnum — OpenStack API/서비스로 Kubernetes 클러스터 제공 (:doc:`magnum`)
 * CAPO — Kubernetes 네이티브 API(CRD)로 선언적 프로비저닝
 
 .. todo::

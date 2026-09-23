@@ -1,6 +1,6 @@
-===================================
+=============================
 실습: Kubernetes on OpenStack
-===================================
+=============================
 
 OpenStack 위에 Kubernetes 클러스터를 프로비저닝하는 실습입니다.
 
@@ -21,6 +21,9 @@ OpenStack 위에 Kubernetes 클러스터를 프로비저닝하는 실습입니�
 
 배포 경로 선택
 ==============
+
+각 경로의 개념과 선택 기준은 :doc:`../kubernetes-on-openstack/concepts` 에
+정리되어 있습니다.
 
 * **Magnum** — OpenStack 이 제공하는 관리형 클러스터
   (:doc:`../kubernetes-on-openstack/magnum`)

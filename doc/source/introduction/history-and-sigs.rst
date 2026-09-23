@@ -4,7 +4,8 @@
 
 OpenStack 과 Kubernetes 의 통합은 어느 날 갑자기 등장한 것이 아니라, 두
 커뮤니티가 오랜 기간 협력하며 형성해 온 흐름입니다. 이 절에서는 그 역사를
-SIG(Special Interest Group, 특별 관심 그룹) 활동을 중심으로 살펴보고, 현재의
+특별 관심 그룹(Special Interest Group, SIG) 활동을 중심으로 살펴보고,
+현재의
 통합 지형이 어떻게 정리되었는지 정리합니다.
 
 .. note::
@@ -43,6 +44,10 @@ Open Infrastructure Foundation 의 컨테이너 백서
 이 세 가지 시나리오는 오늘날 우리가 :doc:`../openstack-on-kubernetes/index`
 (첫 번째 시나리오)와 :doc:`../kubernetes-on-openstack/index` (두 번째·세 번째
 시나리오)로 부르는 구조의 원형입니다.
+
+
+이 흐름을 따라 직접 실습하고 문서화·번역에 기여하는 순서는
+:doc:`learning-path` 에 정리되어 있습니다.
 
 
 참고 자료

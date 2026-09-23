@@ -1,11 +1,13 @@
-==================================
+============================
 Neutron Helm Chart 구조 파악
-==================================
+============================
 
 `openstack-helm <https://opendev.org/openstack/openstack-helm>`_ 의 neutron
-chart 는 OpenStack 네트워킹 서비스를 Kubernetes 위에 배포하는 Helm chart 다.
-이 문서는 `차트 디렉터리 <https://github.com/openstack/openstack-helm/tree/master/neutron>`_
-의 파일 구성과 각 항목이 실제 Kubernetes 리소스로 어떻게 구현되는지를 정리한다.
+chart 는 OpenStack 네트워킹 서비스를 Kubernetes 위에 배포하는 Helm
+chart 입니다. 이 문서는
+`차트 디렉터리 <https://github.com/openstack/openstack-helm/tree/master/neutron>`_
+의 파일 구성과 각 항목이 실제 Kubernetes 리소스로 어떻게 구현되는지를
+정리합니다.
 
 
 차트 최상위 파일
@@ -20,12 +22,12 @@ chart 는 OpenStack 네트워킹 서비스를 Kubernetes 위에 배포하는 Hel
    └── templates/        # Kubernetes 리소스 템플릿
 
 **Chart.yaml** 은 차트 이름, 버전(``2026.1.0``), appVersion(``28.0.0``)을 선언하며,
-``helm-toolkit`` 을 라이브러리 의존성으로 등록한다.
+``helm-toolkit`` 을 라이브러리 의존성으로 등록합니다.
 helm-toolkit 은 openstack-helm 전체에서 공통 스니펫(snippet)을 제공하는 내부 라이브러리
-차트로, 실제 Kubernetes 리소스를 직접 생성하지는 않는다.
+차트로, 실제 Kubernetes 리소스를 직접 생성하지는 않습니다.
 
-**values.yaml** 은 배포 시 오버라이드할 수 있는 기본값 전체를 담는다.
-주요 최상위 블록은 아래 표와 같다.
+**values.yaml** 은 배포 시 오버라이드할 수 있는 기본값 전체를 담습니다.
+주요 최상위 블록은 아래 표와 같습니다.
 
 .. list-table::
    :header-rows: 1
@@ -50,22 +52,23 @@ helm-toolkit 은 openstack-helm 전체에서 공통 스니펫(snippet)을 제공
 
 
 templates/ 디렉터리 구성
-=========================
+========================
 
-templates/ 아래 파일들은 역할에 따라 다음과 같이 묶인다.
+templates/ 아래 파일들은 역할에 따라 다음과 같이 묶입니다.
 
 설정 관련
 ---------
 
 ``bin/`` 디렉터리에는 각 컴포넌트의 기동 스크립트가 ``_*.sh.tpl`` 형식으로
-들어 있다.
+들어 있습니다.
 Helm 이 렌더링하면 ``configmap-bin.yaml`` 에 의해
-단일 ConfigMap 으로 묶여 각 Pod 의 ``/tmp/`` 경로에 마운트된다.
+단일 ConfigMap 으로 묶여 각 Pod 의 ``/tmp/`` 경로에 마운트됩니다.
 
 ``configmap-etc.yaml`` 은 ``values.yaml`` 의 ``conf`` 블록 값을
-``neutron.conf``, ``ml2_conf.ini``, ``l3_agent.ini`` 등 설정 파일로 렌더링한다.
+``neutron.conf``, ``ml2_conf.ini``, ``l3_agent.ini`` 등 설정 파일로
+렌더링합니다.
 특이한 점은 이 템플릿 내부에서 ``endpoints`` 블록을 참조해 DB 접속 URL,
-RabbitMQ transport URL, Keystone auth_url 등을 자동으로 채워 넣는다는 것이다.
+RabbitMQ transport URL, Keystone auth_url 등을 자동으로 채워 넣는다는 점입니다.
 
 .. code-block:: text
 
@@ -77,7 +80,7 @@ RabbitMQ transport URL, Keystone auth_url 등을 자동으로 채워 넣는다�
 워크로드 관련
 -------------
 
-컴포넌트의 역할에 따라 Kubernetes 워크로드 타입이 다르게 선택된다.
+컴포넌트의 역할에 따라 Kubernetes 워크로드 타입이 다르게 선택됩니다.
 
 .. list-table::
    :header-rows: 1
@@ -124,15 +127,15 @@ RabbitMQ transport URL, Keystone auth_url 등을 자동으로 채워 넣는다�
      - 고아 네트워크 네임스페이스 정리 크론
 
 ``network.backend`` 값에 따라 OVS 관련 또는 OVN 관련 DaemonSet 이
-동적으로 활성화된다.
+동적으로 활성화됩니다.
 사용하지 않는 에이전트는 ``manifests`` 토글로
-리소스 자체가 생성되지 않는다.
+리소스 자체가 생성되지 않습니다.
 
 Job 관련
 --------
 
 서비스 기동 전 일회성 작업은 Helm Hook(``post-install``, ``post-upgrade``)으로
-등록된 Job 으로 실행된다.
+등록된 Job 으로 실행됩니다.
 
 .. list-table::
    :header-rows: 1
@@ -181,10 +184,10 @@ Job 관련
 
 
 값 → 리소스 반영 흐름 요약
-===========================
+==========================
 
 아래는 ``helm install`` 시 values.yaml 의 값이 실제 Kubernetes 리소스로 이어지는
-흐름이다.
+흐름입니다.
 
 .. code-block:: text
 

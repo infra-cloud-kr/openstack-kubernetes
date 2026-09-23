@@ -1,6 +1,6 @@
-=========================
+====================
 Kubernetes 문서 관례
-=========================
+====================
 
 Kubernetes 공식 문서는 OpenStack 과 달리 `Hugo <https://gohugo.io/>`_ 와
 Markdown 기반입니다. 본 프로젝트는 rST/Sphinx 로 작성하지만, Kubernetes
@@ -15,7 +15,7 @@ Markdown 기반입니다. 본 프로젝트는 rST/Sphinx 로 작성하지만, Ku
 핵심 출처
 =========
 
-* Kubernetes Documentation (website) — https://kubernetes.io/docs/
+* Kubernetes Documentation (website) — https://kubernetes.io/docs/home/
 * Contribute to Kubernetes docs —
   https://kubernetes.io/docs/contribute/
 

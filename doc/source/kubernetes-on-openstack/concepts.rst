@@ -13,11 +13,13 @@ OpenStack 위에 Kubernetes 클러스터를 올리기 전에 알아 두면 좋�
 배포 경로
 =========
 
-* **Magnum** — OpenStack 이 제공하는 K8s-as-a-Service
+* **Magnum** — OpenStack 이 제공하는 Kubernetes-as-a-Service
   (:doc:`magnum`)
-* **Kubespray** — Ansible 기반 범용 Kubernetes 배포 도구
-* **kOps** — 클러스터 수명주기 관리 도구 (state store 로 Swift 활용 가능)
+* :term:`Kubespray` — Ansible 기반 범용 Kubernetes 배포 도구
+* :term:`kOps` — 클러스터 수명주기 관리 도구. 클러스터 상태 저장소로
+  :doc:`../storage/swift` 를 활용할 수 있습니다
 * **Cluster API (CAPI)** — 선언적 클러스터 수명주기 관리
+  (:doc:`cluster-api`)
 
 
 OpenStack 과의 통합 지점

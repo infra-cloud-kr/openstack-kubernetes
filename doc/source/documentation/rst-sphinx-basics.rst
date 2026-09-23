@@ -1,10 +1,10 @@
-====================
+=================
 rST / Sphinx 기초
-====================
+=================
 
-본 프로젝트는 reStructuredText(rST)와 `Sphinx <https://www.sphinx-doc.org/>`_
-로 문서를 작성합니다. 이 문서는 처음 기여하는 분을 위한 최소한의 기초를
-정리합니다.
+본 프로젝트는 reStructuredText(rST)와
+`Sphinx <https://www.sphinx-doc.org/en/master/>`_ 로 문서를 작성합니다.
+이 문서는 처음 기여하는 분을 위한 최소한의 기초를 정리합니다.
 
 
 왜 rST/Sphinx 인가

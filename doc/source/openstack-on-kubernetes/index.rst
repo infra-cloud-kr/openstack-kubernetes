@@ -8,7 +8,8 @@ OpenStack 의 각 서비스(Nova, Neutron, Keystone, Glance, Swift 등)를 컨�
 해당합니다.
 
 올리는 방법은 하나가 아니지만(:doc:`approaches`), 이 섹션은 그 기반이 되는
-openstack-helm 을 중심으로 준비부터 운영까지 짚습니다.
+openstack-helm 을 중심으로 준비부터 운영까지 짚습니다. 먼저 잡아 두면 좋은
+개념은 :doc:`concepts` 에 모아 두었습니다.
 
 .. toctree::
    :maxdepth: 1
@@ -21,7 +22,7 @@ openstack-helm 을 중심으로 준비부터 운영까지 짚습니다.
 
 .. toctree::
    :maxdepth: 1
-   :caption: K8s 네트워킹 준비
+   :caption: Kubernetes 네트워킹 준비
 
    openstack-helm-network-outline
    cni-and-neutron

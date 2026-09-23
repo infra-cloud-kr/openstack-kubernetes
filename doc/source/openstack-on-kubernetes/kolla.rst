@@ -1,11 +1,11 @@
-============================
+=======================
 Kolla (컨테이너 이미지)
-============================
+=======================
 
-`Kolla <https://docs.openstack.org/kolla/>`_ 는 OpenStack 서비스의 프로덕션용
-컨테이너 이미지를 빌드하는 프로젝트입니다. openstack-helm 과 Kolla-Ansible 이
-모두 이 이미지를 사용합니다 — 즉 Kolla 는 "배포 도구" 가 아니라 그 아래의
-"이미지 레이어" 입니다.
+`Kolla <https://docs.openstack.org/kolla/latest/>`_ 는 OpenStack 서비스의
+프로덕션용 컨테이너 이미지를 빌드하는 프로젝트입니다. openstack-helm 과
+Kolla-Ansible 이 모두 이 이미지를 사용합니다 — 즉 Kolla 는 "배포 도구" 가
+아니라 그 아래의 "이미지 레이어" 입니다.
 
 .. note::
 
@@ -41,5 +41,6 @@ openstack-helm 과의 관계
 참고
 ====
 
-* Kolla — https://docs.openstack.org/kolla/
-* Kolla-Ansible(배포 도구, 비교용) — https://docs.openstack.org/kolla-ansible/
+* Kolla — https://docs.openstack.org/kolla/latest/
+* Kolla-Ansible(배포 도구, 비교용) —
+  https://docs.openstack.org/kolla-ansible/latest/
