@@ -1,0 +1,255 @@
+
+/* ==========================================
+   OpenInfra Docs - Modern Tech Design
+   Sphinx Book Theme
+   Kubernetes Blue + OpenStack Red
+   ========================================== */
+
+/* Pretendard */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+/* ==========================================
+   1. Color & Font Variables
+   ========================================== */
+
+:root {
+    --k8s-blue: #326CE5;
+    --openstack-red: #ED1944;
+
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --sidebar-bg: #F8FAFC;
+    --border-color: #E2E8F0;
+
+    --pst-font-family-base: 'Pretendard', sans-serif;
+    --pst-font-family-heading: 'Pretendard', sans-serif;
+}
+
+/* Light theme */
+html,
+html[data-theme="light"] {
+    --pst-color-primary: #326CE5;
+    --pst-color-secondary: #326CE5;
+    --pst-color-link: #326CE5;
+    --pst-color-link-hover: #244FB3;
+
+    --pst-color-info: #326CE5;
+    --pst-color-warning: #E3B23C;
+    --pst-color-danger: #ED1944;
+
+    /* Remove anchor target highlight */
+    --pst-color-target: transparent;
+}
+
+/* ==========================================
+   2. Typography
+   ========================================== */
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    color: var(--text-primary);
+    background: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.75;
+    word-break: keep-all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pretendard', sans-serif;
+    color: var(--text-primary);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* ==========================================
+   3. Sidebar Navigation
+   ========================================== */
+
+.bd-sidebar-primary {
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+}
+
+.bd-sidebar-primary a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.bd-sidebar-primary a:hover {
+    color: var(--k8s-blue);
+}
+
+.bd-sidebar-primary a.current,
+.bd-sidebar-primary .current > a,
+.bd-sidebar-primary a.active {
+    color: var(--k8s-blue);
+    font-weight: 700;
+}
+
+/* Right sidebar */
+.bd-sidebar-secondary a:hover,
+.bd-sidebar-secondary a.active {
+    color: var(--k8s-blue);
+}
+
+/* ==========================================
+   4. Links
+   ========================================== */
+
+.bd-article a {
+    color: var(--k8s-blue);
+    text-decoration: none;
+}
+
+.bd-article a:hover {
+    color: #244FB3;
+    text-decoration: underline;
+}
+
+/* ==========================================
+   5. Admonition Boxes
+   ========================================== */
+
+/* Common */
+div.admonition {
+    background: #FFFFFF !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+
+
+/* ==========================================
+   TODO - Yellow
+   ========================================== */
+
+div.admonition.admonition-todo {
+    background: #FFFFFF !important;
+    border: 1px solid #F6D98B !important;
+    border-left: 4px solid #E3B23C !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+}
+
+div.admonition.admonition-todo > .admonition-title {
+    background: #FFF4CC !important;
+    color: #8A5A00 !important;
+}
+
+/* TODO 아이콘 제거 */
+div.admonition.admonition-todo > .admonition-title::before,
+div.admonition.admonition-todo > .admonition-title::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* 아이콘 제거 후 여백 */
+div.admonition.admonition-todo > .admonition-title {
+    padding-left: 16px !important;
+}
+
+
+/* NOTE - Blue */
+div.admonition.note {
+    border: 1px solid #C7D9FF !important;
+    border-left: 4px solid var(--k8s-blue) !important;
+}
+
+div.admonition.note > .admonition-title {
+    background: #EAF0FF !important;
+    color: #1D4ED8 !important;
+}
+
+/* WARNING & DANGER - Red */
+div.admonition.warning,
+div.admonition.danger {
+    border: 1px solid #FFCDD6 !important;
+    border-left: 4px solid var(--openstack-red) !important;
+}
+
+div.admonition.warning > .admonition-title,
+div.admonition.danger > .admonition-title {
+    background: #FFF0F3 !important;
+    color: #BE123C !important;
+}
+
+/* Remove admonition icons */
+div.admonition > .admonition-title::before,
+div.admonition > .admonition-title::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Adjust title spacing after icon removal */
+div.admonition > .admonition-title {
+    padding-left: 16px !important;
+}
+
+/* ==========================================
+   6. Remove Anchor Highlight
+   ========================================== */
+
+/* Preserve anchor navigation, remove yellow highlight */
+.bd-content :target,
+.bd-article :target,
+.bd-content .highlighted,
+.bd-article .highlighted {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================
+   7. Code Blocks
+   ========================================== */
+
+div.highlight {
+    background: #F8FAFC;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+pre, code {
+    font-family: 'Consolas', monospace;
+}
+
+/* ==========================================
+   8. Mobile
+   ========================================== */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/* 다크모드 전환 버튼 숨기기 */
+.theme-switch-button,
+.theme-switch-button-container,
+button.theme-switch-button {
+    display: none !important;
+}
+
+/* 왼쪽 사이드바 프로젝트 제목 볼드체 */
+.bd-sidebar-primary .navbar-brand,
+.bd-sidebar-primary .navbar-brand p,
+.bd-sidebar-primary .logo__title,
+.bd-sidebar-primary .navbar-brand__title {
+    font-weight: 700 !important;
+    color: #0F172A !important;
+}
