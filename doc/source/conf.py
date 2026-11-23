@@ -39,14 +39,37 @@ gettext_compact = 'docs'
 # todo 지시문을 출력에 표시.
 todo_include_todos = True
 
+
 # -- HTML 출력 옵션 ----------------------------------------------------------
 
-# 외부 의존성 없이 동작하는 Sphinx 기본 내장 theme.
-# OpenStack 공식 문서 테마(openstackdocstheme)로 전환하려면
-# doc/requirements.txt 에서 해당 패키지를 설치한 뒤 아래를 교체하세요.
-html_theme = 'alabaster'
+# Sphinx Book Theme 기반 문서 디자인
+# Kubernetes Blue + OpenStack Red
+html_theme = 'sphinx_book_theme'
 
 html_title = 'OpenStack & Kubernetes 한글 문서화 프로젝트'
+
+# 사용자 정의 CSS
+html_static_path = ['_static']
+html_css_files = ['custom.css']
+
+# 왼쪽 전체 문서 목차 및 레이아웃 설정
+html_theme_options = {
+    'home_page_in_toc': True,
+    'show_navbar_depth': 1,
+    'max_navbar_depth': 4,
+    'collapse_navbar': False,
+
+    # 불필요한 기능 제거
+    'navbar_end': [],
+    'use_download_button': False,
+    'use_fullscreen_button': False,
+}
+
+# 라이트 모드 기본 설정
+html_context = {
+    'default_mode': 'light',
+}
+
 
 # -- 링크 검사 (linkcheck) ---------------------------------------------------
 # ``tox -e linkcheck`` 로 외부 링크의 유효성을 확인합니다.

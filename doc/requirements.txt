@@ -7,3 +7,5 @@ doc8>=1.1.0
 
 # (선택) OpenStack 공식 문서 테마로 전환할 때 주석을 해제하세요.
 # openstackdocstheme>=3.0.0
+
+sphinx-book-theme>=1.4,<1.5
